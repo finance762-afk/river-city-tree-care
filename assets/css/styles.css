@@ -1049,6 +1049,15 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   clip-path: inset(0 0 0 0);
 }
 
+/* Image wrappers must always be visible regardless of animation state */
+.gallery-item,
+.ba-panel,
+.about-img-wrap,
+.service-img-wrap {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* Stagger grid children */
 [data-stagger] > * {
   opacity: 0;

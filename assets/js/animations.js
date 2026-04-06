@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Scroll Reveal (fade-up, wipe-right) --- */
   const animatedElements = document.querySelectorAll('[data-animate]');
 
+  /* Classes that wrap images — never hide these with opacity:0 */
+  const imageWrapperClasses = ['gallery-item', 'ba-panel', 'about-img-wrap', 'service-img-wrap', 'split', 'split-reverse'];
+
+  function isImageWrapper(el) {
+    if (el.querySelector('img')) return true;
+    return imageWrapperClasses.some(cls => el.classList.contains(cls));
+  }
+
   if (animatedElements.length) {
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -20,7 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, { threshold: 0.15 });
 
-    animatedElements.forEach(el => revealObserver.observe(el));
+    animatedElements.forEach(el => {
+      if (isImageWrapper(el)) {
+        /* Make image wrappers immediately visible — skip animation */
+        el.classList.add('in-view');
+      } else {
+        revealObserver.observe(el);
+      }
+    });
   }
 
   /* --- Stagger Grid Children --- */
