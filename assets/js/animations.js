@@ -38,14 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, { threshold: 0.15 });
 
-    staggerGrids.forEach(grid => {
-      Array.from(grid.children).forEach(child => {
-        child.style.opacity = '0';
-        child.style.transform = 'translateY(30px)';
-        child.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      });
-      staggerObserver.observe(grid);
-    });
+    staggerGrids.forEach(grid => staggerObserver.observe(grid));
   }
 
   /* --- Stat Counter Animated Count-Up --- */
