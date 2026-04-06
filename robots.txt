@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /thank-you
+
+Sitemap: https://www.rivercitytreega.com/sitemap.xml
+Sitemap: https://www.rivercitytreega.com/sitemap-images.xml
