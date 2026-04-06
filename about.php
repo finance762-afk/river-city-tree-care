@@ -93,7 +93,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/Amvmq1g.png" alt="Andrew Roberson, owner of River City Tree Care, LLC — company shirt and chainsaw" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/Amvmq1g.png" alt="Andrew Roberson, owner of River City Tree Care, LLC — company shirt and chainsaw" width="800" height="600">
           </div>
           <div>
             <h2>Owner-Operated. Hands-On. Every Job.</h2>
@@ -147,7 +147,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs — lot clearing result by River City Tree Care in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs — lot clearing result by River City Tree Care in Ringgold, GA" width="800" height="600">
           </div>
           <div>
             <h2>The Work Speaks for Itself</h2>
@@ -167,7 +167,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2 style="color: var(--primary); margin-bottom: var(--space-lg);">What Customers Are Saying</h2>
         <div style="max-width: 600px; margin-inline: auto;">
           <div class="img-shadow" style="margin-bottom: var(--space-lg);">
-            <img src="https://i.imgur.com/soD6w6P.jpeg" alt="5-star Google review for River City Tree Care, LLC in Ringgold, GA" width="600" height="400" loading="lazy" style="width: 100%; height: auto;">
+            <img src="https://i.imgur.com/soD6w6P.jpeg" alt="5-star Google review for River City Tree Care, LLC in Ringgold, GA" width="600" height="400" style="width: 100%; height: auto;">
           </div>
           <p style="color: var(--primary); font-size: 1.6rem; letter-spacing: 0.1em; margin-bottom: var(--space-sm);">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
           <p style="color: var(--text-light); font-size: 0.9rem;">Review sourced from Google Reviews</p>

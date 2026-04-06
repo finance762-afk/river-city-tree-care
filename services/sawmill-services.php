@@ -112,7 +112,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Portable sawmill milling logs into lumber in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Portable sawmill milling logs into lumber in Ringgold, GA" width="800" height="600">
           </div>
           <div>
             <h2>Turn Downed Trees into Usable Lumber</h2>
@@ -208,7 +208,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Logs ready for sawmill processing — custom lumber milling service" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Logs ready for sawmill processing — custom lumber milling service" width="800" height="600">
           </div>
           <div>
             <h2>Best Species for Milling in North Georgia</h2>

@@ -102,7 +102,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Hardwood logs from tree removal job — firewood and sawmill stock in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Hardwood logs from tree removal job — firewood and sawmill stock in Ringgold, GA" width="800" height="600">
           </div>
           <div>
             <h2>Locally Sourced Hardwood — Cut Fresh from Job Sites</h2>
@@ -155,7 +155,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Cut timber and logs ready for firewood processing or sawmill milling" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Cut timber and logs ready for firewood processing or sawmill milling" width="800" height="600">
           </div>
           <div>
             <h2>Firewood Tips for North Georgia</h2>

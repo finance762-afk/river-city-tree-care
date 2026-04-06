@@ -112,7 +112,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project with trees and brush removed from lot in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project with trees and brush removed from lot in Ringgold, GA" width="800" height="600">
           </div>
           <div>
             <h2>Clear the Lot, Start the Build</h2>
@@ -163,7 +163,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed lot clearing — clean property ready for development near Chattanooga, TN" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed lot clearing — clean property ready for development near Chattanooga, TN" width="800" height="600">
           </div>
           <div>
             <h2>How Lot Clearing Works</h2>
@@ -196,7 +196,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Large hauling trailer loaded with cleared timber and brush" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Large hauling trailer loaded with cleared timber and brush" width="800" height="600">
           </div>
           <div>
             <h2>Equipment for the Job</h2>

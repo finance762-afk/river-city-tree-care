@@ -112,7 +112,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Forestry mulching clearing overgrown land in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Forestry mulching clearing overgrown land in Ringgold, GA" width="800" height="600">
           </div>
           <div>
             <h2>One Machine. One Pass. Clean Ground.</h2>
@@ -194,7 +194,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Cleared acreage after forestry mulching in North Georgia" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Cleared acreage after forestry mulching in North Georgia" width="800" height="600">
           </div>
           <div>
             <h2>Common Forestry Mulching Projects</h2>

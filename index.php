@@ -231,11 +231,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
         <div class="ba-grid">
           <div class="ba-panel" data-animate="wipe-right">
-            <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal — overgrown trees and brush in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal — overgrown trees and brush in Ringgold, GA" width="800" height="600">
             <span class="ba-label">Before</span>
           </div>
           <div class="ba-panel" data-animate="wipe-right">
-            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal — clean lot with clear sightlines in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal — clean lot with clear sightlines in Ringgold, GA" width="800" height="600">
             <span class="ba-label">After</span>
           </div>
         </div>
@@ -293,7 +293,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="about-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs in Ringgold, GA — River City Tree Care results" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs in Ringgold, GA — River City Tree Care results" width="800" height="600">
           </div>
           <div class="about-content">
             <h2>Built on Hard Work, Not Sales Pitches</h2>
@@ -316,22 +316,22 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
         <div class="gallery-grid" data-stagger>
           <div class="gallery-item" data-animate="wipe-right">
-            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project — trees and brush removed from lot in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project — trees and brush removed from lot in Ringgold, GA" width="800" height="600">
           </div>
           <div class="gallery-item" data-animate="wipe-right">
-            <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree debris on job site" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree debris on job site" width="800" height="600">
           </div>
           <div class="gallery-item" data-animate="wipe-right">
-            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Sawmill services — custom lumber milling from downed trees" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Sawmill services — custom lumber milling from downed trees" width="800" height="600">
           </div>
           <div class="gallery-item" data-animate="wipe-right">
-            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land clearing — clean lot ready for development near Chattanooga, TN" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land clearing — clean lot ready for development near Chattanooga, TN" width="800" height="600">
           </div>
           <div class="gallery-item" data-animate="wipe-right">
-            <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Stump grinder removing tree stump below grade" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Stump grinder removing tree stump below grade" width="800" height="600">
           </div>
           <div class="gallery-item" data-animate="wipe-right">
-            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Large hauling trailer loaded with cut timber from job site" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Large hauling trailer loaded with cut timber from job site" width="800" height="600">
           </div>
         </div>
       </div>

@@ -111,7 +111,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Commercial stump grinder removing tree stump below grade in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Commercial stump grinder removing tree stump below grade in Ringgold, GA" width="800" height="600">
           </div>
           <div>
             <h2>Why Grind the Stump?</h2>
@@ -188,7 +188,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Clean residential yard after stump grinding and lot clearing in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Clean residential yard after stump grinding and lot clearing in Ringgold, GA" width="800" height="600">
           </div>
           <div>
             <h2>What Happens After the Stump Is Gone?</h2>

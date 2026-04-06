@@ -112,7 +112,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree branches during trimming job in Ringgold, GA" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree branches during trimming job in Ringgold, GA" width="800" height="600">
           </div>
           <div>
             <h2>Why Regular Tree Trimming Matters</h2>
@@ -189,7 +189,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/WpCmdQg.jpeg" alt="River City Tree Care job site — professional tree work in progress" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/WpCmdQg.jpeg" alt="River City Tree Care job site — professional tree work in progress" width="800" height="600">
           </div>
           <div>
             <h2>What We Trim</h2>

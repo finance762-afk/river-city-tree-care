@@ -104,7 +104,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land development clearing — clean site ready for construction near Chattanooga, TN" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land development clearing — clean site ready for construction near Chattanooga, TN" width="800" height="600">
           </div>
           <div>
             <h2>Site Prep That Gets You to Grading Day</h2>
@@ -196,7 +196,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="600" loading="lazy">
+            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="600">
           </div>
           <div>
             <h2>The Right Equipment for the Scale</h2>
