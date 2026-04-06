@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view');
+          entry.target.style.opacity = '';
+          entry.target.style.transform = '';
+          entry.target.style.transition = '';
           revealObserver.unobserve(entry.target);
         }
       });

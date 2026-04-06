@@ -1044,8 +1044,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   clip-path: inset(0 100% 0 0);
 }
 [data-animate].in-view {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1 !important;
+  transform: none !important;
   clip-path: inset(0 0 0 0);
 }
 
