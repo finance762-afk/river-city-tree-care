@@ -2,5 +2,10 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /
 
+# Root-level pages that conflict with same-named directories (e.g. /services)
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# Subdirectory clean URLs (e.g. /services/tree-removal)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.+?)/?$ $1.php [L]
