@@ -1,13 +1,18 @@
 Options -Indexes
 RewriteEngine On
+RewriteBase /
 
-RewriteCond %{REQUEST_URI} !^/assets/
-RewriteCond %{REQUEST_URI} !^/includes/
+# Allow direct access to real files and assets
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^assets/ - [L]
+RewriteRule ^includes/ - [L]
 
-RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
-RewriteRule ^ /%1 [NC,L,R=301]
+# Route clean URLs to .php files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
 
-ErrorDocument 404 /404.php
+# Route subdirectory clean URLs (e.g. /services/tree-removal)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}/index.php !-f
+RewriteRule ^([^/]+)/([^/]+)/?$ $1/$2.php [L]
