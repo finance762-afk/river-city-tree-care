@@ -110,7 +110,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-intro" data-animate="fade-up">
       <div class="container">
         <div class="split-reverse">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Commercial stump grinder removing tree stump below grade in Ringgold, GA" width="800" height="600">
           </div>
           <div>
@@ -187,7 +187,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-content" style="background: var(--bg);" data-animate="fade-up">
       <div class="container">
         <div class="split">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Clean residential yard after stump grinding and lot clearing in Ringgold, GA" width="800" height="600">
           </div>
           <div>

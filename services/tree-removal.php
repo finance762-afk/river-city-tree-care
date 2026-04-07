@@ -112,11 +112,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="before-after-section" style="padding-top: var(--space-2xl);" data-animate="fade-up">
       <div class="container">
         <div class="ba-grid">
-          <div class="ba-panel" data-animate="wipe-right">
+          <div class="ba-panel">
             <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal in Ringgold, GA — overgrown trees and brush" width="800" height="600">
             <span class="ba-label">Before</span>
           </div>
-          <div class="ba-panel" data-animate="wipe-right">
+          <div class="ba-panel">
             <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal in Ringgold, GA — clean cleared lot" width="800" height="600">
             <span class="ba-label">After</span>
           </div>
@@ -128,7 +128,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-intro" data-animate="fade-up">
       <div class="container">
         <div class="split-reverse">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="River City Tree Care hauling trailer loaded with cut timber from removal job" width="800" height="600">
           </div>
           <div>

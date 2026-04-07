@@ -230,11 +230,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="section-subtitle prose-centered" style="text-align: center;">Same property. Same week. Complete tree removal and full site cleanup in Ringgold, GA.</p>
 
         <div class="ba-grid">
-          <div class="ba-panel" data-animate="wipe-right">
+          <div class="ba-panel">
             <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal — overgrown trees and brush in Ringgold, GA" width="800" height="600">
             <span class="ba-label">Before</span>
           </div>
-          <div class="ba-panel" data-animate="wipe-right">
+          <div class="ba-panel">
             <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal — clean lot with clear sightlines in Ringgold, GA" width="800" height="600">
             <span class="ba-label">After</span>
           </div>
@@ -292,7 +292,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="about-section" data-animate="fade-up">
       <div class="container">
         <div class="split">
-          <div class="about-img-wrap" data-animate="wipe-right">
+          <div class="about-img-wrap">
             <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs in Ringgold, GA — River City Tree Care results" width="800" height="600">
           </div>
           <div class="about-content">
@@ -315,22 +315,22 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="section-subtitle prose-centered" style="text-align: center;">Job sites across Ringgold, Chattanooga, and the surrounding area.</p>
 
         <div class="gallery-grid" data-stagger>
-          <div class="gallery-item" data-animate="wipe-right">
+          <div class="gallery-item">
             <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project — trees and brush removed from lot in Ringgold, GA" width="800" height="600">
           </div>
-          <div class="gallery-item" data-animate="wipe-right">
+          <div class="gallery-item">
             <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree debris on job site" width="800" height="600">
           </div>
-          <div class="gallery-item" data-animate="wipe-right">
+          <div class="gallery-item">
             <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Sawmill services — custom lumber milling from downed trees" width="800" height="600">
           </div>
-          <div class="gallery-item" data-animate="wipe-right">
+          <div class="gallery-item">
             <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land clearing — clean lot ready for development near Chattanooga, TN" width="800" height="600">
           </div>
-          <div class="gallery-item" data-animate="wipe-right">
+          <div class="gallery-item">
             <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Stump grinder removing tree stump below grade" width="800" height="600">
           </div>
-          <div class="gallery-item" data-animate="wipe-right">
+          <div class="gallery-item">
             <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Large hauling trailer loaded with cut timber from job site" width="800" height="600">
           </div>
         </div>

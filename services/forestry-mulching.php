@@ -111,7 +111,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-intro" data-animate="fade-up">
       <div class="container">
         <div class="split-reverse">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Forestry mulching clearing overgrown land in Ringgold, GA" width="800" height="600">
           </div>
           <div>
@@ -193,7 +193,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-content" style="background: var(--bg-alt);" data-animate="fade-up">
       <div class="container">
         <div class="split">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Cleared acreage after forestry mulching in North Georgia" width="800" height="600">
           </div>
           <div>

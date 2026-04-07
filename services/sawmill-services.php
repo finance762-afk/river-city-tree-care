@@ -111,7 +111,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-intro" data-animate="fade-up">
       <div class="container">
         <div class="split">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Portable sawmill milling logs into lumber in Ringgold, GA" width="800" height="600">
           </div>
           <div>
@@ -207,7 +207,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-content" style="background: var(--bg-alt);" data-animate="fade-up">
       <div class="container">
         <div class="split-reverse">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Logs ready for sawmill processing — custom lumber milling service" width="800" height="600">
           </div>
           <div>

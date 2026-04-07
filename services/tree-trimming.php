@@ -111,7 +111,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-intro" data-animate="fade-up">
       <div class="container">
         <div class="split">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree branches during trimming job in Ringgold, GA" width="800" height="600">
           </div>
           <div>
@@ -188,7 +188,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-content" style="background: var(--bg);" data-animate="fade-up">
       <div class="container">
         <div class="split-reverse">
-          <div class="service-img-wrap" data-animate="wipe-right">
+          <div class="service-img-wrap">
             <img src="https://i.imgur.com/WpCmdQg.jpeg" alt="River City Tree Care job site — professional tree work in progress" width="800" height="600">
           </div>
           <div>
