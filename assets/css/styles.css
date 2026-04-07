@@ -583,6 +583,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   border-radius: var(--radius);
   overflow: hidden;
   aspect-ratio: 4/3;
+  min-height: 300px;
+  width: 100%;
 }
 .ba-panel img {
   width: 100%;
@@ -670,6 +672,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   border-radius: var(--radius);
   overflow: hidden;
   aspect-ratio: 4/3;
+  min-height: 350px;
+  width: 100%;
 }
 .about-img-wrap img {
   width: 100%;
@@ -935,6 +939,10 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .grid-2 > *, .grid-3 > *, .grid-asym > *, .split > *, .split-reverse > * {
   min-width: 0;
 }
+.split > *:first-child,
+.split-reverse > *:last-child {
+  min-height: 300px;
+}
 
 /* Grid collapse */
 @media (max-width: 1023px) {
@@ -1056,6 +1064,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .service-img-wrap {
   opacity: 1 !important;
   transform: none !important;
+  clip-path: inset(0 0 0 0) !important;
 }
 
 /* Stagger grid children */
@@ -1279,6 +1288,8 @@ footer ul a:hover { color: var(--primary); }
   border-radius: var(--radius);
   overflow: hidden;
   aspect-ratio: 4/3;
+  min-height: 350px;
+  width: 100%;
 }
 .service-img-wrap img {
   width: 100%;
