@@ -1,12 +1,12 @@
 # River City Tree Care, LLC — Full Entity Profile
 
-> Tree service and land clearing company based in Ringgold, GA
+> Tree service and land clearing company based in Chickamauga, GA
 > Schema entity type: LocalBusiness > TreeService
 
 ## Company Information
 - Legal Name: River City Tree Care, LLC
 - Owner: Andrew Roberson
-- Location: Ringgold, GA 30736
+- Location: Chickamauga, GA 30707
 - Phone: (706) 264-6130
 - Email: treeclimber1110@gmail.com
 - Website: https://www.rivercitytreega.com
@@ -16,7 +16,7 @@
 - Licensed and Insured: Yes — general liability and workers' compensation coverage
 
 ## About
-River City Tree Care, LLC is owned and operated by Andrew Roberson out of Ringgold, GA. The company provides tree removal, stump grinding, lot clearing, forestry mulching, land development clearing, firewood sales, and portable sawmill services across a 50-mile radius including Chattanooga, TN and surrounding communities. Andrew is on-site for every project. The crew handles everything from single backyard tree removals to multi-acre development clearing with professional equipment and full site cleanup on every job.
+River City Tree Care, LLC is owned and operated by Andrew Roberson out of Chickamauga, GA. The company provides tree removal, stump grinding, lot clearing, forestry mulching, land development clearing, firewood sales, and portable sawmill services across a 50-mile radius including Chattanooga, TN and surrounding communities. Andrew is on-site for every project. The crew handles everything from single backyard tree removals to multi-acre development clearing with professional equipment and full site cleanup on every job.
 
 ## Services
 
@@ -53,8 +53,9 @@ Portable sawmill services turning logs into custom-cut lumber on site. Dimension
 URL: https://www.rivercitytreega.com/services/sawmill-services
 
 ## Service Area
-50-mile radius from Ringgold, GA including:
-- Ringgold, GA (primary base)
+50-mile radius from Chickamauga, GA including:
+- Chickamauga, GA (primary base)
+- Ringgold, GA
 - Chattanooga, TN (heavy work volume)
 - Fort Oglethorpe, GA
 - Dalton, GA
@@ -69,7 +70,7 @@ URL: https://www.rivercitytreega.com/services/sawmill-services
 
 ## Frequently Asked Questions
 
-Q: How much does tree removal cost in Ringgold, GA?
+Q: How much does tree removal cost in Chickamauga, GA?
 A: Tree removal typically ranges from $400 to $2,500+ depending on tree size, condition, and proximity to structures. Small trees may cost $400–$900, large hardwoods near homes can cost $1,500–$2,500+. Free estimates provided.
 
 Q: Do you offer emergency tree removal?

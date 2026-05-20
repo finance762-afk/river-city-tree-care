@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Sawmill Services in Ringgold, GA | River City Tree Care";
-$pageDescription = "Portable sawmill services in Ringgold, GA. Custom lumber milling from your logs — slabs, beams, and dimensional cuts. Call (706) 264-6130 for availability.";
+$pageTitle       = "Sawmill Services in Chickamauga, GA | River City Tree Care";
+$pageDescription = "Portable sawmill services in Chickamauga, GA. Custom lumber milling from your logs — slabs, beams, and dimensional cuts. Call (706) 264-6130 for availability.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/sawmill-services";
 $ogImage         = "https://i.imgur.com/O3Mk7h2.jpeg";
 $currentPage     = "services";
@@ -20,9 +20,9 @@ $schemaMarkup = '{
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "aggregateRating": {
@@ -36,10 +36,11 @@ $schemaMarkup = '{
       "serviceType": "Sawmill Services",
       "provider": { "@id": "https://www.rivercitytreega.com/#business" },
       "areaServed": [
+        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
         { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
       ],
-      "description": "Portable sawmill services in Ringgold, GA — turning logs into custom-cut lumber, slabs, beams, and dimensional cuts."
+      "description": "Portable sawmill services in Chickamauga, GA — turning logs into custom-cut lumber, slabs, beams, and dimensional cuts."
     },
     {
       "@type": "BreadcrumbList",
@@ -102,8 +103,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Sawmill Services</strong>
         </nav>
-        <h1>Sawmill Services in Ringgold, GA</h1>
-        <p class="lead prose">River City Tree Care offers portable sawmill services in Ringgold, GA — turning your timber into custom-cut lumber on site. River City Tree Care serves Ringgold, GA and the greater Chattanooga area with milling for property owners, builders, and land clearing customers. This is a specialty service — call <a href="tel:+17062646130">(706) 264-6130</a> for availability, pricing, and minimum log requirements.</p>
+        <h1>Sawmill Services in Chickamauga, GA</h1>
+        <p class="lead prose">River City Tree Care offers portable sawmill services in Chickamauga, GA — turning your timber into custom-cut lumber on site. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with milling for property owners, builders, and land clearing customers. This is a specialty service — call <a href="tel:+17062646130">(706) 264-6130</a> for availability, pricing, and minimum log requirements.</p>
       </div>
     </div>
 
@@ -112,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Portable sawmill milling logs into lumber in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Portable sawmill milling logs into lumber in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Turn Downed Trees into Usable Lumber</h2>
@@ -280,7 +281,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Custom Lumber from Your Own Trees</h2>
-        <p class="prose-centered">River City Tree Care offers portable sawmill services in Ringgold, GA and the surrounding area. Turn your timber into something useful.</p>
+        <p class="prose-centered">River City Tree Care offers portable sawmill services in Chickamauga, GA and the surrounding area. Turn your timber into something useful.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Contact Us About Milling</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>

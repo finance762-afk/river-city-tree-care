@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Free Estimate | River City Tree Care Ringgold, GA";
-$pageDescription = "Request a free estimate from River City Tree Care in Ringgold, GA. Tree removal, stump grinding, lot clearing, and more. Call (706) 264-6130.";
+$pageTitle       = "Free Estimate | River City Tree Care Chickamauga, GA";
+$pageDescription = "Request a free estimate from River City Tree Care in Chickamauga, GA. Tree removal, stump grinding, lot clearing, and more. Call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/contact";
 $ogImage         = "https://i.imgur.com/sqX9jX4.jpeg";
 $currentPage     = "contact";
@@ -21,9 +21,9 @@ $schemaMarkup = '{
       "email": "treeclimber1110@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "openingHoursSpecification": {
@@ -54,7 +54,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <strong>Contact</strong>
         </nav>
-        <h1>Get a Free Estimate — Ringgold, GA &amp; Chattanooga, TN</h1>
+        <h1>Get a Free Estimate — Chickamauga, GA &amp; Chattanooga, TN</h1>
         <p class="lead prose">Free estimates for all <a href="/services">services</a>. River City Tree Care is available 24/7 including emergencies. Fill out the form below or call directly — we typically respond within a few hours.</p>
       </div>
     </div>
@@ -138,7 +138,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
               <div>
                 <h3 style="color: var(--text); margin-bottom: var(--space-sm);">Service Area</h3>
-                <p style="color: var(--text-light);">50-mile radius from Ringgold, GA<br>Including Chattanooga TN, Fort Oglethorpe GA,<br>Dalton GA, LaFayette GA, Rossville GA, Calhoun GA</p>
+                <p style="color: var(--text-light);">50-mile radius from Chickamauga, GA<br>Including Ringgold GA, Chattanooga TN, Fort Oglethorpe GA,<br>Dalton GA, LaFayette GA, Rossville GA, Calhoun GA</p>
               </div>
 
               <div class="callout-box">
@@ -155,17 +155,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <!-- Google Map -->
     <section style="background: var(--bg-alt); padding: var(--section-pad);">
       <div class="container">
-        <h2 style="text-align: center; color: var(--primary); margin-bottom: var(--space-xl);">Find Us in Ringgold, GA</h2>
+        <h2 style="text-align: center; color: var(--primary); margin-bottom: var(--space-xl);">Find Us in Chickamauga, GA</h2>
         <div style="border-radius: var(--radius); overflow: hidden; aspect-ratio: 16/9;">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52544.04762892569!2d-85.15825682089843!3d34.91595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886098e93c2bf403%3A0xb5cc3fe0b33eb5a0!2sRinggold%2C%20GA%2030736!5e0!3m2!1sen!2sus!4v1712419200000!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52544.0!2d-85.29110!3d34.87120!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88606c8f3ed42a2d%3A0xd1d8b6c93e3e3a6a!2sChickamauga%2C%20GA%2030707!5e0!3m2!1sen!2sus!4v1716249600000!5m2!1sen!2sus"
             width="100%"
             height="100%"
             style="border:0; width:100%; height:100%;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="River City Tree Care service area — Ringgold, GA">
+            title="River City Tree Care service area — Chickamauga, GA">
           </iframe>
         </div>
       </div>

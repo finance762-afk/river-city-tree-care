@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Firewood for Sale in Ringgold, GA | River City Tree Care";
-$pageDescription = "Split hardwood firewood for sale in Ringgold, GA and Chattanooga, TN. Oak, hickory, and mixed hardwoods. Call (706) 264-6130 for availability and pricing.";
+$pageTitle       = "Firewood for Sale in Chickamauga, GA | River City Tree Care";
+$pageDescription = "Split hardwood firewood for sale in Chickamauga, GA and Chattanooga, TN. Oak, hickory, and mixed hardwoods. Call (706) 264-6130 for availability and pricing.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/firewood";
 $ogImage         = "https://i.imgur.com/O3Mk7h2.jpeg";
 $currentPage     = "services";
@@ -20,9 +20,9 @@ $schemaMarkup = '{
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "aggregateRating": {
@@ -36,10 +36,11 @@ $schemaMarkup = '{
       "serviceType": "Firewood Sales",
       "provider": { "@id": "https://www.rivercitytreega.com/#business" },
       "areaServed": [
+        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
         { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
       ],
-      "description": "Split hardwood firewood sourced from local tree removal jobs in Ringgold, GA and North Georgia. Oak, hickory, and mixed hardwoods available."
+      "description": "Split hardwood firewood sourced from local tree removal jobs in Chickamauga, GA and North Georgia. Oak, hickory, and mixed hardwoods available."
     },
     {
       "@type": "BreadcrumbList",
@@ -57,7 +58,7 @@ $schemaMarkup = '{
           "name": "What types of firewood do you sell?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "River City Tree Care sells primarily oak and hickory firewood, along with mixed hardwoods depending on what comes off recent job sites. All wood is sourced from local tree removal jobs in the Ringgold, GA and North Georgia area."
+            "text": "River City Tree Care sells primarily oak and hickory firewood, along with mixed hardwoods depending on what comes off recent job sites. All wood is sourced from local tree removal jobs in the Chickamauga, GA and North Georgia area."
           }
         },
         {
@@ -92,8 +93,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Firewood</strong>
         </nav>
-        <h1>Firewood for Sale in Ringgold, GA</h1>
-        <p class="lead prose">River City Tree Care sells split hardwood firewood by the truckload in Ringgold, GA and surrounding areas. River City Tree Care serves Ringgold, GA and the greater Chattanooga area with locally sourced oak, hickory, and mixed hardwoods — cut from our tree removal jobs across North Georgia. Call <a href="tel:+17062646130">(706) 264-6130</a> for availability and pricing.</p>
+        <h1>Firewood for Sale in Chickamauga, GA</h1>
+        <p class="lead prose">River City Tree Care sells split hardwood firewood by the truckload in Chickamauga, GA and surrounding areas. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with locally sourced oak, hickory, and mixed hardwoods — cut from our tree removal jobs across North Georgia. Call <a href="tel:+17062646130">(706) 264-6130</a> for availability and pricing.</p>
       </div>
     </div>
 
@@ -102,12 +103,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Hardwood logs from tree removal job — firewood and sawmill stock in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Hardwood logs from tree removal job — firewood and sawmill stock in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Locally Sourced Hardwood — Cut Fresh from Job Sites</h2>
             <div class="prose">
-              <p>Every tree River City Tree Care removes across the Ringgold, Chattanooga, and North Georgia area produces usable wood. Instead of sending it all to a dump, we split the best hardwood into firewood and make it available to local customers.</p>
+              <p>Every tree River City Tree Care removes across the Chickamauga, Ringgold, Chattanooga, and North Georgia area produces usable wood. Instead of sending it all to a dump, we split the best hardwood into firewood and make it available to local customers.</p>
               <p>Our firewood comes from the species most common in Catoosa County and the surrounding region — <strong>oak, hickory, and mixed hardwoods</strong> including maple, sweetgum, and poplar. Oak and hickory are the premium picks for fireplace and fire pit use: they burn longer, produce more heat, and create less creosote than softwoods.</p>
               <p>Firewood is sold by the truckload — split, ready to burn (seasoned) or ready to stack and cure (green). Availability and species mix vary based on current job site production. Call to check what's in stock.</p>
             </div>
@@ -190,7 +191,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
-                <p>Oak, hickory, and mixed hardwoods — all sourced from local tree removal jobs in the Ringgold and North Georgia area. Species mix varies by current stock.</p>
+                <p>Oak, hickory, and mixed hardwoods — all sourced from local tree removal jobs in the Chickamauga, Ringgold, and North Georgia area. Species mix varies by current stock.</p>
               </div>
             </div>
           </div>
@@ -226,7 +227,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Hardwood Firewood — Locally Cut, Ready to Burn</h2>
-        <p class="prose-centered">River City Tree Care sells firewood sourced from tree removal jobs across Ringgold, GA and the greater Chattanooga area. Call for pricing and availability.</p>
+        <p class="prose-centered">River City Tree Care sells firewood sourced from tree removal jobs across Chickamauga, Ringgold, and the greater Chattanooga area. Call for pricing and availability.</p>
         <div class="cta-actions">
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Contact Us</a>

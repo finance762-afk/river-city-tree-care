@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Tree Removal & Land Clearing Ringgold, GA | RCTC";
-$pageDescription = "24/7 tree removal, stump grinding, lot clearing, and forestry mulching in Ringgold, GA and Chattanooga, TN. Free estimates — (706) 264-6130.";
+$pageTitle       = "Tree Removal & Land Clearing Chickamauga, GA | RCTC";
+$pageDescription = "24/7 tree removal, stump grinding, lot clearing, and forestry mulching in Chickamauga, GA and Chattanooga, TN. Free estimates — (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com";
 $ogImage         = "https://i.imgur.com/sqX9jX4.jpeg";
 $currentPage     = "home";
@@ -22,9 +22,9 @@ $schemaMarkup = '{
       "email": "treeclimber1110@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "openingHoursSpecification": {
@@ -34,6 +34,7 @@ $schemaMarkup = '{
         "closes": "23:59"
       },
       "areaServed": [
+        {"@type": "City", "name": "Chickamauga", "addressRegion": "GA"},
         {"@type": "City", "name": "Ringgold", "addressRegion": "GA"},
         {"@type": "City", "name": "Chattanooga", "addressRegion": "TN"},
         {"@type": "City", "name": "Fort Oglethorpe", "addressRegion": "GA"},
@@ -42,6 +43,11 @@ $schemaMarkup = '{
         {"@type": "City", "name": "LaFayette", "addressRegion": "GA"},
         {"@type": "City", "name": "Rossville", "addressRegion": "GA"}
       ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "34.8712",
+        "longitude": "-85.2911"
+      },
       "priceRange": "$$",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -67,7 +73,7 @@ $schemaMarkup = '{
           "name": "What tree services does River City Tree Care offer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "River City Tree Care provides tree trimming, tree removal, stump grinding, lot clearing, forestry mulching, land development clearing, firewood sales, and portable sawmill services across a 50-mile radius from Ringgold, GA including Chattanooga, TN."
+            "text": "River City Tree Care provides tree trimming, tree removal, stump grinding, lot clearing, forestry mulching, land development clearing, firewood sales, and portable sawmill services across a 50-mile radius from Chickamauga, GA including Chattanooga, TN."
           }
         },
         {
@@ -83,7 +89,7 @@ $schemaMarkup = '{
           "name": "What areas does River City Tree Care serve?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "River City Tree Care serves a 50-mile radius from Ringgold, GA including Chattanooga TN, Fort Oglethorpe GA, Dalton GA, Calhoun GA, LaFayette GA, Rossville GA, and surrounding communities in Catoosa County, Hamilton County, and Whitfield County."
+            "text": "River City Tree Care serves a 50-mile radius from Chickamauga, GA including Ringgold GA, Chattanooga TN, Fort Oglethorpe GA, Dalton GA, Calhoun GA, LaFayette GA, Rossville GA, and surrounding communities in Walker County, Catoosa County, Hamilton County, and Whitfield County."
           }
         },
         {
@@ -120,11 +126,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="hero-bg" style="background-image: url('https://i.imgur.com/sqX9jX4.jpeg');"></div>
       <div class="container">
         <h1 class="hero-h1-gradient">
-          Ringgold's Tree Removal &amp;<br>Land Clearing Experts —<br>
+          Chickamauga's Tree Removal &amp;<br>Land Clearing Experts —<br>
           <span class="hero-typed-wrap"><span id="typed-services"></span></span>
         </h1>
         <p class="hero-subtitle prose-centered">
-          River City Tree Care, LLC is a licensed and insured tree service company based in Ringgold, GA. 24/7 emergency response. Free estimates within a 50-mile radius including Chattanooga, TN.
+          River City Tree Care, LLC is a licensed and insured tree service company based in Chickamauga, GA. 24/7 emergency response. Free estimates within a 50-mile radius including Chattanooga, TN.
         </p>
         <div class="hero-cta">
           <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
@@ -146,7 +152,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <div class="badge"><i class="lucide-clock"></i> 24/7 Emergency Service</div>
         <div class="badge"><i class="lucide-calculator"></i> Free Estimates</div>
         <div class="badge"><i class="lucide-map-pin"></i> 50-Mile Service Radius</div>
-        <div class="badge"><i class="lucide-navigation"></i> Ringgold, GA &amp; Chattanooga, TN</div>
+        <div class="badge"><i class="lucide-navigation"></i> Chickamauga, GA &amp; Chattanooga, TN</div>
         <div class="badge"><i class="lucide-truck"></i> Fully Equipped Crew</div>
       </div>
     </div>
@@ -157,7 +163,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="services-section" data-animate="fade-up">
       <div class="container">
         <h2 class="section-title" style="text-align: center;">What We Do</h2>
-        <p class="section-subtitle prose-centered" style="text-align: center;">From single-tree removals to full land development clearing — River City Tree Care handles it all across Ringgold, Chattanooga, and the surrounding region.</p>
+        <p class="section-subtitle prose-centered" style="text-align: center;">From single-tree removals to full land development clearing — River City Tree Care handles it all across Chickamauga, Ringgold, Chattanooga, and the surrounding region.</p>
 
         <div class="grid-3" data-stagger>
 
@@ -227,15 +233,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="before-after-section">
       <div class="container">
         <h2 class="section-title" style="text-align: center;">The Difference One Crew Makes</h2>
-        <p class="section-subtitle prose-centered" style="text-align: center;">Same property. Same week. Complete tree removal and full site cleanup in Ringgold, GA.</p>
+        <p class="section-subtitle prose-centered" style="text-align: center;">Same property. Same week. Complete tree removal and full site cleanup in Chickamauga, GA.</p>
 
         <div class="ba-grid">
           <div class="ba-panel">
-            <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal — overgrown trees and brush in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal — overgrown trees and brush in Chickamauga, GA" width="800" height="600">
             <span class="ba-label">Before</span>
           </div>
           <div class="ba-panel">
-            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal — clean lot with clear sightlines in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal — clean lot with clear sightlines in Chickamauga, GA" width="800" height="600">
             <span class="ba-label">After</span>
           </div>
         </div>
@@ -278,7 +284,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Trees Down? Storm Damage? We're on It.</h2>
-        <p class="prose-centered">River City Tree Care responds 24/7 to emergency calls across Ringgold, GA and the greater Chattanooga area. One call gets a crew to your property — fast.</p>
+        <p class="prose-centered">River City Tree Care responds 24/7 to emergency calls across Chickamauga, GA and the greater Chattanooga area. One call gets a crew to your property — fast.</p>
         <div class="cta-actions">
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
@@ -293,12 +299,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="about-img-wrap">
-            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs in Ringgold, GA — River City Tree Care results" width="800" height="600">
+            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs in Chickamauga, GA — River City Tree Care results" width="800" height="600">
           </div>
           <div class="about-content">
             <h2>Built on Hard Work, Not Sales Pitches</h2>
             <div class="prose">
-              <p><strong>River City Tree Care, LLC</strong> is owned and operated by <strong>Andrew Roberson</strong> out of Ringgold, GA. Andrew and his crew handle everything from single backyard tree removals to multi-acre land clearing projects across a 50-mile radius — including Chattanooga, TN, Fort Oglethorpe, Dalton, and surrounding communities.</p>
+              <p><strong>River City Tree Care, LLC</strong> is owned and operated by <strong>Andrew Roberson</strong> out of Chickamauga, GA. Andrew and his crew handle everything from single backyard tree removals to multi-acre land clearing projects across a 50-mile radius — including Chattanooga, TN, Fort Oglethorpe, Dalton, and surrounding communities.</p>
               <p>The approach is straightforward: show up with the right equipment, do the work safely, clean up completely, and leave every property better than we found it. No subcontractors. No runaround. Just a hands-on crew that takes the job as seriously as you do. <a href="/about" style="color: var(--primary); font-weight: 700;">Read more about our team &rarr;</a></p>
             </div>
           </div>
@@ -312,11 +318,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="gallery-section" data-animate="fade-up">
       <div class="container">
         <h2 class="section-title" style="text-align: center;">Recent Work</h2>
-        <p class="section-subtitle prose-centered" style="text-align: center;">Job sites across Ringgold, Chattanooga, and the surrounding area.</p>
+        <p class="section-subtitle prose-centered" style="text-align: center;">Job sites across Chickamauga, Ringgold, Chattanooga, and the surrounding area.</p>
 
         <div class="gallery-grid" data-stagger>
           <div class="gallery-item">
-            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project — trees and brush removed from lot in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project — trees and brush removed from lot in Chickamauga, GA" width="800" height="600">
           </div>
           <div class="gallery-item">
             <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree debris on job site" width="800" height="600">
@@ -343,7 +349,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="faq-section" data-animate="fade-up">
       <div class="container">
         <h2 class="section-title" style="text-align: center;">Frequently Asked Questions</h2>
-        <p class="section-subtitle prose-centered" style="text-align: center;">Straight answers to the questions we hear most from homeowners and property managers in the Ringgold and Chattanooga area.</p>
+        <p class="section-subtitle prose-centered" style="text-align: center;">Straight answers to the questions we hear most from homeowners and property managers in the Chickamauga and Chattanooga area.</p>
 
         <div class="faq-list">
 
@@ -354,7 +360,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
-                <p>River City Tree Care provides <a href="/services/tree-trimming" style="color: var(--primary);">tree trimming</a>, <a href="/services/tree-removal" style="color: var(--primary);">tree removal</a>, <a href="/services/stump-grinding" style="color: var(--primary);">stump grinding</a>, <a href="/services/lot-clearing" style="color: var(--primary);">lot clearing</a>, <a href="/services/forestry-mulching" style="color: var(--primary);">forestry mulching</a>, <a href="/services/land-development" style="color: var(--primary);">land development clearing</a>, <a href="/services/firewood" style="color: var(--primary);">firewood sales</a>, and <a href="/services/sawmill-services" style="color: var(--primary);">portable sawmill services</a> across a 50-mile radius from Ringgold, GA including Chattanooga, TN.</p>
+                <p>River City Tree Care provides <a href="/services/tree-trimming" style="color: var(--primary);">tree trimming</a>, <a href="/services/tree-removal" style="color: var(--primary);">tree removal</a>, <a href="/services/stump-grinding" style="color: var(--primary);">stump grinding</a>, <a href="/services/lot-clearing" style="color: var(--primary);">lot clearing</a>, <a href="/services/forestry-mulching" style="color: var(--primary);">forestry mulching</a>, <a href="/services/land-development" style="color: var(--primary);">land development clearing</a>, <a href="/services/firewood" style="color: var(--primary);">firewood sales</a>, and <a href="/services/sawmill-services" style="color: var(--primary);">portable sawmill services</a> across a 50-mile radius from Chickamauga, GA including Chattanooga, TN.</p>
               </div>
             </div>
           </div>
@@ -378,7 +384,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
-                <p>River City Tree Care covers a 50-mile radius from Ringgold, GA — including Chattanooga TN, Fort Oglethorpe GA, Dalton GA, Calhoun GA, LaFayette GA, Rossville GA, and surrounding communities across Catoosa County, Hamilton County, and Whitfield County.</p>
+                <p>River City Tree Care covers a 50-mile radius from Chickamauga, GA — including Ringgold GA, Chattanooga TN, Fort Oglethorpe GA, Dalton GA, Calhoun GA, LaFayette GA, Rossville GA, and surrounding communities across Walker County, Catoosa County, Hamilton County, and Whitfield County.</p>
               </div>
             </div>
           </div>
@@ -417,7 +423,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Ready to Clear the Way?</h2>
-        <p class="prose-centered">Whether it's one tree or ten acres, River City Tree Care has the equipment and the crew to get it done. Serving Ringgold, GA, Chattanooga, TN, and everywhere in between — 24/7.</p>
+        <p class="prose-centered">Whether it's one tree or ten acres, River City Tree Care has the equipment and the crew to get it done. Serving Chickamauga, GA, Chattanooga, TN, and everywhere in between — 24/7.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>

@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Tree Trimming Ringgold, GA | River City Tree Care";
-$pageDescription = "Professional tree trimming in Ringgold, GA and Chattanooga, TN. Crown thinning, deadwood removal, clearance trimming. Free estimates — call (706) 264-6130.";
+$pageTitle       = "Tree Trimming Chickamauga, GA | River City Tree Care";
+$pageDescription = "Professional tree trimming in Chickamauga, GA and Chattanooga, TN. Crown thinning, deadwood removal, clearance trimming. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/tree-trimming";
 $ogImage         = "https://i.imgur.com/jUSd82l.jpeg";
 $currentPage     = "services";
@@ -20,9 +20,9 @@ $schemaMarkup = '{
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "aggregateRating": {
@@ -36,10 +36,11 @@ $schemaMarkup = '{
       "serviceType": "Tree Trimming",
       "provider": { "@id": "https://www.rivercitytreega.com/#business" },
       "areaServed": [
+        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
         { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
       ],
-      "description": "Professional tree trimming including crown thinning, deadwood removal, and clearance trimming for power lines and structures in Ringgold, GA and Chattanooga, TN."
+      "description": "Professional tree trimming including crown thinning, deadwood removal, and clearance trimming for power lines and structures in Chickamauga, GA and Chattanooga, TN."
     },
     {
       "@type": "BreadcrumbList",
@@ -64,10 +65,10 @@ $schemaMarkup = '{
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does tree trimming cost in Ringgold, GA?",
+          "name": "How much does tree trimming cost in Chickamauga, GA?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most residential tree trimming in the Ringgold area runs $200–$800 per tree depending on size, number of branches, and access. Large trees or multi-tree jobs may cost more. River City Tree Care provides free estimates for every job."
+            "text": "Most residential tree trimming in the Chickamauga area runs $200–$800 per tree depending on size, number of branches, and access. Large trees or multi-tree jobs may cost more. River City Tree Care provides free estimates for every job."
           }
         },
         {
@@ -102,8 +103,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Tree Trimming</strong>
         </nav>
-        <h1>Tree Trimming Services in Ringgold, GA</h1>
-        <p class="lead prose">Most residential tree trimming in the Ringgold area runs $200–$800 depending on tree size, number of branches, and access. River City Tree Care serves Ringgold, GA and the greater Chattanooga area with year-round trimming, deadwood removal, and canopy management. Free estimates on every job — call <a href="tel:+17062646130">(706) 264-6130</a>.</p>
+        <h1>Tree Trimming Services in Chickamauga, GA</h1>
+        <p class="lead prose">Most residential tree trimming in the Chickamauga area runs $200–$800 depending on tree size, number of branches, and access. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with year-round trimming, deadwood removal, and canopy management. Free estimates on every job — call <a href="tel:+17062646130">(706) 264-6130</a>.</p>
       </div>
     </div>
 
@@ -112,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree branches during trimming job in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree branches during trimming job in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Why Regular Tree Trimming Matters</h2>
@@ -131,7 +132,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
 
         <div class="answer-block">
-          <h3>How much does tree trimming cost in Ringgold, GA?</h3>
+          <h3>How much does tree trimming cost in Chickamauga, GA?</h3>
           <p>Most residential tree trimming runs $200–$800 per tree. The final price depends on tree height, number of limbs to remove, proximity to structures or power lines, and how much equipment is needed to reach the canopy. Multi-tree jobs are often discounted. River City Tree Care gives free written estimates on every job.</p>
         </div>
 
@@ -176,7 +177,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-cta">
       <div class="container">
         <h2>Branches Getting Out of Hand?</h2>
-        <p class="prose-centered">Schedule a free trimming estimate with River City Tree Care. We serve Ringgold, Chattanooga, Fort Oglethorpe, and the surrounding area.</p>
+        <p class="prose-centered">Schedule a free trimming estimate with River City Tree Care. We serve Chickamauga, Ringgold, Chattanooga, Fort Oglethorpe, and the surrounding area.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
@@ -223,7 +224,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <div class="faq-list">
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              How much does tree trimming cost in Ringgold, GA?
+              How much does tree trimming cost in Chickamauga, GA?
               <i class="lucide-chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
@@ -264,7 +265,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Keep Your Trees Healthy and Your Property Safe</h2>
-        <p class="prose-centered">River City Tree Care provides professional tree trimming across Ringgold, GA, Chattanooga, TN, and everywhere in between. 24/7 availability for emergency work.</p>
+        <p class="prose-centered">River City Tree Care provides professional tree trimming across Chickamauga, Ringgold, Chattanooga, TN, and everywhere in between. 24/7 availability for emergency work.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Schedule Your Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>

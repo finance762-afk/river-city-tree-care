@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Forestry Mulching Ringgold, GA | River City Tree Care";
-$pageDescription = "Forestry mulching in Ringgold, GA and Chattanooga, TN. Clear overgrown land in a single pass — no hauling, no burning. Free estimates — call (706) 264-6130.";
+$pageTitle       = "Forestry Mulching Chickamauga, GA | River City Tree Care";
+$pageDescription = "Forestry mulching in Chickamauga, GA and Chattanooga, TN. Clear overgrown land in a single pass — no hauling, no burning. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/forestry-mulching";
 $ogImage         = "https://i.imgur.com/VXyzEDK.jpeg";
 $currentPage     = "services";
@@ -20,9 +20,9 @@ $schemaMarkup = '{
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "aggregateRating": {
@@ -36,10 +36,11 @@ $schemaMarkup = '{
       "serviceType": "Forestry Mulching",
       "provider": { "@id": "https://www.rivercitytreega.com/#business" },
       "areaServed": [
+        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
         { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
       ],
-      "description": "Forestry mulching for overgrown land, fence lines, and site prep in Ringgold, GA and North Georgia. One-pass clearing with no debris haul-away."
+      "description": "Forestry mulching for overgrown land, fence lines, and site prep in Chickamauga, GA and North Georgia. One-pass clearing with no debris haul-away."
     },
     {
       "@type": "BreadcrumbList",
@@ -102,8 +103,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Forestry Mulching</strong>
         </nav>
-        <h1>Forestry Mulching in Ringgold, GA &amp; North Georgia</h1>
-        <p class="lead prose">Forestry mulching is often the most cost-effective clearing method for wooded acreage — one machine handles cutting, grinding, and mulching in a single pass. River City Tree Care serves Ringgold, GA and the greater Chattanooga area with forestry mulching for overgrown land, fence lines, pasture reclamation, and site prep. No hauling. No burning. Call <a href="tel:+17062646130">(706) 264-6130</a> for a free estimate.</p>
+        <h1>Forestry Mulching in Chickamauga, GA &amp; North Georgia</h1>
+        <p class="lead prose">Forestry mulching is often the most cost-effective clearing method for wooded acreage — one machine handles cutting, grinding, and mulching in a single pass. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with forestry mulching for overgrown land, fence lines, pasture reclamation, and site prep. No hauling. No burning. Call <a href="tel:+17062646130">(706) 264-6130</a> for a free estimate.</p>
       </div>
     </div>
 
@@ -112,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Forestry mulching clearing overgrown land in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Forestry mulching clearing overgrown land in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>One Machine. One Pass. Clean Ground.</h2>
@@ -181,7 +182,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-cta">
       <div class="container">
         <h2>Overgrown Acreage? One Call Gets It Cleared.</h2>
-        <p class="prose-centered">River City Tree Care provides forestry mulching across Ringgold, GA, Chattanooga, TN, and North Georgia. Free site walk and estimate.</p>
+        <p class="prose-centered">River City Tree Care provides forestry mulching across Chickamauga, Ringgold, Chattanooga, TN, and North Georgia. Free site walk and estimate.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
@@ -265,7 +266,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Clear the Land. Keep the Soil. Save the Haul.</h2>
-        <p class="prose-centered">Forestry mulching from River City Tree Care — serving Ringgold, Chattanooga, Dalton, Fort Oglethorpe, and everywhere in between.</p>
+        <p class="prose-centered">Forestry mulching from River City Tree Care — serving Chickamauga, Ringgold, Chattanooga, Dalton, Fort Oglethorpe, and everywhere in between.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Schedule Your Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>

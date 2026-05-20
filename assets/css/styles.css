@@ -1,6 +1,6 @@
 /* ============================================
    STYLES.CSS — River City Tree Care
-   Dark theme · Amber-gold dominant · Rugged outdoor
+   Dark theme · Forest-green primary · Warm gold accent
    ============================================ */
 
 /* --- CSS Reset --- */
@@ -39,11 +39,15 @@ a { text-decoration: none; color: inherit; }
   --space-4xl: 96px;
 
   /* Colors — River City Tree Care */
-  --primary: #F0900A;
-  --primary-dark: #C46800;
-  --primary-rgb: 240, 144, 10;
-  --secondary: #8B5E3C;
-  --accent: #4A7C59;
+  --primary: #2D5A27;
+  --primary-dark: #1C3A18;
+  --primary-rgb: 45, 90, 39;
+  --secondary: #4A7A2E;
+  --accent: #D4A02C;
+  --accent-rgb: 212, 160, 44;
+  --card-tint-1: rgba(45, 90, 39, 0.06);
+  --card-tint-2: rgba(74, 122, 46, 0.07);
+  --card-tint-3: rgba(212, 160, 44, 0.08);
   --text: #f0e6d9;
   --text-light: #b8a898;
   --text-dark: #1a1a1a;
@@ -56,7 +60,7 @@ a { text-decoration: none; color: inherit; }
   --elevation-1: 0 1px 3px rgba(0,0,0,0.25);
   --elevation-2: 0 4px 16px rgba(0,0,0,0.30);
   --elevation-3: 0 8px 28px rgba(0,0,0,0.40);
-  --ember-glow: 0 0 24px rgba(240, 144, 10, 0.35);
+  --ember-glow: 0 0 24px rgba(45, 90, 39, 0.35);
 
   /* Transitions */
   --transition: 0.2s ease;
@@ -224,14 +228,14 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   align-items: center;
   z-index: 1000;
   background: var(--bg);
-  border-bottom: 1px solid rgba(240, 144, 10, 0.15);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.15);
   transition: background var(--transition-slow), box-shadow var(--transition-slow), border-bottom var(--transition-slow);
 }
 .navbar.scrolled {
   background: rgba(24, 16, 10, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(240, 144, 10, 0.25);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.25);
   box-shadow: 0 4px 24px rgba(0,0,0,0.4);
 }
 .navbar .container {
@@ -408,7 +412,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   opacity: 0;
 }
 .hero-h1-gradient {
-  background: linear-gradient(135deg, #F0900A 0%, #FFB347 50%, #F0900A 100%);
+  background: linear-gradient(135deg, #2D5A27 0%, #4A7A2E 50%, #2D5A27 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -469,8 +473,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
    ============================================ */
 .badge-strip {
   background: var(--bg-alt);
-  border-top: 1px solid rgba(240, 144, 10, 0.15);
-  border-bottom: 1px solid rgba(240, 144, 10, 0.15);
+  border-top: 1px solid rgba(45, 90, 39, 0.15);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.15);
 }
 .badge-strip .container {
   display: flex;
@@ -505,7 +509,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 }
 
 /* ============================================
-   SERVICES GRID — Dark cards, amber accent
+   SERVICES GRID — Dark cards, green accent
    ============================================ */
 .services-section {
   background: var(--bg);
@@ -619,8 +623,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .stats-section {
   background: var(--bg-mid);
   padding: var(--section-pad);
-  border-top: 1px solid rgba(240, 144, 10, 0.1);
-  border-bottom: 1px solid rgba(240, 144, 10, 0.1);
+  border-top: 1px solid rgba(45, 90, 39, 0.1);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.1);
 }
 .stats-grid {
   display: grid;
@@ -746,7 +750,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   margin-inline: auto;
 }
 .faq-item {
-  border-bottom: 1px solid rgba(240, 144, 10, 0.15);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.15);
 }
 .faq-question {
   width: 100%;
@@ -799,8 +803,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   text-align: center;
   position: relative;
   overflow: hidden;
-  border-top: 2px solid rgba(240, 144, 10, 0.3);
-  border-bottom: 2px solid rgba(240, 144, 10, 0.3);
+  border-top: 2px solid rgba(45, 90, 39, 0.3);
+  border-bottom: 2px solid rgba(45, 90, 39, 0.3);
 }
 .cta-banner::before {
   content: '';
@@ -864,8 +868,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   padding: var(--space-md) 0;
   overflow: hidden;
   white-space: nowrap;
-  border-top: 1px solid rgba(240, 144, 10, 0.1);
-  border-bottom: 1px solid rgba(240, 144, 10, 0.1);
+  border-top: 1px solid rgba(45, 90, 39, 0.1);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.1);
 }
 .ticker-track {
   display: inline-flex;
@@ -998,7 +1002,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   width: 100%;
   padding: var(--space-md);
   padding-top: var(--space-lg);
-  border: 2px solid rgba(240, 144, 10, 0.2);
+  border: 2px solid rgba(45, 90, 39, 0.2);
   border-radius: var(--radius);
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1rem;
@@ -1147,7 +1151,7 @@ footer {
   background: var(--bg-alt);
   color: var(--text);
   padding: var(--space-4xl) 0 var(--space-xl);
-  border-top: 2px solid rgba(240, 144, 10, 0.2);
+  border-top: 2px solid rgba(45, 90, 39, 0.2);
 }
 .footer-grid {
   display: grid;
@@ -1206,7 +1210,7 @@ footer ul a:hover { color: var(--primary); }
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(240, 144, 10, 0.1);
+  background: rgba(45, 90, 39, 0.1);
   color: var(--primary);
   font-size: 1.1rem;
   transition: background var(--transition), color var(--transition);
@@ -1216,7 +1220,7 @@ footer ul a:hover { color: var(--primary); }
   color: #fff;
 }
 .footer-bottom {
-  border-top: 1px solid rgba(240, 144, 10, 0.15);
+  border-top: 1px solid rgba(45, 90, 39, 0.15);
   padding-top: var(--space-lg);
   display: flex;
   justify-content: space-between;
@@ -1254,7 +1258,7 @@ footer ul a:hover { color: var(--primary); }
 .page-header {
   background: var(--bg-alt);
   padding: var(--space-3xl) 0 var(--space-2xl);
-  border-bottom: 1px solid rgba(240, 144, 10, 0.12);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.12);
 }
 .page-header .breadcrumb {
   margin-bottom: var(--space-lg);
@@ -1321,7 +1325,7 @@ footer ul a:hover { color: var(--primary); }
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(240, 144, 10, 0.15);
+  background: rgba(45, 90, 39, 0.15);
   color: var(--primary);
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.4rem;
@@ -1399,7 +1403,7 @@ footer ul a:hover { color: var(--primary); }
   color: var(--primary);
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-sm);
-  border-bottom: 2px solid rgba(240, 144, 10, 0.2);
+  border-bottom: 2px solid rgba(45, 90, 39, 0.2);
 }
 .comparison-col ul {
   list-style: none;
@@ -1432,7 +1436,7 @@ footer ul a:hover { color: var(--primary); }
 /* Specialty callout box */
 .callout-box {
   background: var(--bg-alt);
-  border: 1px solid rgba(240, 144, 10, 0.2);
+  border: 1px solid rgba(45, 90, 39, 0.2);
   border-radius: var(--radius);
   padding: var(--space-xl);
   margin: var(--space-xl) 0;
@@ -1445,8 +1449,8 @@ footer ul a:hover { color: var(--primary); }
   background: var(--bg-alt);
   padding: var(--section-pad);
   text-align: center;
-  border-top: 1px solid rgba(240, 144, 10, 0.12);
-  border-bottom: 1px solid rgba(240, 144, 10, 0.12);
+  border-top: 1px solid rgba(45, 90, 39, 0.12);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.12);
 }
 .service-cta h2 { color: var(--primary); margin-bottom: var(--space-md); }
 .service-cta p {
@@ -1488,12 +1492,12 @@ footer ul a:hover { color: var(--primary); }
   font-weight: 700;
   font-size: 0.95rem;
   padding: var(--space-sm) var(--space-md);
-  background: rgba(240, 144, 10, 0.08);
+  background: rgba(45, 90, 39, 0.08);
   border-radius: var(--radius);
   transition: background var(--transition);
 }
 .related-services a:hover {
-  background: rgba(240, 144, 10, 0.18);
+  background: rgba(45, 90, 39, 0.18);
 }
 
 /* ============================================

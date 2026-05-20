@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Stump Grinding in Ringgold, GA | River City Tree Care";
-$pageDescription = "Stump grinding in Ringgold, GA and Chattanooga, TN. Most stumps ground below grade in under an hour. $100–$400 per stump. Free estimates — call (706) 264-6130.";
+$pageTitle       = "Stump Grinding in Chickamauga, GA | River City Tree Care";
+$pageDescription = "Stump grinding in Chickamauga, GA and Chattanooga, TN. Most stumps ground below grade in under an hour. $100–$400 per stump. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/stump-grinding";
 $ogImage         = "https://i.imgur.com/z7KgBB4.jpeg";
 $currentPage     = "services";
@@ -20,9 +20,9 @@ $schemaMarkup = '{
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "aggregateRating": {
@@ -36,10 +36,11 @@ $schemaMarkup = '{
       "serviceType": "Stump Grinding",
       "provider": { "@id": "https://www.rivercitytreega.com/#business" },
       "areaServed": [
+        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
         { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
       ],
-      "description": "Professional stump grinding 6–12 inches below grade in Ringgold, GA and Chattanooga, TN. Most stumps completed in under an hour."
+      "description": "Professional stump grinding 6–12 inches below grade in Chickamauga, GA and Chattanooga, TN. Most stumps completed in under an hour."
     },
     {
       "@type": "BreadcrumbList",
@@ -63,10 +64,10 @@ $schemaMarkup = '{
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does stump grinding cost in Ringgold, GA?",
+          "name": "How much does stump grinding cost in Chickamauga, GA?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Stump grinding in the Ringgold area typically costs $100–$400 per stump depending on diameter, root spread, and accessibility. Multi-stump jobs are usually discounted. River City Tree Care provides free estimates."
+            "text": "Stump grinding in the Chickamauga area typically costs $100–$400 per stump depending on diameter, root spread, and accessibility. Multi-stump jobs are usually discounted. River City Tree Care provides free estimates."
           }
         },
         {
@@ -101,8 +102,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Stump Grinding</strong>
         </nav>
-        <h1>Stump Grinding in Ringgold, GA</h1>
-        <p class="lead prose">Stump grinding in the Ringgold area typically runs $100–$400 per stump, with most residential stumps ground below grade in under an hour. River City Tree Care serves Ringgold, GA and the greater Chattanooga area with fast, professional stump removal — standalone or bundled with <a href="/services/tree-removal">tree removal</a>. Free estimates on every job.</p>
+        <h1>Stump Grinding in Chickamauga, GA</h1>
+        <p class="lead prose">Stump grinding in the Chickamauga area typically runs $100–$400 per stump, with most residential stumps ground below grade in under an hour. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with fast, professional stump removal — standalone or bundled with <a href="/services/tree-removal">tree removal</a>. Free estimates on every job.</p>
       </div>
     </div>
 
@@ -111,7 +112,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Commercial stump grinder removing tree stump below grade in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Commercial stump grinder removing tree stump below grade in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Why Grind the Stump?</h2>
@@ -130,7 +131,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
 
         <div class="answer-block">
-          <h3>How much does stump grinding cost in Ringgold, GA?</h3>
+          <h3>How much does stump grinding cost in Chickamauga, GA?</h3>
           <p>Most stumps cost $100–$400 to grind. Pricing depends on stump diameter (measured at ground level), root flare, and accessibility — stumps against fences or in tight spaces may require more careful work. Multi-stump jobs are typically discounted. River City Tree Care provides free written estimates before any work begins.</p>
         </div>
 
@@ -175,7 +176,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-cta">
       <div class="container">
         <h2>Got a Stump? Let's Get Rid of It.</h2>
-        <p class="prose-centered">Most residential stumps are gone in under an hour. Call for a free estimate in Ringgold, Chattanooga, and surrounding areas.</p>
+        <p class="prose-centered">Most residential stumps are gone in under an hour. Call for a free estimate in Chickamauga, Ringgold, Chattanooga, and surrounding areas.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
@@ -188,7 +189,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Clean residential yard after stump grinding and lot clearing in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Clean residential yard after stump grinding and lot clearing in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>What Happens After the Stump Is Gone?</h2>
@@ -223,7 +224,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
-                <p>$100–$400 per stump in the Ringgold and Chattanooga area. Multi-stump discounts available. Call <a href="tel:+17062646130" style="color: var(--primary);">(706) 264-6130</a> for a free estimate.</p>
+                <p>$100–$400 per stump in the Chickamauga and Chattanooga area. Multi-stump discounts available. Call <a href="tel:+17062646130" style="color: var(--primary);">(706) 264-6130</a> for a free estimate.</p>
               </div>
             </div>
           </div>
@@ -259,7 +260,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Reclaim Your Yard — One Stump at a Time</h2>
-        <p class="prose-centered">River City Tree Care handles single stumps and multi-stump jobs across Ringgold, Chattanooga, and the surrounding area. Fast work, clean results, free estimates.</p>
+        <p class="prose-centered">River City Tree Care handles single stumps and multi-stump jobs across Chickamauga, Ringgold, Chattanooga, and the surrounding area. Fast work, clean results, free estimates.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Schedule Your Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>

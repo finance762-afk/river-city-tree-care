@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Land Development Ringgold, GA | River City Tree Care";
-$pageDescription = "Land clearing and site prep for residential and commercial development in Ringgold, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
+$pageTitle       = "Land Development Chickamauga, GA | River City Tree Care";
+$pageDescription = "Land clearing and site prep for residential and commercial development in Chickamauga, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/land-development";
 $ogImage         = "https://i.imgur.com/yVOtcwu.jpeg";
 $currentPage     = "services";
@@ -20,9 +20,9 @@ $schemaMarkup = '{
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "aggregateRating": {
@@ -36,10 +36,11 @@ $schemaMarkup = '{
       "serviceType": "Land Development Clearing",
       "provider": { "@id": "https://www.rivercitytreega.com/#business" },
       "areaServed": [
+        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
         { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
       ],
-      "description": "Full land clearing and site prep for residential and commercial development in Ringgold, GA and Chattanooga, TN."
+      "description": "Full land clearing and site prep for residential and commercial development in Chickamauga, GA and Chattanooga, TN."
     },
     {
       "@type": "BreadcrumbList",
@@ -94,8 +95,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Land Development</strong>
         </nav>
-        <h1>Land Development Clearing in Ringgold, GA</h1>
-        <p class="lead prose">River City Tree Care provides full land clearing and site prep for residential and commercial development projects across North Georgia and the Chattanooga metro. River City Tree Care serves Ringgold, GA and the greater Chattanooga area — from single custom home lots to multi-acre subdivision and commercial clearing. Free on-site estimates for every project.</p>
+        <h1>Land Development Clearing in Chickamauga, GA</h1>
+        <p class="lead prose">River City Tree Care provides full land clearing and site prep for residential and commercial development projects across North Georgia and the Chattanooga metro. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area — from single custom home lots to multi-acre subdivision and commercial clearing. Free on-site estimates for every project.</p>
       </div>
     </div>
 
@@ -183,7 +184,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-cta">
       <div class="container">
         <h2>Building on Raw Land? We Clear It First.</h2>
-        <p class="prose-centered">Free site walk and estimate for residential and commercial development clearing across Ringgold, Chattanooga, and North Georgia.</p>
+        <p class="prose-centered">Free site walk and estimate for residential and commercial development clearing across Chickamauga, Ringgold, Chattanooga, and North Georgia.</p>
         <div class="cta-actions">
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
@@ -264,7 +265,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>From Raw Land to Build-Ready — River City Gets It Done</h2>
-        <p class="prose-centered">Serving builders, developers, and homeowners across Ringgold, GA, Chattanooga, TN, and the surrounding area. 24/7 availability.</p>
+        <p class="prose-centered">Serving builders, developers, and homeowners across Chickamauga, Ringgold, Chattanooga, TN, and the surrounding area. 24/7 availability.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>

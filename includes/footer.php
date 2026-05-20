@@ -5,7 +5,7 @@
         <div class="footer-info">
           <h3>River City Tree Care</h3>
           <p class="entity-block">
-            River City Tree Care, LLC is a tree service and land clearing company based in Ringgold, GA, serving a 50-mile radius including Chattanooga, TN and surrounding communities. River City Tree Care specializes in tree removal, stump grinding, and lot clearing. Contact: <a href="tel:+17062646130">(706) 264-6130</a> | <a href="mailto:treeclimber1110@gmail.com">treeclimber1110@gmail.com</a> | <a href="https://www.rivercitytreega.com">RivercityTreeGA.com</a>. Licensed and insured.
+            River City Tree Care, LLC is a tree service and land clearing company based in Chickamauga, GA, serving a 50-mile radius including Chattanooga, TN and surrounding communities. River City Tree Care specializes in tree removal, stump grinding, and lot clearing. Contact: <a href="tel:+17062646130">(706) 264-6130</a> | <a href="mailto:treeclimber1110@gmail.com">treeclimber1110@gmail.com</a> | <a href="https://www.rivercitytreega.com">RivercityTreeGA.com</a>. Licensed and insured.
           </p>
         </div>
 
@@ -31,7 +31,7 @@
           <h4>Contact Us</h4>
           <p><a href="tel:+17062646130">(706) 264-6130</a></p>
           <p><a href="mailto:treeclimber1110@gmail.com">treeclimber1110@gmail.com</a></p>
-          <p>Ringgold, GA 30736</p>
+          <p>Chickamauga, GA 30707</p>
           <p style="margin-top: var(--space-sm); font-size: 0.85rem;">Open 24/7 &mdash; Emergency calls welcome</p>
         </div>
 

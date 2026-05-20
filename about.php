@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "About River City Tree Care, LLC — Ringgold, GA";
-$pageDescription = "River City Tree Care, LLC is owned by Andrew Roberson in Ringgold, GA. Tree removal, land clearing, and stump grinding. Licensed and insured.";
+$pageTitle       = "About River City Tree Care, LLC — Chickamauga, GA";
+$pageDescription = "River City Tree Care, LLC is owned by Andrew Roberson in Chickamauga, GA. Tree removal, land clearing, and stump grinding. Licensed and insured.";
 $canonicalUrl    = "https://www.rivercitytreega.com/about";
 $ogImage         = "https://i.imgur.com/Amvmq1g.png";
 $currentPage     = "about";
@@ -22,9 +22,9 @@ $schemaMarkup = '{
       "email": "treeclimber1110@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "sameAs": [
@@ -35,6 +35,7 @@ $schemaMarkup = '{
         "https://www.bbb.org/us/ga/ringgold/profile/tree-service/river-city-tree-care-0483-40084597"
       ],
       "areaServed": [
+        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
         { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" },
         { "@type": "City", "name": "Fort Oglethorpe", "addressRegion": "GA" },
@@ -83,8 +84,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <strong>About</strong>
         </nav>
-        <h1>About River City Tree Care, LLC — Ringgold, GA</h1>
-        <p class="lead prose">River City Tree Care, LLC is a licensed and insured tree service and land clearing company based in Ringgold, GA, serving a 50-mile radius including Chattanooga, TN and surrounding communities.</p>
+        <h1>About River City Tree Care, LLC — Chickamauga, GA</h1>
+        <p class="lead prose">River City Tree Care, LLC is a licensed and insured tree service and land clearing company based in Chickamauga, GA, serving a 50-mile radius including Chattanooga, TN and surrounding communities.</p>
       </div>
     </div>
 
@@ -98,7 +99,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div>
             <h2>Owner-Operated. Hands-On. Every Job.</h2>
             <div class="prose">
-              <p><strong>Andrew Roberson</strong> owns and operates River City Tree Care, LLC out of Ringgold, GA. What started as one man with a chainsaw and a truck has grown into a full-service tree care and land clearing operation covering Catoosa County, Hamilton County, Whitfield County, and the broader Chattanooga metro — a 50-mile radius that includes Fort Oglethorpe, Dalton, LaFayette, Rossville, Calhoun, and every community in between.</p>
+              <p><strong>Andrew Roberson</strong> owns and operates River City Tree Care, LLC out of Chickamauga, GA. What started as one man with a chainsaw and a truck has grown into a full-service tree care and land clearing operation covering Walker County, Catoosa County, Hamilton County, Whitfield County, and the broader Chattanooga metro — a 50-mile radius that includes Fort Oglethorpe, Dalton, LaFayette, Rossville, Calhoun, and every community in between.</p>
               <p>Andrew and his crew handle the full range of tree work and land clearing: <a href="/services/tree-trimming" style="color: var(--primary);">trimming</a>, <a href="/services/tree-removal" style="color: var(--primary);">removal</a>, <a href="/services/stump-grinding" style="color: var(--primary);">stump grinding</a>, <a href="/services/lot-clearing" style="color: var(--primary);">lot clearing</a>, <a href="/services/forestry-mulching" style="color: var(--primary);">forestry mulching</a>, <a href="/services/land-development" style="color: var(--primary);">land development clearing</a>, <a href="/services/firewood" style="color: var(--primary);">firewood sales</a>, and <a href="/services/sawmill-services" style="color: var(--primary);">portable sawmill services</a>. The jobs range from single-tree removals in residential backyards to multi-acre clearing for developers and builders.</p>
               <p>The business runs on a simple approach: show up with the right equipment, do the work safely and completely, clean up the entire site, and move on. No subcontractors. No half-finished jobs. No return visits because something got missed. Andrew is on-site for every project — the person who quoted the work is the same person running the crew.</p>
               <p>River City Tree Care is available <strong>24 hours a day, 7 days a week</strong> — including holidays. Storm damage, fallen trees on structures, and emergency situations get same-day response. Every standard job starts with a free on-site estimate so you know the full scope and cost before work begins.</p>
@@ -147,7 +148,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs — lot clearing result by River City Tree Care in Ringgold, GA" width="800" height="600">
+            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs — lot clearing result by River City Tree Care in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>The Work Speaks for Itself</h2>
@@ -167,7 +168,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2 style="color: var(--primary); margin-bottom: var(--space-lg);">What Customers Are Saying</h2>
         <div style="max-width: 600px; margin-inline: auto;">
           <div class="img-shadow" style="margin-bottom: var(--space-lg);">
-            <img src="https://i.imgur.com/soD6w6P.jpeg" alt="5-star Google review for River City Tree Care, LLC in Ringgold, GA" width="600" height="400" style="width: 100%; height: auto;">
+            <img src="https://i.imgur.com/soD6w6P.jpeg" alt="5-star Google review for River City Tree Care, LLC in Chickamauga, GA" width="600" height="400" style="width: 100%; height: auto;">
           </div>
           <p style="color: var(--primary); font-size: 1.6rem; letter-spacing: 0.1em; margin-bottom: var(--space-sm);">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
           <p style="color: var(--text-light); font-size: 0.9rem;">Review sourced from Google Reviews</p>
@@ -193,7 +194,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Ready to Get Started?</h2>
-        <p class="prose-centered">Free estimates on every job. 24/7 emergency availability. Serving Ringgold, GA, Chattanooga, TN, and the surrounding area.</p>
+        <p class="prose-centered">Free estimates on every job. 24/7 emergency availability. Serving Chickamauga, Ringgold, Chattanooga, TN, and the surrounding area.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>

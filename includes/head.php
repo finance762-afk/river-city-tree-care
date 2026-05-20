@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . "/site-config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +38,7 @@
   <?php endif; ?>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=2">
 
   <!-- Preconnect / DNS-Prefetch -->
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
@@ -49,18 +50,23 @@
   <!-- GA4 Placeholder -->
   <!-- Google tag (gtag.js) — replace GA_MEASUREMENT_ID -->
   <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <?php if (!empty($ga4MeasurementId)): ?>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo htmlspecialchars($ga4MeasurementId, ENT_QUOTES, 'UTF-8'); ?>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
+    gtag('config', '<?php echo htmlspecialchars($ga4MeasurementId, ENT_QUOTES, 'UTF-8'); ?>');
   </script>
+  <?php endif; ?>
   -->
 
   <!-- GSC Verification (homepage only) -->
   <?php if ($currentPage === 'home'): ?>
-  <!-- <meta name="google-site-verification" content="GSC_VERIFICATION_CODE"> -->
+  <!-- <?php if (!empty($gscVerification)): ?>
+  <meta name="google-site-verification" content="<?php echo htmlspecialchars($gscVerification, ENT_QUOTES, 'UTF-8'); ?>">
+  <?php endif; ?> -->
   <?php endif; ?>
 
   <!-- Hero Image Preload -->

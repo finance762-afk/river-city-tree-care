@@ -1,11 +1,11 @@
 # River City Tree Care, LLC
 
-> Tree service and land clearing company based in Ringgold, GA
+> Tree service and land clearing company based in Chickamauga, GA
 
 ## Company Information
 - Name: River City Tree Care, LLC
 - Owner: Andrew Roberson
-- Location: Ringgold, GA 30736
+- Location: Chickamauga, GA 30707
 - Phone: (706) 264-6130
 - Email: treeclimber1110@gmail.com
 - Website: https://www.rivercitytreega.com
@@ -23,8 +23,10 @@
 - Sawmill Services
 
 ## Service Area
-50-mile radius from Ringgold, GA including:
+50-mile radius from Chickamauga, GA including:
+- Chickamauga, GA
 - Chattanooga, TN
+- Ringgold, GA
 - Fort Oglethorpe, GA
 - Dalton, GA
 - Calhoun, GA

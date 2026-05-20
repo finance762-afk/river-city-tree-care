@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Tree Services Ringgold, GA | River City Tree Care";
-$pageDescription = "Tree removal, stump grinding, lot clearing, forestry mulching, and more in Ringgold, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
+$pageTitle       = "Tree Services Chickamauga, GA | River City Tree Care";
+$pageDescription = "Tree removal, stump grinding, lot clearing, forestry mulching, and more in Chickamauga, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services";
 $ogImage         = "https://i.imgur.com/sqX9jX4.jpeg";
 $currentPage     = "services";
@@ -40,8 +40,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <strong>Services</strong>
         </nav>
-        <h1>Tree Services in Ringgold, GA &amp; Chattanooga, TN</h1>
-        <p class="lead prose">River City Tree Care, LLC provides full-service tree work and land clearing across a 50-mile radius from Ringgold, GA — including Chattanooga, TN, Fort Oglethorpe, Dalton, LaFayette, and surrounding communities. Every job includes free on-site estimates, full cleanup, and 24/7 emergency availability. Call <a href="tel:+17062646130">(706) 264-6130</a> to schedule.</p>
+        <h1>Tree Services in Chickamauga, GA &amp; Chattanooga, TN</h1>
+        <p class="lead prose">River City Tree Care, LLC provides full-service tree work and land clearing across a 50-mile radius from Chickamauga, GA — including Ringgold, Chattanooga, TN, Fort Oglethorpe, Dalton, LaFayette, and surrounding communities. Every job includes free on-site estimates, full cleanup, and 24/7 emergency availability. Call <a href="tel:+17062646130">(706) 264-6130</a> to schedule.</p>
       </div>
     </div>
 

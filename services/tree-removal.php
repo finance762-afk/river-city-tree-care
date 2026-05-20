@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = "Tree Removal Ringgold, GA | River City Tree Care";
-$pageDescription = "Professional tree removal in Ringgold, GA and Chattanooga, TN. 24/7 emergency response, full cleanup included. Free estimates — call (706) 264-6130.";
+$pageTitle       = "Tree Removal Chickamauga, GA | River City Tree Care";
+$pageDescription = "Professional tree removal in Chickamauga, GA and Chattanooga, TN. 24/7 emergency response, full cleanup included. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/tree-removal";
 $ogImage         = "https://i.imgur.com/81aTpmZ.jpeg";
 $currentPage     = "services";
@@ -20,9 +20,9 @@ $schemaMarkup = '{
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ringgold",
+        "addressLocality": "Chickamauga",
         "addressRegion": "GA",
-        "postalCode": "30736",
+        "postalCode": "30707",
         "addressCountry": "US"
       },
       "aggregateRating": {
@@ -36,11 +36,12 @@ $schemaMarkup = '{
       "serviceType": "Tree Removal",
       "provider": { "@id": "https://www.rivercitytreega.com/#business" },
       "areaServed": [
+        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
         { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" },
         { "@type": "City", "name": "Fort Oglethorpe", "addressRegion": "GA" }
       ],
-      "description": "Full tree removal for hazardous, dead, and storm-damaged trees in Ringgold, GA and Chattanooga, TN. 24/7 emergency response."
+      "description": "Full tree removal for hazardous, dead, and storm-damaged trees in Chickamauga, GA and Chattanooga, TN. 24/7 emergency response."
     },
     {
       "@type": "BreadcrumbList",
@@ -65,10 +66,10 @@ $schemaMarkup = '{
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does tree removal cost in Ringgold, GA?",
+          "name": "How much does tree removal cost in Chickamauga, GA?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tree removal in Ringgold and the Chattanooga area typically costs $400–$2,500+ depending on tree height, condition, proximity to structures, and whether stump removal is included. Small trees may run $400–$900, while large hardwoods near homes or power lines can cost $1,500–$2,500 or more."
+            "text": "Tree removal in Chickamauga and the Chattanooga area typically costs $400–$2,500+ depending on tree height, condition, proximity to structures, and whether stump removal is included. Small trees may run $400–$900, while large hardwoods near homes or power lines can cost $1,500–$2,500 or more."
           }
         },
         {
@@ -103,8 +104,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Tree Removal</strong>
         </nav>
-        <h1>Tree Removal in Ringgold, GA &amp; Chattanooga, TN</h1>
-        <p class="lead prose">Tree removal in Ringgold and Chattanooga typically costs $400–$2,500+ depending on tree height, condition, location near structures, and whether stump removal is included. River City Tree Care serves Ringgold, GA and the greater Chattanooga area with 24/7 emergency tree removal, full cleanup, and free on-site estimates. Call <a href="tel:+17062646130">(706) 264-6130</a> any time.</p>
+        <h1>Tree Removal in Chickamauga, GA &amp; Chattanooga, TN</h1>
+        <p class="lead prose">Tree removal in Chickamauga and Chattanooga typically costs $400–$2,500+ depending on tree height, condition, location near structures, and whether stump removal is included. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with 24/7 emergency tree removal, full cleanup, and free on-site estimates. Call <a href="tel:+17062646130">(706) 264-6130</a> any time.</p>
       </div>
     </div>
 
@@ -113,11 +114,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="ba-grid">
           <div class="ba-panel">
-            <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal in Ringgold, GA — overgrown trees and brush" width="800" height="600">
+            <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal in Chickamauga, GA — overgrown trees and brush" width="800" height="600">
             <span class="ba-label">Before</span>
           </div>
           <div class="ba-panel">
-            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal in Ringgold, GA — clean cleared lot" width="800" height="600">
+            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal in Chickamauga, GA — clean cleared lot" width="800" height="600">
             <span class="ba-label">After</span>
           </div>
         </div>
@@ -135,7 +136,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
             <h2>When Does a Tree Need to Come Down?</h2>
             <div class="prose">
               <p>Not every tree can be saved. Dead trees, storm-damaged trunks, root-compromised hardwoods leaning toward your house, and trees interfering with construction all need professional removal — not trimming.</p>
-              <p><strong>River City Tree Care</strong> removes trees of all sizes across the Ringgold, GA and Chattanooga, TN area. That includes large oaks in tight residential yards, storm-damaged pines dropped across driveways, and multi-tree clearing for new construction. Our crew brings professional rigging, climbing gear, and heavy equipment to every job.</p>
+              <p><strong>River City Tree Care</strong> removes trees of all sizes across the Chickamauga, GA and Chattanooga, TN area. That includes large oaks in tight residential yards, storm-damaged pines dropped across driveways, and multi-tree clearing for new construction. Our crew brings professional rigging, climbing gear, and heavy equipment to every job.</p>
               <p>Every removal includes complete debris haul-away. We chip branches on-site, load trunk sections, and leave your property cleaner than we found it. If you want the wood kept for firewood, we'll cut and stack it where you need it.</p>
               <p><strong>Emergency work is available 24/7.</strong> Storm damage, fallen trees on structures, and road-blocking situations get same-day response — call <a href="tel:+17062646130" style="color: var(--primary);">(706) 264-6130</a> day or night.</p>
             </div>
@@ -149,8 +150,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
 
         <div class="answer-block">
-          <h3>How much does tree removal cost in Ringgold, GA?</h3>
-          <p>Tree removal typically ranges from $400 to $2,500+ in the Ringgold and Chattanooga area. Small trees (under 30 feet) may cost $400–$900. Medium trees (30–60 feet) usually run $800–$1,500. Large hardwoods near structures, power lines, or fences often cost $1,500–$2,500 or more due to rigging and precision cutting requirements. Stump grinding adds $100–$400 per stump. River City Tree Care gives free estimates so you know the full cost upfront.</p>
+          <h3>How much does tree removal cost in Chickamauga, GA?</h3>
+          <p>Tree removal typically ranges from $400 to $2,500+ in the Chickamauga and Chattanooga area. Small trees (under 30 feet) may cost $400–$900. Medium trees (30–60 feet) usually run $800–$1,500. Large hardwoods near structures, power lines, or fences often cost $1,500–$2,500 or more due to rigging and precision cutting requirements. Stump grinding adds $100–$400 per stump. River City Tree Care gives free estimates so you know the full cost upfront.</p>
         </div>
 
         <div class="answer-block">
@@ -199,7 +200,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="service-cta">
       <div class="container">
         <h2>Dead Tree? Storm Damage? We're on It.</h2>
-        <p class="prose-centered">River City Tree Care responds 24/7 to emergency tree removal across Ringgold, Chattanooga, Fort Oglethorpe, Dalton, and surrounding areas.</p>
+        <p class="prose-centered">River City Tree Care responds 24/7 to emergency tree removal across Chickamauga, Ringgold, Chattanooga, Fort Oglethorpe, Dalton, and surrounding areas.</p>
         <div class="cta-actions">
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
@@ -240,7 +241,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <div class="faq-list">
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              How much does tree removal cost in Ringgold, GA?
+              How much does tree removal cost in Chickamauga, GA?
               <i class="lucide-chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
@@ -281,7 +282,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     <section class="cta-banner">
       <div class="container">
         <h2>Get That Tree Handled — Call Today</h2>
-        <p class="prose-centered">Free estimates. 24/7 emergency response. Serving Ringgold, GA, Chattanooga, TN, and everywhere in between.</p>
+        <p class="prose-centered">Free estimates. 24/7 emergency response. Serving Chickamauga, Ringgold, Chattanooga, TN, and everywhere in between.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
           <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
