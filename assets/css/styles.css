@@ -1511,3 +1511,347 @@ footer ul a:hover { color: var(--primary); }
 @media (min-width: 1024px) {
   .mobile-menu { display: none; }
 }
+
+/* ============================================
+   HOMEPAGE PREMIUM — Phase 2
+   ============================================ */
+
+/* --- Font Variables --- */
+:root {
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
+  --font-accent: 'Caveat', cursive;
+}
+
+.text-accent {
+  font-family: var(--font-accent);
+  color: var(--accent);
+  font-size: 1.15em;
+}
+
+.section-subtitle .text-accent,
+.hero .text-accent {
+  font-size: 1.2em;
+}
+
+/* --- Section Dividers --- */
+.section-divider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.section-divider--top { top: -1px; }
+.section-divider--bottom { bottom: -1px; }
+.section-divider svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* --- Transparent Nav (homepage only) --- */
+body.page-home .navbar {
+  background: transparent;
+  border-bottom-color: transparent;
+}
+body.page-home .navbar.scrolled {
+  background: rgba(24, 16, 10, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(45, 90, 39, 0.25);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+/* --- Logo Shrink on Scroll --- */
+.nav-logo img { transition: height 0.3s ease; }
+.navbar.scrolled .nav-logo img { height: 40px; }
+
+/* --- Nav CTA Button --- */
+.nav-cta {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--accent);
+  color: var(--bg) !important;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  font-weight: 700;
+  transition: background var(--transition), transform var(--transition);
+  white-space: nowrap;
+}
+.nav-cta:hover {
+  background: #c49025;
+  transform: translateY(-1px);
+}
+@media (max-width: 1023px) {
+  .nav-cta { display: none; }
+}
+
+/* --- Mobile CTA Bar --- */
+.mobile-cta-bar {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mobile-cta-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    background: var(--primary-dark);
+    padding: 10px var(--space-sm);
+    gap: var(--space-sm);
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.4);
+  }
+  .mobile-cta-bar a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .mobile-cta-bar a:first-child {
+    background: var(--primary);
+  }
+  .mobile-cta-bar a:last-child {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  body {
+    padding-bottom: 68px;
+  }
+  .back-to-top {
+    bottom: 80px;
+  }
+}
+
+/* --- Card Tints --- */
+.card-tint-1 { background: rgba(45, 90, 39, 0.08) !important; }
+.card-tint-2 { background: rgba(74, 122, 46, 0.09) !important; }
+.card-tint-3 { background: rgba(212, 160, 44, 0.07) !important; }
+
+/* --- Service Card with Image --- */
+.service-card-visual {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow var(--transition-slow), transform var(--transition);
+  border: 1px solid rgba(45, 90, 39, 0.12);
+}
+.service-card-visual:hover {
+  box-shadow: var(--ember-glow);
+  transform: translateY(-6px);
+}
+.service-card-visual .card-img {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+.service-card-visual .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+.service-card-visual:hover .card-img img {
+  transform: scale(1.05);
+}
+.service-card-visual .card-body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+.service-card-visual .card-body h3 {
+  color: var(--text);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.service-card-visual .card-body h3 i {
+  color: var(--accent);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.service-card-visual .card-body h3 a {
+  color: inherit;
+  transition: color var(--transition);
+}
+.service-card-visual .card-body h3 a:hover { color: var(--primary); }
+.service-card-visual .card-body p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  flex: 1;
+}
+.service-card-visual .card-link {
+  color: var(--accent);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: auto;
+  transition: gap var(--transition), color var(--transition);
+}
+.service-card-visual .card-link:hover {
+  gap: var(--space-sm);
+  color: var(--primary);
+}
+
+/* Grid for 4-col service cards */
+.services-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+@media (max-width: 1023px) {
+  .services-grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .services-grid-4 { grid-template-columns: 1fr; }
+}
+
+/* --- About Asymmetric Grid --- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+.about-image-group {
+  position: relative;
+  padding: var(--space-xl);
+}
+.about-image-primary {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--elevation-3);
+  position: relative;
+  z-index: 1;
+}
+.about-image-primary img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.about-image-secondary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--elevation-3);
+  border: 4px solid var(--bg-alt);
+  z-index: 2;
+  transform: rotate(3deg);
+}
+.about-image-secondary img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 767px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-image-group { padding: var(--space-md); }
+  .about-image-secondary { width: 45%; bottom: -10px; right: -5px; }
+}
+
+/* --- Floating Accents --- */
+.floating-accent {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.05;
+}
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(-2deg); }
+}
+.float-animate {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+.float-animate-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .float-animate, .float-animate-slow { animation: none; }
+}
+
+/* --- Stat Watermark --- */
+.stat-watermark {
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(6rem, 15vw, 12rem);
+  color: rgba(45, 90, 39, 0.04);
+  pointer-events: none;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+}
+
+/* --- Hero 100vh + Green Overlay --- */
+body.page-home .hero {
+  min-height: 100vh;
+}
+body.page-home .hero::before {
+  background: linear-gradient(170deg, rgba(28, 58, 24, 0.7) 0%, rgba(24, 16, 10, 0.8) 100%);
+}
+
+/* --- Mobile Menu Stagger --- */
+.mobile-menu a {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.3s ease, transform 0.3s ease, color var(--transition);
+}
+.mobile-menu.open a {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open a:nth-child(1) { transition-delay: 0.05s; }
+.mobile-menu.open a:nth-child(2) { transition-delay: 0.1s; }
+.mobile-menu.open a:nth-child(3) { transition-delay: 0.15s; }
+.mobile-menu.open a:nth-child(4) { transition-delay: 0.2s; }
+.mobile-menu.open a:nth-child(5) { transition-delay: 0.25s; }
+.mobile-menu.open a:nth-child(6) { transition-delay: 0.3s; }
+
+/* --- Process card variant --- */
+.process-card {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  position: relative;
+  border-top: 3px solid var(--accent);
+}
+.process-card .step-number {
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+}

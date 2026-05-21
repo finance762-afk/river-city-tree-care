@@ -57,6 +57,12 @@
     </div>
   </footer>
 
+  <!-- Mobile CTA Bar -->
+  <div class="mobile-cta-bar">
+    <a href="tel:+17062646130"><i class="lucide-phone"></i> Call Now</a>
+    <a href="/contact"><i class="lucide-file-text"></i> Free Estimate</a>
+  </div>
+
   <!-- Back to Top -->
   <button class="back-to-top" aria-label="Back to top">
     <i class="lucide-chevron-up"></i>

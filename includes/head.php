@@ -21,10 +21,10 @@
   <meta property="og:url" content="<?php echo $canonicalUrl; ?>">
   <meta property="og:type" content="<?php echo ($currentPage === 'home') ? 'website' : 'article'; ?>">
 
-  <!-- Google Fonts — Bebas Neue + Nunito Sans -->
+  <!-- Google Fonts — Bebas Neue + Nunito Sans + Caveat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Preload heading font -->
   <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" crossorigin>
@@ -38,7 +38,7 @@
   <?php endif; ?>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/styles.css?v=2">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=3">
 
   <!-- Preconnect / DNS-Prefetch -->
   <link rel="dns-prefetch" href="//www.googletagmanager.com">

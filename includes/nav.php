@@ -11,6 +11,8 @@
         <li><a href="/contact" <?php if ($currentPage === 'contact') echo 'aria-current="page"'; ?>>Contact</a></li>
       </ul>
 
+      <a href="/contact" class="nav-cta">Free Estimate</a>
+
       <a href="tel:+17062646130" class="nav-phone desktop-only">
         <i class="lucide-phone"></i> (706) 264-6130
       </a>
@@ -28,6 +30,7 @@
     <a href="/services" <?php if ($currentPage === 'services') echo 'aria-current="page"'; ?>>Services</a>
     <a href="/about" <?php if ($currentPage === 'about') echo 'aria-current="page"'; ?>>About</a>
     <a href="/contact" <?php if ($currentPage === 'contact') echo 'aria-current="page"'; ?>>Contact</a>
+    <a href="/contact" style="color: var(--accent); font-size: 1.3rem;">Free Estimate</a>
     <a href="tel:+17062646130" class="mobile-phone">
       <i class="lucide-phone"></i> (706) 264-6130
     </a>
