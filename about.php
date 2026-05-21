@@ -116,25 +116,25 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <div class="grid-2" data-stagger>
 
           <div class="service-card" style="border-left-color: var(--primary);">
-            <div class="card-icon"><i class="lucide-clock"></i></div>
+            <div class="card-icon"><i data-lucide="clock"></i></div>
             <h3>Show Up on Time</h3>
             <p>When we set a date, we're there. No rescheduling, no guessing. If an emergency pushes the timeline, you hear from us directly — not through silence.</p>
           </div>
 
           <div class="service-card" style="border-left-color: var(--primary);">
-            <div class="card-icon"><i class="lucide-wrench"></i></div>
+            <div class="card-icon"><i data-lucide="wrench"></i></div>
             <h3>Professional Equipment</h3>
             <p>Chainsaws, commercial stump grinders, wood chippers, skid steers, forestry mulchers, hauling trailers — we bring the right tools for the job, not make-do alternatives.</p>
           </div>
 
           <div class="service-card" style="border-left-color: var(--primary);">
-            <div class="card-icon"><i class="lucide-sparkles"></i></div>
+            <div class="card-icon"><i data-lucide="sparkles"></i></div>
             <h3>Full Site Cleanup</h3>
             <p>Every job ends with a complete cleanup. All wood, branches, brush, and debris are chipped or hauled off-site. Your property is left cleaner than we found it.</p>
           </div>
 
           <div class="service-card" style="border-left-color: var(--primary);">
-            <div class="card-icon"><i class="lucide-phone-call"></i></div>
+            <div class="card-icon"><i data-lucide="phone-call"></i></div>
             <h3>24/7 Availability</h3>
             <p>Storms don't wait for business hours. River City Tree Care responds to emergency calls around the clock — nights, weekends, and holidays included.</p>
           </div>
@@ -197,7 +197,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">Free estimates on every job. 24/7 emergency availability. Serving Chickamauga, Ringgold, Chattanooga, TN, and the surrounding area.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

@@ -132,11 +132,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <h2>What Can Be Milled?</h2>
         <ul class="scope-list">
-          <li><i class="lucide-ruler"></i> <strong>Dimensional lumber</strong> — 2x4s, 2x6s, 4x4s, 6x6s, and other standard sizes</li>
-          <li><i class="lucide-panel-top"></i> <strong>Live-edge slabs</strong> — natural-edge boards for tables, countertops, mantels, and shelving</li>
-          <li><i class="lucide-box"></i> <strong>Beams</strong> — structural and decorative beams for construction, barns, and timber framing</li>
-          <li><i class="lucide-layers"></i> <strong>Custom thicknesses</strong> — boards milled to your specification for specific projects</li>
-          <li><i class="lucide-fence"></i> <strong>Fencing material</strong> — rough-cut boards for privacy fences, pasture fencing, or garden borders</li>
+          <li><i data-lucide="ruler"></i> <strong>Dimensional lumber</strong> — 2x4s, 2x6s, 4x4s, 6x6s, and other standard sizes</li>
+          <li><i data-lucide="panel-top"></i> <strong>Live-edge slabs</strong> — natural-edge boards for tables, countertops, mantels, and shelving</li>
+          <li><i data-lucide="box"></i> <strong>Beams</strong> — structural and decorative beams for construction, barns, and timber framing</li>
+          <li><i data-lucide="layers"></i> <strong>Custom thicknesses</strong> — boards milled to your specification for specific projects</li>
+          <li><i data-lucide="fence"></i> <strong>Fencing material</strong> — rough-cut boards for privacy fences, pasture fencing, or garden borders</li>
         </ul>
 
         <div class="callout-box">
@@ -198,7 +198,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2>Got Logs? Let's Turn Them into Lumber.</h2>
         <p class="prose-centered">Sawmill services are available by appointment. Call River City Tree Care to discuss your logs, your project, and scheduling.</p>
         <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Contact Us</a>
         </div>
       </div>
@@ -224,8 +224,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
             <div class="related-services">
               <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/firewood"><i class="lucide-arrow-right"></i> Firewood</a>
-              <a href="/services/lot-clearing"><i class="lucide-arrow-right"></i> Lot Clearing</a>
+              <a href="/services/firewood"><i data-lucide="arrow-right"></i> Firewood</a>
+              <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               What types of lumber can you mill?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -253,7 +253,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Can you mill logs from a tree you just removed?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -265,7 +265,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               What is the minimum log size for milling?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -284,7 +284,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">River City Tree Care offers portable sawmill services in Chickamauga, GA and the surrounding area. Turn your timber into something useful.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Contact Us About Milling</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

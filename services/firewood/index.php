@@ -145,7 +145,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2>Need Firewood? Call to Check Stock.</h2>
         <p class="prose-centered">Availability changes based on current job site production. Call River City Tree Care to find out what's in stock and arrange pickup or delivery.</p>
         <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Contact Us</a>
         </div>
       </div>
@@ -170,8 +170,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
             <div class="related-services">
               <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/sawmill-services"><i class="lucide-arrow-right"></i> Sawmill Services</a>
-              <a href="/services/tree-removal"><i class="lucide-arrow-right"></i> Tree Removal</a>
+              <a href="/services/sawmill-services"><i data-lucide="arrow-right"></i> Sawmill Services</a>
+              <a href="/services/tree-removal"><i data-lucide="arrow-right"></i> Tree Removal</a>
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               What types of firewood do you sell?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -199,7 +199,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Do you deliver firewood?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -211,7 +211,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Is the firewood seasoned or green?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -229,7 +229,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2>Hardwood Firewood — Locally Cut, Ready to Burn</h2>
         <p class="prose-centered">River City Tree Care sells firewood sourced from tree removal jobs across Chickamauga, Ringgold, and the greater Chattanooga area. Call for pricing and availability.</p>
         <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Contact Us</a>
         </div>
       </div>

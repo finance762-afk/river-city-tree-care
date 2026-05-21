@@ -180,7 +180,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">Schedule a free trimming estimate with River City Tree Care. We serve Chickamauga, Ringgold, Chattanooga, Fort Oglethorpe, and the surrounding area.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>
@@ -198,18 +198,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <p>River City Tree Care handles every type of trimming job property owners and managers deal with in North Georgia and the Chattanooga metro:</p>
             </div>
             <ul class="scope-list">
-              <li><i class="lucide-check"></i> Dead, diseased, and broken branches</li>
-              <li><i class="lucide-check"></i> Limbs encroaching on rooflines and gutters</li>
-              <li><i class="lucide-check"></i> Branches over driveways and walkways</li>
-              <li><i class="lucide-check"></i> Crown thinning for light and airflow</li>
-              <li><i class="lucide-check"></i> Clearance for power lines and utility access</li>
-              <li><i class="lucide-check"></i> Storm prep — removing weak attachments before severe weather</li>
+              <li><i data-lucide="check"></i> Dead, diseased, and broken branches</li>
+              <li><i data-lucide="check"></i> Limbs encroaching on rooflines and gutters</li>
+              <li><i data-lucide="check"></i> Branches over driveways and walkways</li>
+              <li><i data-lucide="check"></i> Crown thinning for light and airflow</li>
+              <li><i data-lucide="check"></i> Clearance for power lines and utility access</li>
+              <li><i data-lucide="check"></i> Storm prep — removing weak attachments before severe weather</li>
             </ul>
 
             <div class="related-services">
               <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/tree-removal"><i class="lucide-arrow-right"></i> Tree Removal</a>
-              <a href="/services/stump-grinding"><i class="lucide-arrow-right"></i> Stump Grinding</a>
+              <a href="/services/tree-removal"><i data-lucide="arrow-right"></i> Tree Removal</a>
+              <a href="/services/stump-grinding"><i data-lucide="arrow-right"></i> Stump Grinding</a>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               How much does tree trimming cost in Chickamauga, GA?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -237,7 +237,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Do you trim trees near power lines?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -249,7 +249,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               When is the best time to trim trees in Georgia?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -268,7 +268,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">River City Tree Care provides professional tree trimming across Chickamauga, Ringgold, Chattanooga, TN, and everywhere in between. 24/7 availability for emergency work.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Schedule Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

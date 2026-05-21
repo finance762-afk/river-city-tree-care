@@ -179,7 +179,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">Most residential stumps are gone in under an hour. Call for a free estimate in Chickamauga, Ringgold, Chattanooga, and surrounding areas.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>
@@ -203,8 +203,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
             <div class="related-services">
               <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/tree-removal"><i class="lucide-arrow-right"></i> Tree Removal</a>
-              <a href="/services/lot-clearing"><i class="lucide-arrow-right"></i> Lot Clearing</a>
+              <a href="/services/tree-removal"><i data-lucide="arrow-right"></i> Tree Removal</a>
+              <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
             </div>
           </div>
         </div>
@@ -220,7 +220,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               How much does stump grinding cost?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -232,7 +232,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               How long does it take to grind a stump?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -244,7 +244,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Can I plant over a ground stump?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -263,7 +263,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">River City Tree Care handles single stumps and multi-stump jobs across Chickamauga, Ringgold, Chattanooga, and the surrounding area. Fast work, clean results, free estimates.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Schedule Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

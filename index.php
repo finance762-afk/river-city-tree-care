@@ -135,7 +135,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <div class="hero-cta">
           <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
           <a href="tel:+17062646130" class="hero-phone">
-            <i class="lucide-phone"></i> (706) 264-6130
+            <i data-lucide="phone"></i> (706) 264-6130
           </a>
         </div>
       </div>
@@ -153,11 +153,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
          ============================================ -->
     <div class="badge-strip">
       <div class="container">
-        <div class="badge"><i class="lucide-clock"></i> 24/7 Emergency Service</div>
-        <div class="badge"><i class="lucide-calculator"></i> Free Estimates</div>
-        <div class="badge"><i class="lucide-shield-check"></i> Licensed &amp; Insured</div>
-        <div class="badge"><i class="lucide-map-pin"></i> Chickamauga, GA &amp; Chattanooga, TN</div>
-        <div class="badge"><i class="lucide-truck"></i> Full Cleanup Included</div>
+        <div class="badge"><i data-lucide="clock"></i> 24/7 Emergency Service</div>
+        <div class="badge"><i data-lucide="calculator"></i> Free Estimates</div>
+        <div class="badge"><i data-lucide="shield-check"></i> Licensed &amp; Insured</div>
+        <div class="badge"><i data-lucide="map-pin"></i> Chickamauga, GA &amp; Chattanooga, TN</div>
+        <div class="badge"><i data-lucide="truck"></i> Full Cleanup Included</div>
       </div>
     </div>
 
@@ -179,9 +179,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing branches during tree trimming job in Chickamauga, GA" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
-              <h3><i class="lucide-scissors"></i> <a href="/services/tree-trimming">Tree Trimming</a></h3>
+              <h3><i data-lucide="scissors"></i> <a href="/services/tree-trimming">Tree Trimming</a></h3>
               <p>Crown thinning, deadwood removal, and clearance trimming for power lines, rooflines, and driveways.</p>
-              <a href="/services/tree-trimming" class="card-link">Learn More <i class="lucide-arrow-right"></i></a>
+              <a href="/services/tree-trimming" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
 
@@ -190,9 +190,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Tree removal job site — overgrown trees on residential property" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
-              <h3><i class="lucide-trees"></i> <a href="/services/tree-removal">Tree Removal</a></h3>
+              <h3><i data-lucide="trees"></i> <a href="/services/tree-removal">Tree Removal</a></h3>
               <p>Hazardous, dead, and storm-damaged trees removed safely. 24/7 emergency response with full debris haul-away.</p>
-              <a href="/services/tree-removal" class="card-link">Learn More <i class="lucide-arrow-right"></i></a>
+              <a href="/services/tree-removal" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
 
@@ -201,9 +201,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Commercial stump grinder removing stump below grade" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
-              <h3><i class="lucide-disc"></i> <a href="/services/stump-grinding">Stump Grinding</a></h3>
+              <h3><i data-lucide="disc"></i> <a href="/services/stump-grinding">Stump Grinding</a></h3>
               <p>Stumps ground 6–12 inches below grade. Yard ready to fill, seed, or build over — most done in under an hour.</p>
-              <a href="/services/stump-grinding" class="card-link">Learn More <i class="lucide-arrow-right"></i></a>
+              <a href="/services/stump-grinding" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
 
@@ -212,9 +212,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Lot clearing project — trees and brush removed from residential property" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
-              <h3><i class="lucide-land-plot"></i> <a href="/services/lot-clearing">Lot Clearing</a></h3>
+              <h3><i data-lucide="land-plot"></i> <a href="/services/lot-clearing">Lot Clearing</a></h3>
               <p>Residential and commercial lots cleared for building, fencing, or landscaping — all debris hauled off-site.</p>
-              <a href="/services/lot-clearing" class="card-link">Learn More <i class="lucide-arrow-right"></i></a>
+              <a href="/services/lot-clearing" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
 
@@ -223,9 +223,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land clearing — clean lot ready for development" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
-              <h3><i class="lucide-tractor"></i> <a href="/services/forestry-mulching">Forestry Mulching</a></h3>
+              <h3><i data-lucide="tractor"></i> <a href="/services/forestry-mulching">Forestry Mulching</a></h3>
               <p>Clear overgrown acreage in a single pass. No hauling, no burning — nutrient-rich mulch stays on-site.</p>
-              <a href="/services/forestry-mulching" class="card-link">Learn More <i class="lucide-arrow-right"></i></a>
+              <a href="/services/forestry-mulching" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
 
@@ -234,9 +234,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
-              <h3><i class="lucide-building-2"></i> <a href="/services/land-development">Land Development</a></h3>
+              <h3><i data-lucide="building-2"></i> <a href="/services/land-development">Land Development</a></h3>
               <p>Site prep for new construction — tree removal, brush clearing, and grading-ready results for builders and developers.</p>
-              <a href="/services/land-development" class="card-link">Learn More <i class="lucide-arrow-right"></i></a>
+              <a href="/services/land-development" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
 
@@ -245,9 +245,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Hardwood logs from tree removal — firewood stock in North Georgia" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
-              <h3><i class="lucide-flame"></i> <a href="/services/firewood">Firewood</a></h3>
+              <h3><i data-lucide="flame"></i> <a href="/services/firewood">Firewood</a></h3>
               <p>Seasoned hardwood cut from local job sites — oak, hickory, and mixed hardwoods by the truckload.</p>
-              <a href="/services/firewood" class="card-link">Learn More <i class="lucide-arrow-right"></i></a>
+              <a href="/services/firewood" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
 
@@ -256,9 +256,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Logs ready for portable sawmill processing — custom lumber milling" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
-              <h3><i class="lucide-axe"></i> <a href="/services/sawmill-services">Sawmill Services</a></h3>
+              <h3><i data-lucide="axe"></i> <a href="/services/sawmill-services">Sawmill Services</a></h3>
               <p>Turn downed trees into usable lumber on-site — slabs, beams, and dimensional cuts from your logs.</p>
-              <a href="/services/sawmill-services" class="card-link">Learn More <i class="lucide-arrow-right"></i></a>
+              <a href="/services/sawmill-services" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
 
@@ -283,22 +283,22 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container" style="position: relative; z-index: 1;">
         <div class="stats-grid">
           <div class="stat-counter">
-            <div class="stat-icon"><i class="lucide-clock"></i></div>
+            <div class="stat-icon"><i data-lucide="clock"></i></div>
             <div class="stat-number" data-count="24" data-suffix="/7">0</div>
             <div class="stat-label">Availability</div>
           </div>
           <div class="stat-counter">
-            <div class="stat-icon"><i class="lucide-map-pin"></i></div>
+            <div class="stat-icon"><i data-lucide="map-pin"></i></div>
             <div class="stat-number" data-count="50" data-suffix="-Mile">0</div>
             <div class="stat-label">Service Radius</div>
           </div>
           <div class="stat-counter">
-            <div class="stat-icon"><i class="lucide-calculator"></i></div>
+            <div class="stat-icon"><i data-lucide="calculator"></i></div>
             <div class="stat-number">Free</div>
             <div class="stat-label">Estimates — Always</div>
           </div>
           <div class="stat-counter">
-            <div class="stat-icon"><i class="lucide-zap"></i></div>
+            <div class="stat-icon"><i data-lucide="zap"></i></div>
             <div class="stat-number">Same-Day</div>
             <div class="stat-label">Emergency Response</div>
           </div>
@@ -315,7 +315,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2>Trees Down? <span class="text-accent">Storm Damage?</span> We're on It.</h2>
         <p class="prose-centered">River City Tree Care responds 24/7 to emergency calls across Chickamauga, GA and the greater Chattanooga area. One call gets a crew to your property — fast.</p>
         <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
         </div>
       </div>
@@ -476,7 +476,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               What tree services does River City Tree Care offer?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -488,7 +488,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Do you offer emergency tree removal?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -500,7 +500,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               What areas does River City Tree Care serve?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -512,7 +512,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Do you haul away debris after tree removal?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -524,7 +524,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Are you licensed and insured?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -546,7 +546,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">Whether it's one tree or ten acres, River City Tree Care has the equipment and the crew to get it done. Serving Chickamauga, GA, Chattanooga, TN, and everywhere in between — 24/7.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

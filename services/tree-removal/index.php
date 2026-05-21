@@ -202,7 +202,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2>Dead Tree? Storm Damage? We're on It.</h2>
         <p class="prose-centered">River City Tree Care responds 24/7 to emergency tree removal across Chickamauga, Ringgold, Chattanooga, Fort Oglethorpe, Dalton, and surrounding areas.</p>
         <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
         </div>
       </div>
@@ -216,19 +216,19 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <p>The mix of hardwoods and softwoods across Catoosa County, Hamilton County, and the surrounding area means we work with a wide range of species. Each requires a different approach to rigging, cutting, and cleanup:</p>
         </div>
         <ul class="scope-list">
-          <li><i class="lucide-check"></i> <strong>Oaks</strong> — heavy, dense canopies requiring careful sectioning and rigging</li>
-          <li><i class="lucide-check"></i> <strong>Pines</strong> — tall, prone to storm snap; often the most common emergency removal</li>
-          <li><i class="lucide-check"></i> <strong>Maples and sweetgums</strong> — fast growers that frequently interfere with structures</li>
-          <li><i class="lucide-check"></i> <strong>Hickories</strong> — strong wood, deep root systems, premium firewood when milled</li>
-          <li><i class="lucide-check"></i> <strong>Dead standing timber</strong> — unpredictable fall direction, handled with extra caution</li>
-          <li><i class="lucide-check"></i> <strong>Storm-damaged trees</strong> — partially fallen, hung up on other trees, or leaning on structures</li>
+          <li><i data-lucide="check"></i> <strong>Oaks</strong> — heavy, dense canopies requiring careful sectioning and rigging</li>
+          <li><i data-lucide="check"></i> <strong>Pines</strong> — tall, prone to storm snap; often the most common emergency removal</li>
+          <li><i data-lucide="check"></i> <strong>Maples and sweetgums</strong> — fast growers that frequently interfere with structures</li>
+          <li><i data-lucide="check"></i> <strong>Hickories</strong> — strong wood, deep root systems, premium firewood when milled</li>
+          <li><i data-lucide="check"></i> <strong>Dead standing timber</strong> — unpredictable fall direction, handled with extra caution</li>
+          <li><i data-lucide="check"></i> <strong>Storm-damaged trees</strong> — partially fallen, hung up on other trees, or leaning on structures</li>
         </ul>
 
         <div class="related-services">
           <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-          <a href="/services/tree-trimming"><i class="lucide-arrow-right"></i> Tree Trimming</a>
-          <a href="/services/stump-grinding"><i class="lucide-arrow-right"></i> Stump Grinding</a>
-          <a href="/services/lot-clearing"><i class="lucide-arrow-right"></i> Lot Clearing</a>
+          <a href="/services/tree-trimming"><i data-lucide="arrow-right"></i> Tree Trimming</a>
+          <a href="/services/stump-grinding"><i data-lucide="arrow-right"></i> Stump Grinding</a>
+          <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
         </div>
       </div>
     </section>
@@ -242,7 +242,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               How much does tree removal cost in Chickamauga, GA?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -254,7 +254,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Do you offer 24/7 emergency tree removal?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -266,7 +266,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Do you remove the stump too?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -285,7 +285,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">Free estimates. 24/7 emergency response. Serving Chickamauga, Ringgold, Chattanooga, TN, and everywhere in between.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

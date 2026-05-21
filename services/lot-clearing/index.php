@@ -132,12 +132,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <h2>What We Clear Lots For</h2>
         <ul class="scope-list">
-          <li><i class="lucide-home"></i> <strong>New home construction</strong> — clear the building envelope, driveway path, and setback areas</li>
-          <li><i class="lucide-building-2"></i> <strong>Commercial site prep</strong> — clear land for retail, office, or industrial construction</li>
-          <li><i class="lucide-fence"></i> <strong>Fencing and landscaping</strong> — clear fence lines, garden areas, or yard extensions</li>
-          <li><i class="lucide-dollar-sign"></i> <strong>Resale prep</strong> — clean up overgrown lots to improve curb appeal and property value</li>
-          <li><i class="lucide-warehouse"></i> <strong>Outbuildings and storage</strong> — clear space for barns, workshops, or storage structures</li>
-          <li><i class="lucide-car"></i> <strong>Driveway and access roads</strong> — cut and clear paths through wooded property</li>
+          <li><i data-lucide="home"></i> <strong>New home construction</strong> — clear the building envelope, driveway path, and setback areas</li>
+          <li><i data-lucide="building-2"></i> <strong>Commercial site prep</strong> — clear land for retail, office, or industrial construction</li>
+          <li><i data-lucide="fence"></i> <strong>Fencing and landscaping</strong> — clear fence lines, garden areas, or yard extensions</li>
+          <li><i data-lucide="dollar-sign"></i> <strong>Resale prep</strong> — clean up overgrown lots to improve curb appeal and property value</li>
+          <li><i data-lucide="warehouse"></i> <strong>Outbuildings and storage</strong> — clear space for barns, workshops, or storage structures</li>
+          <li><i data-lucide="car"></i> <strong>Driveway and access roads</strong> — cut and clear paths through wooded property</li>
         </ul>
       </div>
     </section>
@@ -186,7 +186,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2>Need a Lot Cleared? Start with a Free Walkthrough.</h2>
         <p class="prose-centered">River City Tree Care clears lots for builders, homeowners, and developers across Chickamauga, Ringgold, Chattanooga, and the surrounding area.</p>
         <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
         </div>
       </div>
@@ -208,9 +208,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
             <div class="related-services">
               <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/forestry-mulching"><i class="lucide-arrow-right"></i> Forestry Mulching</a>
-              <a href="/services/land-development"><i class="lucide-arrow-right"></i> Land Development</a>
-              <a href="/services/stump-grinding"><i class="lucide-arrow-right"></i> Stump Grinding</a>
+              <a href="/services/forestry-mulching"><i data-lucide="arrow-right"></i> Forestry Mulching</a>
+              <a href="/services/land-development"><i data-lucide="arrow-right"></i> Land Development</a>
+              <a href="/services/stump-grinding"><i data-lucide="arrow-right"></i> Stump Grinding</a>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               How much does lot clearing cost in Chickamauga, GA?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -238,7 +238,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Do you clear lots for new construction?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -250,7 +250,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               What happens to the debris?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -269,7 +269,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">River City Tree Care handles the full clearing scope. Serving Chickamauga, Ringgold, Chattanooga, TN, and everywhere in between.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

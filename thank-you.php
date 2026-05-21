@@ -19,7 +19,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
     <section style="background: var(--bg); padding: 120px 20px; text-align: center; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
       <div class="container">
-        <div style="color: var(--primary); font-size: 3rem; margin-bottom: var(--space-lg);"><i class="lucide-check-circle"></i></div>
+        <div style="color: var(--primary); font-size: 3rem; margin-bottom: var(--space-lg);"><i data-lucide="check-circle"></i></div>
         <h1 style="color: var(--primary); margin-bottom: var(--space-md);">We Got Your Request</h1>
         <p class="prose-centered" style="color: var(--text-light); margin-bottom: var(--space-md);">Andrew or a crew member will be in touch within a few hours to discuss your project and schedule a free estimate.</p>
         <p class="prose-centered" style="color: var(--text-light); margin-bottom: var(--space-2xl);">For emergencies, call <a href="tel:+17062646130" style="color: var(--primary); font-weight: 700;">(706) 264-6130</a> directly — we respond 24/7.</p>

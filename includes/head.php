@@ -29,8 +29,8 @@
   <!-- Preload heading font -->
   <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" crossorigin>
 
-  <!-- Icon CDN — Lucide -->
-  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+  <!-- Lucide Icons JS -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
   <!-- Swiper CSS (conditional) -->
   <?php if (!empty($useSwiper)): ?>

@@ -124,12 +124,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <h2>Development Projects We Clear For</h2>
         <ul class="scope-list">
-          <li><i class="lucide-home"></i> <strong>Custom home builds</strong> — clear the building pad, driveway, septic field, and utility runs</li>
-          <li><i class="lucide-map"></i> <strong>Subdivision lots</strong> — phased clearing for multi-lot residential developments</li>
-          <li><i class="lucide-building-2"></i> <strong>Commercial pads</strong> — retail, office, and industrial site clearing</li>
-          <li><i class="lucide-road"></i> <strong>Driveways and access roads</strong> — cut paths through wooded property to the building site</li>
-          <li><i class="lucide-droplets"></i> <strong>Utility and septic clearing</strong> — clear trenching paths for water, sewer, electric, and septic systems</li>
-          <li><i class="lucide-fence"></i> <strong>Property line clearing</strong> — clear setback areas and boundary lines for surveys and fencing</li>
+          <li><i data-lucide="home"></i> <strong>Custom home builds</strong> — clear the building pad, driveway, septic field, and utility runs</li>
+          <li><i data-lucide="map"></i> <strong>Subdivision lots</strong> — phased clearing for multi-lot residential developments</li>
+          <li><i data-lucide="building-2"></i> <strong>Commercial pads</strong> — retail, office, and industrial site clearing</li>
+          <li><i data-lucide="road"></i> <strong>Driveways and access roads</strong> — cut paths through wooded property to the building site</li>
+          <li><i data-lucide="droplets"></i> <strong>Utility and septic clearing</strong> — clear trenching paths for water, sewer, electric, and septic systems</li>
+          <li><i data-lucide="fence"></i> <strong>Property line clearing</strong> — clear setback areas and boundary lines for surveys and fencing</li>
         </ul>
       </div>
     </section>
@@ -186,7 +186,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2>Building on Raw Land? We Clear It First.</h2>
         <p class="prose-centered">Free site walk and estimate for residential and commercial development clearing across Chickamauga, Ringgold, Chattanooga, and North Georgia.</p>
         <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
           <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
         </div>
       </div>
@@ -208,8 +208,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
             <div class="related-services">
               <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/lot-clearing"><i class="lucide-arrow-right"></i> Lot Clearing</a>
-              <a href="/services/forestry-mulching"><i class="lucide-arrow-right"></i> Forestry Mulching</a>
+              <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
+              <a href="/services/forestry-mulching"><i data-lucide="arrow-right"></i> Forestry Mulching</a>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Do you work with builders and contractors?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -237,7 +237,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               What size projects do you handle?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -249,7 +249,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Is the site grading-ready when you're done?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -268,7 +268,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">Serving builders, developers, and homeowners across Chickamauga, Ringgold, Chattanooga, TN, and the surrounding area. 24/7 availability.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

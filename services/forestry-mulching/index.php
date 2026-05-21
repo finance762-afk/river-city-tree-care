@@ -135,23 +135,23 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="comparison-col">
             <h3>Forestry Mulching</h3>
             <ul>
-              <li><i class="lucide-check"></i> One machine, one pass — faster for acreage</li>
-              <li><i class="lucide-check"></i> No debris hauling required</li>
-              <li><i class="lucide-check"></i> Mulch layer prevents erosion and suppresses regrowth</li>
-              <li><i class="lucide-check"></i> Works on slopes, wet areas, and rocky terrain</li>
-              <li><i class="lucide-check"></i> Less soil disturbance — topsoil stays intact</li>
-              <li><i class="lucide-check"></i> Often lower cost per acre for wooded land</li>
+              <li><i data-lucide="check"></i> One machine, one pass — faster for acreage</li>
+              <li><i data-lucide="check"></i> No debris hauling required</li>
+              <li><i data-lucide="check"></i> Mulch layer prevents erosion and suppresses regrowth</li>
+              <li><i data-lucide="check"></i> Works on slopes, wet areas, and rocky terrain</li>
+              <li><i data-lucide="check"></i> Less soil disturbance — topsoil stays intact</li>
+              <li><i data-lucide="check"></i> Often lower cost per acre for wooded land</li>
             </ul>
           </div>
           <div class="comparison-col">
             <h3>Traditional Clearing</h3>
             <ul>
-              <li><i class="lucide-check"></i> Best when debris must be fully removed from site</li>
-              <li><i class="lucide-check"></i> Required for grading-ready construction sites</li>
-              <li><i class="lucide-check"></i> Handles very large trees that exceed mulcher capacity</li>
-              <li><i class="lucide-check"></i> Removes stumps below grade for building</li>
-              <li><i class="lucide-check"></i> Allows timber to be kept or milled</li>
-              <li><i class="lucide-check"></i> Better for small, dense lots with access constraints</li>
+              <li><i data-lucide="check"></i> Best when debris must be fully removed from site</li>
+              <li><i data-lucide="check"></i> Required for grading-ready construction sites</li>
+              <li><i data-lucide="check"></i> Handles very large trees that exceed mulcher capacity</li>
+              <li><i data-lucide="check"></i> Removes stumps below grade for building</li>
+              <li><i data-lucide="check"></i> Allows timber to be kept or milled</li>
+              <li><i data-lucide="check"></i> Better for small, dense lots with access constraints</li>
             </ul>
           </div>
         </div>
@@ -185,7 +185,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">River City Tree Care provides forestry mulching across Chickamauga, Ringgold, Chattanooga, TN, and North Georgia. Free site walk and estimate.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>
@@ -200,17 +200,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div>
             <h2>Common Forestry Mulching Projects</h2>
             <ul class="scope-list">
-              <li><i class="lucide-check"></i> <strong>Overgrown fields and pastures</strong> — reclaim land that's been overtaken by saplings and brush</li>
-              <li><i class="lucide-check"></i> <strong>Fence line clearing</strong> — clear 10–20 feet on each side for new fence installation</li>
-              <li><i class="lucide-check"></i> <strong>Firebreak creation</strong> — mulch strips of vegetation to create defensible space</li>
-              <li><i class="lucide-check"></i> <strong>Right-of-way maintenance</strong> — keep utility and road easements clear</li>
-              <li><i class="lucide-check"></i> <strong>Pre-development clearing</strong> — initial clearing before full <a href="/services/land-development" style="color: var(--primary);">land development</a></li>
+              <li><i data-lucide="check"></i> <strong>Overgrown fields and pastures</strong> — reclaim land that's been overtaken by saplings and brush</li>
+              <li><i data-lucide="check"></i> <strong>Fence line clearing</strong> — clear 10–20 feet on each side for new fence installation</li>
+              <li><i data-lucide="check"></i> <strong>Firebreak creation</strong> — mulch strips of vegetation to create defensible space</li>
+              <li><i data-lucide="check"></i> <strong>Right-of-way maintenance</strong> — keep utility and road easements clear</li>
+              <li><i data-lucide="check"></i> <strong>Pre-development clearing</strong> — initial clearing before full <a href="/services/land-development" style="color: var(--primary);">land development</a></li>
             </ul>
 
             <div class="related-services">
               <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/lot-clearing"><i class="lucide-arrow-right"></i> Lot Clearing</a>
-              <a href="/services/land-development"><i class="lucide-arrow-right"></i> Land Development</a>
+              <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
+              <a href="/services/land-development"><i data-lucide="arrow-right"></i> Land Development</a>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               How is forestry mulching different from traditional land clearing?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -238,7 +238,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               What size trees can a forestry mulcher handle?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -250,7 +250,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               Is forestry mulching good for the soil?
-              <i class="lucide-chevron-down chevron"></i>
+              <i data-lucide="chevron-down chevron"></i>
             </button>
             <div class="faq-answer" role="region">
               <div class="faq-answer-inner prose">
@@ -269,7 +269,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered">Forestry mulching from River City Tree Care — serving Chickamauga, Ringgold, Chattanooga, Dalton, Fort Oglethorpe, and everywhere in between.</p>
         <div class="cta-actions">
           <a href="/contact" class="btn-primary ripple">Schedule Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i class="lucide-phone"></i> (706) 264-6130</a>
+          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
         </div>
       </div>
     </section>

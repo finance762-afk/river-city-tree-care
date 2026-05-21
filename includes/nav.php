@@ -14,7 +14,7 @@
       <a href="/contact" class="nav-cta">Free Estimate</a>
 
       <a href="tel:+17062646130" class="nav-phone desktop-only">
-        <i class="lucide-phone"></i> (706) 264-6130
+        <i data-lucide="phone"></i> (706) 264-6130
       </a>
 
       <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -32,6 +32,6 @@
     <a href="/contact" <?php if ($currentPage === 'contact') echo 'aria-current="page"'; ?>>Contact</a>
     <a href="/contact" style="color: var(--accent); font-size: 1.3rem;">Free Estimate</a>
     <a href="tel:+17062646130" class="mobile-phone">
-      <i class="lucide-phone"></i> (706) 264-6130
+      <i data-lucide="phone"></i> (706) 264-6130
     </a>
   </div>
