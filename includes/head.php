@@ -38,7 +38,7 @@
   <?php endif; ?>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/styles.css?v=3">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=4">
 
   <!-- Preconnect / DNS-Prefetch -->
   <link rel="dns-prefetch" href="//www.googletagmanager.com">

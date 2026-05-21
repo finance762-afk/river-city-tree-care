@@ -21,7 +21,7 @@ a { text-decoration: none; color: inherit; }
 /* --- CSS Variables --- */
 :root {
   /* Layout */
-  --navbar-height: 80px;
+  --navbar-height: 90px;
   --max-width: 1200px;
   --content-width: 65ch;
   --section-pad: 80px 20px;
@@ -227,16 +227,16 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   display: flex;
   align-items: center;
   z-index: 1000;
-  background: var(--bg);
-  border-bottom: 1px solid rgba(45, 90, 39, 0.15);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   transition: background var(--transition-slow), box-shadow var(--transition-slow), border-bottom var(--transition-slow);
 }
 .navbar.scrolled {
-  background: rgba(24, 16, 10, 0.95);
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(45, 90, 39, 0.25);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
 }
 .navbar .container {
   display: flex;
@@ -250,7 +250,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   gap: var(--space-sm);
 }
 .nav-logo img {
-  height: 50px;
+  height: 70px;
   width: auto;
 }
 
@@ -261,7 +261,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   list-style: none;
 }
 .nav-links a {
-  color: rgba(240, 230, 217, 0.9);
+  color: var(--primary-dark);
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   font-size: 1.05rem;
@@ -299,7 +299,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   gap: var(--space-sm);
   transition: color var(--transition);
 }
-.nav-phone:hover { color: #fff; }
+.nav-phone:hover { color: var(--accent); }
 .nav-phone i { font-size: 1rem; }
 
 /* Hamburger */
@@ -1556,17 +1556,29 @@ body.page-home .navbar {
   background: transparent;
   border-bottom-color: transparent;
 }
+body.page-home .navbar .nav-links a {
+  color: rgba(255, 255, 255, 0.9);
+}
+body.page-home .navbar .nav-phone {
+  color: rgba(255, 255, 255, 0.9);
+}
 body.page-home .navbar.scrolled {
-  background: rgba(24, 16, 10, 0.95);
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(45, 90, 39, 0.25);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+body.page-home .navbar.scrolled .nav-links a {
+  color: var(--primary-dark);
+}
+body.page-home .navbar.scrolled .nav-phone {
+  color: var(--primary-dark);
 }
 
 /* --- Logo Shrink on Scroll --- */
 .nav-logo img { transition: height 0.3s ease; }
-.navbar.scrolled .nav-logo img { height: 40px; }
+.navbar.scrolled .nav-logo img { height: 52px; }
 
 /* --- Nav CTA Button --- */
 .nav-cta {
