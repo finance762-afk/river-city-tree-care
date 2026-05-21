@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = "Land Development Chickamauga, GA | River City Tree Care";
 $pageDescription = "Land clearing and site prep for residential and commercial development in Chickamauga, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/land-development";
+$canonicalUrl    = "https://www.rivercitytreega.com/services/land-development/";
 $ogImage         = "https://i.imgur.com/yVOtcwu.jpeg";
 $currentPage     = "services";
 $heroImage       = "";

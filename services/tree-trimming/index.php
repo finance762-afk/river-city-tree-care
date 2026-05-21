@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = "Tree Trimming Chickamauga, GA | River City Tree Care";
 $pageDescription = "Professional tree trimming in Chickamauga, GA and Chattanooga, TN. Crown thinning, deadwood removal, clearance trimming. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/tree-trimming";
+$canonicalUrl    = "https://www.rivercitytreega.com/services/tree-trimming/";
 $ogImage         = "https://i.imgur.com/jUSd82l.jpeg";
 $currentPage     = "services";
 $heroImage       = "";

@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = "Lot Clearing Services in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Residential and commercial lot clearing in Chickamauga, GA and Chattanooga, TN. Trees, brush, stumps removed — grading-ready. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/lot-clearing";
+$canonicalUrl    = "https://www.rivercitytreega.com/services/lot-clearing/";
 $ogImage         = "https://i.imgur.com/VXyzEDK.jpeg";
 $currentPage     = "services";
 $heroImage       = "";

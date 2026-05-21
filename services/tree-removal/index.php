@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = "Tree Removal Chickamauga, GA | River City Tree Care";
 $pageDescription = "Professional tree removal in Chickamauga, GA and Chattanooga, TN. 24/7 emergency response, full cleanup included. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/tree-removal";
+$canonicalUrl    = "https://www.rivercitytreega.com/services/tree-removal/";
 $ogImage         = "https://i.imgur.com/81aTpmZ.jpeg";
 $currentPage     = "services";
 $heroImage       = "";

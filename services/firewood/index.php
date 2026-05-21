@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = "Firewood for Sale in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Split hardwood firewood for sale in Chickamauga, GA and Chattanooga, TN. Oak, hickory, and mixed hardwoods. Call (706) 264-6130 for availability and pricing.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/firewood";
+$canonicalUrl    = "https://www.rivercitytreega.com/services/firewood/";
 $ogImage         = "https://i.imgur.com/O3Mk7h2.jpeg";
 $currentPage     = "services";
 $heroImage       = "";

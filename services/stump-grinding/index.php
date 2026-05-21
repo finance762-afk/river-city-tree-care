@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = "Stump Grinding in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Stump grinding in Chickamauga, GA and Chattanooga, TN. Most stumps ground below grade in under an hour. $100–$400 per stump. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/stump-grinding";
+$canonicalUrl    = "https://www.rivercitytreega.com/services/stump-grinding/";
 $ogImage         = "https://i.imgur.com/z7KgBB4.jpeg";
 $currentPage     = "services";
 $heroImage       = "";

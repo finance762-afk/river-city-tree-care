@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = "Sawmill Services in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Portable sawmill services in Chickamauga, GA. Custom lumber milling from your logs — slabs, beams, and dimensional cuts. Call (706) 264-6130 for availability.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/sawmill-services";
+$canonicalUrl    = "https://www.rivercitytreega.com/services/sawmill-services/";
 $ogImage         = "https://i.imgur.com/O3Mk7h2.jpeg";
 $currentPage     = "services";
 $heroImage       = "";

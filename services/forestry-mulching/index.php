@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = "Forestry Mulching Chickamauga, GA | River City Tree Care";
 $pageDescription = "Forestry mulching in Chickamauga, GA and Chattanooga, TN. Clear overgrown land in a single pass — no hauling, no burning. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/forestry-mulching";
+$canonicalUrl    = "https://www.rivercitytreega.com/services/forestry-mulching/";
 $ogImage         = "https://i.imgur.com/VXyzEDK.jpeg";
 $currentPage     = "services";
 $heroImage       = "";
