@@ -1208,15 +1208,24 @@ footer ul a:hover { color: var(--primary); }
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(45, 90, 39, 0.1);
-  color: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
   font-size: 1.1rem;
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--transition), transform var(--transition);
 }
 .social-icons a:hover {
-  background: var(--primary);
-  color: #fff;
+  transform: translateY(-2px);
 }
+/* Brand colors for each social platform */
+.social-icons a[aria-label="Facebook"] { color: #1877F2; }
+.social-icons a[aria-label="Facebook"]:hover { background: rgba(24, 119, 242, 0.15); }
+.social-icons a[aria-label="YouTube"] { color: #FF0000; }
+.social-icons a[aria-label="YouTube"]:hover { background: rgba(255, 0, 0, 0.15); }
+.social-icons a[aria-label="Instagram"] { color: #E4405F; }
+.social-icons a[aria-label="Instagram"]:hover { background: rgba(228, 64, 95, 0.15); }
+.social-icons a[aria-label="TikTok"] { color: #ffffff; }
+.social-icons a[aria-label="TikTok"]:hover { background: rgba(255, 255, 255, 0.15); }
+.social-icons a[aria-label="Nextdoor"] { color: #8ED500; }
+.social-icons a[aria-label="Nextdoor"]:hover { background: rgba(142, 213, 0, 0.15); }
 .footer-bottom {
   border-top: 1px solid rgba(45, 90, 39, 0.15);
   padding-top: var(--space-lg);
@@ -1549,28 +1558,7 @@ footer ul a:hover { color: var(--primary); }
   height: auto;
 }
 
-/* --- Transparent Nav (homepage only) --- */
-body.page-home .navbar {
-  background: transparent;
-  border-bottom-color: transparent;
-}
-body.page-home .navbar .nav-links a {
-  color: rgba(255, 255, 255, 0.9);
-}
-body.page-home .navbar .nav-phone {
-  color: rgba(255, 255, 255, 0.9);
-}
-body.page-home .navbar.scrolled {
-  background: #ffffff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-}
-body.page-home .navbar.scrolled .nav-links a {
-  color: var(--primary-dark);
-}
-body.page-home .navbar.scrolled .nav-phone {
-  color: var(--primary-dark);
-}
+/* --- Nav is always white (no transparent override) --- */
 
 /* --- Logo Shrink on Scroll --- */
 .nav-logo img { transition: height 0.3s ease; }
