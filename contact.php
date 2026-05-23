@@ -67,14 +67,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <!-- Form -->
           <div>
             <h2 style="color: var(--primary); margin-bottom: var(--space-xl);">Send Us Your Details</h2>
-            <form action="https://formsubmit.co/treeclimber1110@gmail.com" method="POST">
-              <!-- Hidden fields -->
-              <input type="hidden" name="_next" value="https://www.rivercitytreega.com/thank-you">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="text" name="_honey" style="display:none">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_subject" value="New Estimate Request — River City Tree Care">
-              <input type="hidden" name="_cc" value="CustomerService@pageoneinsights.com">
+            <form action="https://db.pageone.cloud/functions/v1/leads/river-city-tree-care" method="POST">
+              <!-- Honeypot -->
+              <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <!-- Thank-you redirect -->
+              <input type="hidden" name="_next" value="/thank-you">
+              <!-- Consent tracking -->
+              <input type="hidden" name="_consent_version" value="v2.1">
+              <input type="hidden" name="_consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 
               <div class="form-group">
                 <input type="text" name="name" id="name" placeholder=" " required>
@@ -108,9 +108,42 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
               </div>
 
               <div class="form-group">
-                <textarea name="message" id="message" rows="5" placeholder=" " required></textarea>
+                <textarea name="message" id="message" rows="5" placeholder=" "></textarea>
                 <label for="message">Message / Project Details</label>
               </div>
+
+              <fieldset class="form-consent-fieldset">
+                <legend class="form-consent-legend">Communication Consent</legend>
+
+                <label class="form-consent-item">
+                  <input type="checkbox" name="email_opt_in" value="yes" class="consent-checkbox">
+                  <span class="consent-label">
+                    <strong>Email updates (optional):</strong> I agree to receive emails from
+                    River City Tree Care about my inquiry, services, promotions, and news. I understand I can unsubscribe anytime via the link in any email
+                    or by emailing treeclimber1110@gmail.com. Message frequency varies.
+                  </span>
+                </label>
+
+                <label class="form-consent-item">
+                  <input type="checkbox" name="sms_opt_in" value="yes" class="consent-checkbox">
+                  <span class="consent-label">
+                    <strong>SMS/Text messages (optional):</strong> I agree to receive text messages from
+                    River City Tree Care at the phone number I provided. Message types may include appointment reminders, service updates, and promotional
+                    offers. Message frequency varies. Message and data rates may apply. Reply STOP to unsubscribe, HELP for help.
+                    <strong>Consent is not a condition of purchase.</strong>
+                  </span>
+                </label>
+
+                <label class="form-consent-item form-consent-required">
+                  <input type="checkbox" name="terms_accepted" value="yes" class="consent-checkbox" required>
+                  <span class="consent-label">
+                    I have read and agree to the
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    and
+                    <a href="/terms/">Terms of Service</a>. <span class="required-star">*</span>
+                  </span>
+                </label>
+              </fieldset>
 
               <button type="submit" class="btn-primary ripple" style="width: 100%;">Send My Request</button>
             </form>

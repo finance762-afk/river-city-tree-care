@@ -232,11 +232,9 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   transition: background var(--transition-slow), box-shadow var(--transition-slow), border-bottom var(--transition-slow);
 }
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
 }
 .navbar .container {
   display: flex;
@@ -1563,11 +1561,9 @@ body.page-home .navbar .nav-phone {
   color: rgba(255, 255, 255, 0.9);
 }
 body.page-home .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
 }
 body.page-home .navbar.scrolled .nav-links a {
   color: var(--primary-dark);
@@ -1865,5 +1861,127 @@ body.page-home .hero::before {
 .process-card .step-number {
   background: var(--accent);
   color: var(--bg);
+  font-weight: 700;
+}
+
+/* ============================================
+   SOCIAL BUBBLES — About Page
+   ============================================ */
+.social-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  justify-content: center;
+}
+.social-bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  transition: transform var(--transition);
+}
+.social-bubble:hover {
+  transform: translateY(-4px);
+}
+.social-bubble svg {
+  width: 56px;
+  height: 56px;
+  padding: 14px;
+  border-radius: 50%;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.social-bubble:hover svg {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+.social-bubble span {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-light);
+  transition: color var(--transition);
+}
+.social-bubble:hover span {
+  color: var(--text);
+}
+
+/* Platform brand colors */
+.social-bubble--facebook svg {
+  background: #1877F2;
+  color: #fff;
+}
+.social-bubble--youtube svg {
+  background: #FF0000;
+  color: #fff;
+}
+.social-bubble--instagram svg {
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff;
+}
+.social-bubble--tiktok svg {
+  background: #010101;
+  color: #fff;
+}
+.social-bubble--nextdoor svg {
+  background: #00B246;
+  color: #fff;
+}
+.social-bubble--angi svg {
+  background: #FF6138;
+  color: #fff;
+}
+.social-bubble--bbb svg {
+  background: #005A8C;
+  color: #fff;
+}
+
+/* ============================================
+   FORM CONSENT CHECKBOXES
+   ============================================ */
+.form-consent-fieldset {
+  border: 1px solid rgba(45, 90, 39, 0.15);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+.form-consent-legend {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  color: var(--primary);
+  padding: 0 var(--space-sm);
+  letter-spacing: 0.04em;
+}
+.form-consent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  cursor: pointer;
+}
+.form-consent-item:last-child {
+  margin-bottom: 0;
+}
+.consent-checkbox {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin-top: 2px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+.consent-label {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-light);
+}
+.consent-label a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.consent-label a:hover {
+  color: var(--accent);
+}
+.required-star {
+  color: #e74c3c;
   font-weight: 700;
 }
