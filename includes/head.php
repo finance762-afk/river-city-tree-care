@@ -40,6 +40,9 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/styles.css?v=4">
 
+  <!-- Elfsight Reviews Widget -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+
   <!-- Preconnect / DNS-Prefetch -->
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
   <link rel="dns-prefetch" href="//www.google-analytics.com">

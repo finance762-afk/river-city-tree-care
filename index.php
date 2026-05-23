@@ -461,6 +461,21 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
     </section>
 
     <!-- ============================================
+         REVIEWS — Elfsight All-in-One Reviews
+         ============================================ -->
+    <section class="reviews-section" data-animate="fade-up">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-2xl);">
+          <span class="eyebrow-label">Reviews</span>
+          <h2 class="section-title">What Our <span class="text-accent">Customers</span> Say</h2>
+          <p class="section-subtitle prose-centered">Real reviews from homeowners and property managers across Chickamauga, Chattanooga, and the surrounding area.</p>
+        </div>
+        <!-- Elfsight All-in-One Reviews | River City Tree Care -->
+        <div class="elfsight-app-8c4a5425-7a83-4246-a80b-262cc1e07dac" data-elfsight-app-lazy></div>
+      </div>
+    </section>
+
+    <!-- ============================================
          FAQ
          ============================================ -->
     <section class="faq-section" data-animate="fade-up">
