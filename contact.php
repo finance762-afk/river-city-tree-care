@@ -67,14 +67,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <!-- Form -->
           <div>
             <h2 style="color: var(--primary); margin-bottom: var(--space-xl);">Send Us Your Details</h2>
-            <form action="https://db.pageone.cloud/functions/v1/leads/river-city-tree-care" method="POST">
+            <form action="https://formsubmit.co/treeclimber1110@gmail.com" method="POST">
               <!-- Honeypot -->
               <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
-              <!-- Thank-you redirect -->
-              <input type="hidden" name="_next" value="/thank-you">
-              <!-- Consent tracking -->
-              <input type="hidden" name="_consent_version" value="v2.1">
-              <input type="hidden" name="_consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
+              <!-- Formsubmit config -->
+              <input type="hidden" name="_next" value="https://rivercitytreega.com/thank-you">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="River City Tree Care — New Website Inquiry">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_cc" value="CustomerService@pageoneinsights.com">
 
               <div class="form-group">
                 <input type="text" name="name" id="name" placeholder=" " required>

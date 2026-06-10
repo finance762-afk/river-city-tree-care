@@ -6,7 +6,7 @@
 
       <ul class="nav-links">
         <li><a href="/" <?php if ($currentPage === 'home') echo 'aria-current="page"'; ?>>Home</a></li>
-        <li><a href="/services" <?php if ($currentPage === 'services') echo 'aria-current="page"'; ?>>Services</a></li>
+        <li><a href="/services/" <?php if ($currentPage === 'services') echo 'aria-current="page"'; ?>>Services</a></li>
         <li><a href="/about" <?php if ($currentPage === 'about') echo 'aria-current="page"'; ?>>About</a></li>
         <li><a href="/contact" <?php if ($currentPage === 'contact') echo 'aria-current="page"'; ?>>Contact</a></li>
       </ul>
@@ -27,7 +27,7 @@
 
   <div class="mobile-menu">
     <a href="/" <?php if ($currentPage === 'home') echo 'aria-current="page"'; ?>>Home</a>
-    <a href="/services" <?php if ($currentPage === 'services') echo 'aria-current="page"'; ?>>Services</a>
+    <a href="/services/" <?php if ($currentPage === 'services') echo 'aria-current="page"'; ?>>Services</a>
     <a href="/about" <?php if ($currentPage === 'about') echo 'aria-current="page"'; ?>>About</a>
     <a href="/contact" <?php if ($currentPage === 'contact') echo 'aria-current="page"'; ?>>Contact</a>
     <a href="/contact" style="color: var(--accent); font-size: 1.3rem;">Free Estimate</a>

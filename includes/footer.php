@@ -13,15 +13,15 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/services/tree-trimming">Tree Trimming</a></li>
-            <li><a href="/services/tree-removal">Tree Removal</a></li>
-            <li><a href="/services/stump-grinding">Stump Grinding</a></li>
-            <li><a href="/services/lot-clearing">Lot Clearing</a></li>
-            <li><a href="/services/forestry-mulching">Forestry Mulching</a></li>
-            <li><a href="/services/land-development">Land Development</a></li>
-            <li><a href="/services/firewood">Firewood</a></li>
-            <li><a href="/services/sawmill-services">Sawmill Services</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/services/tree-trimming/">Tree Trimming</a></li>
+            <li><a href="/services/tree-removal/">Tree Removal</a></li>
+            <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
+            <li><a href="/services/lot-clearing/">Lot Clearing</a></li>
+            <li><a href="/services/forestry-mulching/">Forestry Mulching</a></li>
+            <li><a href="/services/land-development/">Land Development</a></li>
+            <li><a href="/services/firewood/">Firewood</a></li>
+            <li><a href="/services/sawmill-services/">Sawmill Services</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>

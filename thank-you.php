@@ -25,7 +25,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <p class="prose-centered" style="color: var(--text-light); margin-bottom: var(--space-2xl);">For emergencies, call <a href="tel:+17062646130" style="color: var(--primary); font-weight: 700;">(706) 264-6130</a> directly — we respond 24/7.</p>
         <div style="display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center;">
           <a href="/" class="btn-primary">Back to Home</a>
-          <a href="/services" class="btn-secondary">View Our Services</a>
+          <a href="/services/" class="btn-secondary">View Our Services</a>
         </div>
       </div>
     </section>
