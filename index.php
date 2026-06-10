@@ -365,9 +365,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="about-image-group" data-animate="fade-up">
             <div class="about-image-primary">
-              <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard — lot clearing result by River City Tree Care in Chickamauga, GA" width="800" height="600" loading="lazy">
-            </div>
-            <div class="about-image-secondary">
               <img src="https://i.imgur.com/WpCmdQg.jpeg" alt="River City Tree Care crew at work on active job site" width="600" height="400" loading="lazy">
             </div>
           </div>
