@@ -19,8 +19,10 @@ RewriteCond %{REQUEST_URI} !^/assets/
 RewriteCond %{REQUEST_URI} !^/includes/
 
 # If the request is not an existing file, try adding .php
+# Note: [^\./]+ excludes slashes so that directory URLs (services/, about/, etc.)
+# never get rewritten to .php — Apache's DirectoryIndex handles those.
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\./]+)$ $1.php [NC,L]
 
 # Serve index.php for directories
 DirectoryIndex index.php
