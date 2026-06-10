@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="referrer" content="no-referrer">
-
   <title><?php echo $pageTitle; ?></title>
   <meta name="description" content="<?php echo $pageDescription; ?>">
   <link rel="canonical" href="<?php echo $canonicalUrl; ?>">
