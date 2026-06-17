@@ -81,6 +81,7 @@
   <?php echo $schemaMarkup; ?>
   </script>
   <?php endif; ?>
+<?php require_once __DIR__ . '/edit-mode.php'; ?>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
