@@ -67,7 +67,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
           <!-- Form -->
           <div>
             <h2 style="color: var(--primary); margin-bottom: var(--space-xl);">Send Us Your Details</h2>
-            <form action="https://formsubmit.co/treeclimber1110@gmail.com" method="POST">
+            <form action="https://db.pageone.cloud/functions/v1/leads/river-city-tree-care" method="POST">
               <!-- Honeypot -->
               <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
               <!-- Formsubmit config -->
