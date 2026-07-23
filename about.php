@@ -150,7 +150,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Cleared residential yard with lawn chairs — lot clearing result by River City Tree Care in Chickamauga, GA" width="800" height="600">
+            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal — clean lot with clear sightlines in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>The Work Speaks for Itself</h2>

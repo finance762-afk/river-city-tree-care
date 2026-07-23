@@ -17,6 +17,30 @@ Rules below win when they conflict with anything in references.
 
 ---
 
+## MODEL POLICY
+
+The pipeline selects a Claude model **per task** (Opus for design-critical /
+vision phases, Sonnet for bulk content, QA, fixes, and edits) — it never
+inherits the CLI default. Full per-phase table is in `CLAUDE-websites-v2.md` →
+**MODEL POLICY**; the authoritative config is
+`packages/design-portal/lib/phase-prompts.ts` (`getPhaseModel`, `TASK_MODELS`).
+
+---
+
+## Performance & Asset Standards (v6.2 — MANDATORY, ENFORCED BY `qa_audit.py`)
+
+These are hard QA blockers on every new build. Full spec: `references/performance-2026.md`.
+
+- **Self-hosted fonts — NO Google Fonts CDN.** The scaffold copies the chosen variable woff2 into `/assets/fonts/` and declares `@font-face` (with `font-display: swap`) in `framework.css`. Never add `fonts.googleapis.com` / `fonts.gstatic.com` preconnect or `<link>`. Preload only the above-the-fold heading face: `<link rel="preload" href="/assets/fonts/<file>.woff2" as="font" type="font/woff2" crossorigin>`. Font sources live in `references/fonts/`; filenames are the lowercased-hyphenated family name (`Bricolage Grotesque` → `bricolage-grotesque.woff2`).
+- **Inline SVG icons — NO runtime injection.** Paste the raw `<svg>` from `references/lucide-icons/<name>.svg` at build time (add `aria-hidden="true"` + `width`/`height`). Never `<i data-lucide>`, `lucide.createIcons()`, or a Lucide/unpkg CDN `<script>`.
+- **Responsive images.** Every hero/card `<img>` needs `srcset` + `sizes`. The pipeline pre-generates `/assets/images/<name>-480.webp`, `-960.webp`, `-1600.webp` for on-disk photos — reference those exact files (omit a descriptor whose file is absent). Remote/Imgur photos still get a `sizes` attribute. Explicit `width`/`height` always; hero uses `loading="eager" fetchpriority="high"`, others `loading="lazy"`.
+- **No CDN JS toys.** No VanillaTilt CDN; carousels are CSS scroll-snap unless a Swiper feature is genuinely required. Total JS ≤ 100KB, hero image ≤ 150KB.
+- **Forbidden tags (also QA blockers):** `<meta name="keywords">`, any Twitter/X Card tags (`twitter:*`), and `aggregateRating`/`ratingValue` in JSON-LD.
+
+> Pre-v6.2 sites audit with `qa_audit.py --legacy`. New builds are graded against v6.2 by default.
+
+---
+
 ## Tier Visual Quality Matrix (MANDATORY — ENFORCED BY QA)
 
 Every build is assigned a tier in the build prompt. The tier determines the visual bar.
@@ -87,10 +111,10 @@ These must be SEPARATE, UNBUNDLED, NOT pre-checked. This is a Texas TCPA require
 
 Hidden form fields required:
 
-- `_consent_version` — currently `"v2.1"`
-- `_consent_page` — PHP: `<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>`
+- `consent_version` — currently `"v2.1"`
+- `consent_page` — PHP: `<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>`
 
-The edge function at `https://db.pageone.cloud/functions/v1/leads/{client_slug}` automatically captures IP, user agent, and timestamp, and writes to `consent_records` table for legal defense.
+These arrive in the Formsubmit.co notification email (which is CC'd to Customer Service), preserving a consent record per submission. (Legacy sites that post to the Page One lead endpoint use `_consent_version`/`_consent_page` and get server-side capture into `consent_records`.)
 
 ### Required Intake Questions
 
@@ -123,32 +147,36 @@ Complete page templates, consent HTML/CSS, footer legal row, sitemap entries, Ph
 
 ---
 
-## Lead Form Endpoint (REQUIRED — REPLACES FORMSUBMIT.CO)
+## Contact Form Submission (REQUIRED — Formsubmit.co, 2026-07-11 standard)
 
-All client website contact forms post to the Page One CRM endpoint. This is how leads reach the client's Portal, their CRM deal, and their email.
+New builds submit contact forms via **Formsubmit.co** to the client's email. Use the exact `form_action` URL from `build-plan.json` — it is `https://formsubmit.co/{client email}`. Customer Service is CC'd on every submission via the `_cc` field.
+
+> **Legacy note:** sites migrated in June 2026 post to a Page One lead endpoint (`db.pageone.cloud/functions/v1/leads/{slug}` or `design.pageone.cloud/api/leads/{slug}`). Those are still valid — do NOT rewrite an existing site's form action in either direction unless explicitly instructed.
 
 ### Form action URL
 
 ```
-https://db.pageone.cloud/functions/v1/leads/{client_slug}
+https://formsubmit.co/{client email}    ← use form_action from build-plan.json verbatim
 ```
-
-Where `{client_slug}` is the client's slug (matches the build directory name in `~/client-sites/` and the `site_build_intakes.client_slug` column).
 
 ### Required form markup
 
 ```html
-<form action="https://db.pageone.cloud/functions/v1/leads/example-client-slug" method="POST">
+<form action="https://formsubmit.co/owner@example-client.com" method="POST">
 
   <!-- Honeypot — MUST be hidden from users, bots fill it out -->
   <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-  <!-- Thank-you redirect -->
-  <input type="hidden" name="_next" value="/thank-you">
+  <!-- Formsubmit.co directives -->
+  <input type="hidden" name="_next" value="<?php echo htmlspecialchars($siteUrl); ?>/thank-you">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="New lead from <?php echo htmlspecialchars($siteName); ?>">
+  <input type="hidden" name="_cc" value="CustomerService@pageoneinsights.com">
 
-  <!-- Consent tracking -->
-  <input type="hidden" name="_consent_version" value="v2.1">
-  <input type="hidden" name="_consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
+  <!-- Consent tracking (plain names — Formsubmit forwards them in the email) -->
+  <input type="hidden" name="consent_version" value="v2.1">
+  <input type="hidden" name="consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>">
 
   <!-- Required fields (names MUST match exactly) -->
   <label>
@@ -222,27 +250,26 @@ Where `{client_slug}` is the client's slug (matches the build directory name in 
 
 ### Field name rules
 
-- `name`, `email`, `phone` — REQUIRED on every form. The CRM rejects submissions missing these. Field `name` attributes must match these strings exactly (lowercase).
-- `service` — OPTIONAL but enables AI lead value estimation. Strongly recommended.
+- `name`, `email`, `phone` — REQUIRED on every form. Field `name` attributes must match these strings exactly (lowercase).
+- `service` — OPTIONAL but strongly recommended (dropdown of the client's services).
 - `message` — OPTIONAL. Free-text field.
 - `_honey` — REQUIRED. Spam protection. Must be visually hidden AND have `tabindex="-1"` and `autocomplete="off"`. Do NOT use `display:none` alone without `!important` — bots that parse CSS will skip it.
-- `_next` — REQUIRED. Relative URL for thank-you redirect after submission. Default: `/thank-you`.
+- `_next` — REQUIRED. ABSOLUTE URL (`$siteUrl . '/thank-you'`) — Formsubmit.co requires a full URL for the redirect.
+- `_captcha` = `false`, `_template` = `table`, `_subject`, `_cc` = `CustomerService@pageoneinsights.com` — REQUIRED Formsubmit.co directives on every form.
 
 ### What happens on submission
 
-The CRM handles everything:
-1. Lead saves to `portal_leads` table (client sees it in Portal realtime)
-2. Linked to client's deal in Primary CRM (activity log entry)
-3. Branded email sent to client with lead details + AI value estimate + Portal link
-4. Customer Service CC'd on notification email (internal visibility)
-5. User redirected to `_next` (the thank-you page)
+1. Formsubmit.co emails the lead to the client's email (table format)
+2. Customer Service receives a CC copy (internal visibility + consent record)
+3. User is redirected to `_next` (the thank-you page)
+
+Note: the first submission to a new client email triggers Formsubmit.co's one-time activation email — the client (or CS via the _cc copy) must click to activate. Submit a test lead at launch and confirm activation.
 
 ### What NOT to include
 
-- **NO** `_captcha`, `_subject`, `_template`, `_cc`, or any other formsubmit.co-legacy fields
 - **NO** JavaScript for submission — native HTML form submit works and is more reliable
-- **NO** external spam libraries (reCAPTCHA, hCaptcha) — honeypot + server-side rate limiting is sufficient
-- **NO** mailto: action links — the CRM pipeline handles email delivery
+- **NO** external spam libraries (reCAPTCHA, hCaptcha) — honeypot is sufficient
+- **NO** mailto: action links
 
 ### Thank-you page
 
@@ -295,12 +322,13 @@ RewriteRule ^sitemap\.xml$ /sitemap.php [L]
 RewriteCond %{REQUEST_URI} !^/assets/
 RewriteCond %{REQUEST_URI} !^/includes/
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
 RewriteRule ^ /%1 [NC,L,R=301]
 ```
 
-The `!-d` condition is intentionally removed. Without this fix, pages inside real subdirectories fail to resolve on Hostinger.
+The `RewriteCond %{DOCUMENT_ROOT}/$1.php -f` target-existence condition is MANDATORY. Without it, a request for a real directory (`/services/`, `/about/`) is rewritten to `dir/.php` and 404s sitewide on Apache/Hostinger (confirmed live on god-s-country-tree-service-llc and xtreme-construction-llc, 2026-07-17); nginx previews mask the bug. With the condition, directories fall through to DirectoryIndex on every host.
 
 **URL shape rule:** ALL pages — including service pages — are built as `directory/index.php` with trailing-slash URLs (`/services/roof-repair/`). Never the dual flat-`.php` + directory-stub pattern (canonical/internal-link mismatch). See build-phases.md.
 
@@ -501,10 +529,10 @@ QA validates these by class name. Builds missing these classes auto-fail.
       <!-- Repeat this card for each service. Tints rotate 1, 2, 3, 1, 2, 3... -->
       <article class="service-card-with-image card-tint-1 reveal-up reveal-delay-1">
         <div class="service-card__image">
-          <img src="/assets/images/{photo}.jpg" alt="{descriptive alt}" width="600" height="360" loading="lazy">
+          <img src="/assets/images/{photo}.jpg" srcset="/assets/images/{photo}-480.webp 480w, /assets/images/{photo}-960.webp 960w, /assets/images/{photo}-1600.webp 1600w" sizes="(max-width: 768px) 100vw, 600px" alt="{descriptive alt}" width="600" height="360" loading="lazy">
         </div>
         <div class="service-card__body">
-          <div class="service-card__icon"><i data-lucide="{lucide-icon-name}"></i></div>
+          <div class="service-card__icon"><!-- inline SVG from references/lucide-icons/{icon-name}.svg (NOT data-lucide) --></div>
           <h3>{Service Name}</h3>
           <p class="service-card__desc">{1-sentence description, no fluff}</p>
           <ul>
@@ -524,7 +552,7 @@ QA validates these by class name. Builds missing these classes auto-fail.
 
 **Bullet rule:** EXACTLY 3 bullets per card. Not 2, not 4. Each bullet 3-6 words, scannable, benefit-driven (not feature-only). Examples: "Same-day install on most homes", "Insurance claim support", "20–30 year service life". Avoid: "We use the best materials" (vague), "High-quality professional service" (filler).
 
-**Icon mapping:** Use Lucide icons appropriate to the service. Industry guidance:
+**Icon mapping:** Use icons appropriate to the service, inlined as raw `<svg>` from `references/lucide-icons/<name>.svg` at build time (v6.2 — never `data-lucide`, `createIcons`, or a Lucide CDN). Industry guidance (names map to the `.svg` files):
 - Roofing: `home`, `shield`, `cloud-rain`, `wrench`, `hammer`, `hard-hat`, `building-2`
 - Gutters: `ruler`, `droplets`, `filter`, `wrench`, `shield`, `building-2`, `sparkles`
 - Lawn/Landscape: `leaf`, `scissors`, `sprout`, `flower-2`, `tree-pine`, `sun`
