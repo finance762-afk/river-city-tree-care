@@ -44,9 +44,7 @@
   <!-- Preconnect / DNS-Prefetch -->
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
   <link rel="dns-prefetch" href="//www.google-analytics.com">
-  <link rel="dns-prefetch" href="//i.imgur.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="preconnect" href="https://i.imgur.com" crossorigin>
 
   <!-- GA4 Placeholder -->
   <!-- Google tag (gtag.js) — replace GA_MEASUREMENT_ID -->
