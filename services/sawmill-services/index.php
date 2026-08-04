@@ -2,7 +2,7 @@
 $pageTitle       = "Sawmill Services in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Portable sawmill services in Chickamauga, GA. Custom lumber milling from your logs — slabs, beams, and dimensional cuts. Call (706) 264-6130 for availability.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/sawmill-services/";
-$ogImage         = "https://i.imgur.com/O3Mk7h2.jpeg";
+$ogImage         = "/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -113,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Portable sawmill milling logs into lumber in Chickamauga, GA" width="800" height="600">
+            <img src="/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp" alt="Portable sawmill milling logs into lumber in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Turn Downed Trees into Usable Lumber</h2>
@@ -209,7 +209,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Logs ready for sawmill processing — custom lumber milling service" width="800" height="600">
+            <img src="/assets/images/logs-ready-for-portable-sawmill-processing-custo-480.webp" alt="Logs ready for sawmill processing — custom lumber milling service" width="800" height="600">
           </div>
           <div>
             <h2>Best Species for Milling in North Georgia</h2>

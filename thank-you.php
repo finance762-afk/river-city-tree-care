@@ -2,7 +2,7 @@
 $pageTitle       = "Thank You — River City Tree Care";
 $pageDescription = "Your estimate request has been received. We will be in touch shortly.";
 $canonicalUrl    = "https://www.rivercitytreega.com/thank-you";
-$ogImage         = "https://i.imgur.com/3V6kJDE.png";
+$ogImage         = "/assets/images/logo.png";
 $currentPage     = "";
 $heroImage       = "";
 $schemaMarkup    = "";

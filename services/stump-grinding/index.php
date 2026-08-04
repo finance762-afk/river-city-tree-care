@@ -2,7 +2,7 @@
 $pageTitle       = "Stump Grinding in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Stump grinding in Chickamauga, GA and Chattanooga, TN. Most stumps ground below grade in under an hour. $100–$400 per stump. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/stump-grinding/";
-$ogImage         = "https://i.imgur.com/z7KgBB4.jpeg";
+$ogImage         = "/assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -112,7 +112,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Commercial stump grinder removing tree stump below grade in Chickamauga, GA" width="800" height="600">
+            <img src="/assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp" srcset="/assets/images/commercial-stump-grinder-removing-stump-below-gr-480.webp 480w, /assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Commercial stump grinder removing tree stump below grade in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Why Grind the Stump?</h2>
@@ -189,7 +189,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/bOAPVBM.jpeg" alt="Clean residential yard after stump grinding and lot clearing in Chickamauga, GA" width="800" height="600">
+            <img src="/assets/images/clean-residential-yard-after-stump-grinding-and-960.webp" srcset="/assets/images/clean-residential-yard-after-stump-grinding-and-480.webp 480w, /assets/images/clean-residential-yard-after-stump-grinding-and-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Clean residential yard after stump grinding and lot clearing in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>What Happens After the Stump Is Gone?</h2>

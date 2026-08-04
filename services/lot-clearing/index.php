@@ -2,7 +2,7 @@
 $pageTitle       = "Lot Clearing Services in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Residential and commercial lot clearing in Chickamauga, GA and Chattanooga, TN. Trees, brush, stumps removed — grading-ready. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/lot-clearing/";
-$ogImage         = "https://i.imgur.com/VXyzEDK.jpeg";
+$ogImage         = "/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -113,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project with trees and brush removed from lot in Chickamauga, GA" width="800" height="600">
+            <img src="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp" srcset="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-480.webp 480w, /assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Land clearing project with trees and brush removed from lot in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Clear the Lot, Start the Build</h2>
@@ -164,7 +164,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed lot clearing — clean property ready for development near Chattanooga, TN" width="800" height="600">
+            <img src="/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp" alt="Completed lot clearing — clean property ready for development near Chattanooga, TN" width="800" height="600">
           </div>
           <div>
             <h2>How Lot Clearing Works</h2>
@@ -197,7 +197,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Large hauling trailer loaded with cleared timber and brush" width="800" height="600">
+            <img src="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp" srcset="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-480.webp 480w, /assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Large hauling trailer loaded with cleared timber and brush" width="800" height="600">
           </div>
           <div>
             <h2>Equipment for the Job</h2>

@@ -2,7 +2,7 @@
 $pageTitle       = "Land Development Chickamauga, GA | River City Tree Care";
 $pageDescription = "Land clearing and site prep for residential and commercial development in Chickamauga, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/land-development/";
-$ogImage         = "https://i.imgur.com/yVOtcwu.jpeg";
+$ogImage         = "/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -105,7 +105,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land development clearing — clean site ready for construction near Chattanooga, TN" width="800" height="600">
+            <img src="/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp" alt="Completed land development clearing — clean site ready for construction near Chattanooga, TN" width="800" height="600">
           </div>
           <div>
             <h2>Site Prep That Gets You to Grading Day</h2>
@@ -197,7 +197,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="600">
+            <img src="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp" srcset="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-480.webp 480w, /assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="600">
           </div>
           <div>
             <h2>The Right Equipment for the Scale</h2>

@@ -2,7 +2,7 @@
 $pageTitle       = "Tree Removal Chickamauga, GA | River City Tree Care";
 $pageDescription = "Professional tree removal in Chickamauga, GA and Chattanooga, TN. 24/7 emergency response, full cleanup included. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/tree-removal/";
-$ogImage         = "https://i.imgur.com/81aTpmZ.jpeg";
+$ogImage         = "/assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -114,11 +114,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="ba-grid">
           <div class="ba-panel">
-            <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal in Chickamauga, GA — overgrown trees and brush" width="800" height="600">
+            <img src="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp" srcset="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-480.webp 480w, /assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Property before tree removal in Chickamauga, GA — overgrown trees and brush" width="800" height="600">
             <span class="ba-label">Before</span>
           </div>
           <div class="ba-panel">
-            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal in Chickamauga, GA — clean cleared lot" width="800" height="600">
+            <img src="/assets/images/property-after-tree-removal-clean-lot-with-clear-960.webp" srcset="/assets/images/property-after-tree-removal-clean-lot-with-clear-480.webp 480w, /assets/images/property-after-tree-removal-clean-lot-with-clear-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Property after tree removal in Chickamauga, GA — clean cleared lot" width="800" height="600">
             <span class="ba-label">After</span>
           </div>
         </div>
@@ -130,7 +130,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="River City Tree Care hauling trailer loaded with cut timber from removal job" width="800" height="600">
+            <img src="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp" srcset="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-480.webp 480w, /assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="River City Tree Care hauling trailer loaded with cut timber from removal job" width="800" height="600">
           </div>
           <div>
             <h2>When Does a Tree Need to Come Down?</h2>

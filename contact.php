@@ -2,7 +2,7 @@
 $pageTitle       = "Free Estimate | River City Tree Care Chickamauga, GA";
 $pageDescription = "Request a free estimate from River City Tree Care in Chickamauga, GA. Tree removal, stump grinding, lot clearing, and more. Call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/contact";
-$ogImage         = "https://i.imgur.com/sqX9jX4.jpeg";
+$ogImage         = "/assets/images/sqx9jx4-960.webp";
 $currentPage     = "contact";
 $heroImage       = "";
 $useSwiper       = false;

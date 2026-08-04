@@ -1,7 +1,7 @@
   <nav class="navbar" aria-label="Main navigation">
     <div class="container">
       <a href="/" class="nav-logo">
-        <img src="https://i.imgur.com/3V6kJDE.png" alt="River City Tree Care logo" width="160" height="50">
+        <img src="/assets/images/logo.png" alt="River City Tree Care logo" width="160" height="50">
       </a>
 
       <ul class="nav-links">

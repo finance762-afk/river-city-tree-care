@@ -2,7 +2,7 @@
 $pageTitle       = "Forestry Mulching Chickamauga, GA | River City Tree Care";
 $pageDescription = "Forestry mulching in Chickamauga, GA and Chattanooga, TN. Clear overgrown land in a single pass — no hauling, no burning. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/forestry-mulching/";
-$ogImage         = "https://i.imgur.com/VXyzEDK.jpeg";
+$ogImage         = "/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -113,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Forestry mulching clearing overgrown land in Chickamauga, GA" width="800" height="600">
+            <img src="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp" srcset="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-480.webp 480w, /assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Forestry mulching clearing overgrown land in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>One Machine. One Pass. Clean Ground.</h2>
@@ -195,7 +195,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Cleared acreage after forestry mulching in North Georgia" width="800" height="600">
+            <img src="/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp" alt="Cleared acreage after forestry mulching in North Georgia" width="800" height="600">
           </div>
           <div>
             <h2>Common Forestry Mulching Projects</h2>

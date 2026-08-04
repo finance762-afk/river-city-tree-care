@@ -2,7 +2,7 @@
 $pageTitle       = "Firewood for Sale in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Split hardwood firewood for sale in Chickamauga, GA and Chattanooga, TN. Oak, hickory, and mixed hardwoods. Call (706) 264-6130 for availability and pricing.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/firewood/";
-$ogImage         = "https://i.imgur.com/O3Mk7h2.jpeg";
+$ogImage         = "/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -103,7 +103,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Hardwood logs from tree removal job — firewood and sawmill stock in Chickamauga, GA" width="800" height="600">
+            <img src="/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp" alt="Hardwood logs from tree removal job — firewood and sawmill stock in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Locally Sourced Hardwood — Cut Fresh from Job Sites</h2>
@@ -156,7 +156,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Cut timber and logs ready for firewood processing or sawmill milling" width="800" height="600">
+            <img src="/assets/images/logs-ready-for-portable-sawmill-processing-custo-480.webp" alt="Cut timber and logs ready for firewood processing or sawmill milling" width="800" height="600">
           </div>
           <div>
             <h2>Firewood Tips for North Georgia</h2>

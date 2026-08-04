@@ -2,7 +2,7 @@
 $pageTitle       = "About River City Tree Care, LLC — Chickamauga, GA";
 $pageDescription = "River City Tree Care, LLC is owned by Andrew Roberson in Chickamauga, GA. Tree removal, land clearing, and stump grinding. Licensed and insured.";
 $canonicalUrl    = "https://www.rivercitytreega.com/about";
-$ogImage         = "https://i.imgur.com/Amvmq1g.png";
+$ogImage         = "/assets/images/andrew-roberson-owner-of-river-city-tree-care-ll-960.webp";
 $currentPage     = "about";
 $heroImage       = "";
 $useSwiper       = false;
@@ -17,7 +17,7 @@ $schemaMarkup = '{
       "@id": "https://www.rivercitytreega.com/#organization",
       "name": "River City Tree Care, LLC",
       "url": "https://www.rivercitytreega.com",
-      "logo": "https://i.imgur.com/3V6kJDE.png",
+      "logo": "/assets/images/logo.png",
       "telephone": "+1-706-264-6130",
       "email": "treeclimber1110@gmail.com",
       "address": {
@@ -96,7 +96,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/Amvmq1g.png" alt="Andrew Roberson, owner of River City Tree Care, LLC — company shirt and chainsaw" width="800" height="600">
+            <img src="/assets/images/andrew-roberson-owner-of-river-city-tree-care-ll-960.webp" srcset="/assets/images/andrew-roberson-owner-of-river-city-tree-care-ll-480.webp 480w, /assets/images/andrew-roberson-owner-of-river-city-tree-care-ll-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Andrew Roberson, owner of River City Tree Care, LLC — company shirt and chainsaw" width="800" height="600">
           </div>
           <div>
             <h2>Owner-Operated. Hands-On. Every Job.</h2>
@@ -150,7 +150,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap" data-animate="wipe-right">
-            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal — clean lot with clear sightlines in Chickamauga, GA" width="800" height="600">
+            <img src="/assets/images/property-after-tree-removal-clean-lot-with-clear-960.webp" srcset="/assets/images/property-after-tree-removal-clean-lot-with-clear-480.webp 480w, /assets/images/property-after-tree-removal-clean-lot-with-clear-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Property after tree removal — clean lot with clear sightlines in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>The Work Speaks for Itself</h2>
@@ -170,7 +170,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
         <h2 style="color: var(--primary); margin-bottom: var(--space-lg);">What Customers Are Saying</h2>
         <div style="max-width: 600px; margin-inline: auto;">
           <div class="img-shadow" style="margin-bottom: var(--space-lg);">
-            <img src="https://i.imgur.com/soD6w6P.jpeg" alt="5-star Google review for River City Tree Care, LLC in Chickamauga, GA" width="600" height="400" style="width: 100%; height: auto;">
+            <img src="/assets/images/5-star-google-review-for-river-city-tree-care-ll-960.webp" srcset="/assets/images/5-star-google-review-for-river-city-tree-care-ll-480.webp 480w, /assets/images/5-star-google-review-for-river-city-tree-care-ll-960.webp 960w" sizes="(max-width: 768px) 100vw, 600px" alt="5-star Google review for River City Tree Care, LLC in Chickamauga, GA" width="600" height="400" style="width: 100%; height: auto;">
           </div>
           <p style="color: var(--primary); font-size: 1.6rem; letter-spacing: 0.1em; margin-bottom: var(--space-sm);">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
           <p style="color: var(--text-light); font-size: 0.9rem;">Review sourced from Google Reviews</p>

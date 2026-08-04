@@ -2,9 +2,9 @@
 $pageTitle       = "Tree Removal &amp; Land Clearing Chickamauga, GA | River City Tree Care";
 $pageDescription = "24/7 tree removal, stump grinding, lot clearing, and forestry mulching in Chickamauga, GA and Chattanooga, TN. Free estimates — (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com";
-$ogImage         = "https://i.imgur.com/sqX9jX4.jpeg";
+$ogImage         = "/assets/images/sqx9jx4-960.webp";
 $currentPage     = "home";
-$heroImage       = "https://i.imgur.com/sqX9jX4.jpeg";
+$heroImage       = "/assets/images/sqx9jx4-960.webp";
 $useSwiper       = false;
 $useTilt         = false;
 $useTyped        = false;
@@ -16,7 +16,7 @@ $schemaMarkup = '{
       "@type": "LocalBusiness",
       "@id": "https://www.rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "image": "https://i.imgur.com/3V6kJDE.png",
+      "image": "/assets/images/logo.png",
       "url": "https://www.rivercitytreega.com",
       "telephone": "+1-706-264-6130",
       "email": "treeclimber1110@gmail.com",
@@ -123,7 +123,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
          HERO — 100vh, Ken Burns, Green Overlay
          ============================================ -->
     <section class="hero" aria-label="Hero">
-      <div class="hero-bg" style="background-image: url('https://i.imgur.com/sqX9jX4.jpeg');"></div>
+      <div class="hero-bg" style="background-image: url('/assets/images/sqx9jx4-960.webp');"></div>
       <div class="container">
         <h1>
           Chickamauga's <span class="text-accent">Hardest-Working</span><br>
@@ -176,7 +176,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="service-card-visual card-tint-1">
             <div class="card-img">
-              <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing branches during tree trimming job in Chickamauga, GA" width="800" height="500" loading="lazy">
+              <img src="/assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp" srcset="/assets/images/wood-chipper-processing-branches-during-tree-tri-480.webp 480w, /assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Wood chipper processing branches during tree trimming job in Chickamauga, GA" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
               <h3><i data-lucide="scissors"></i> <a href="/services/tree-trimming">Tree Trimming</a></h3>
@@ -187,7 +187,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="service-card-visual card-tint-2">
             <div class="card-img">
-              <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Tree removal job site — overgrown trees on residential property" width="800" height="500" loading="lazy">
+              <img src="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp" srcset="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-480.webp 480w, /assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Tree removal job site — overgrown trees on residential property" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
               <h3><i data-lucide="trees"></i> <a href="/services/tree-removal">Tree Removal</a></h3>
@@ -198,7 +198,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="service-card-visual card-tint-3">
             <div class="card-img">
-              <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Commercial stump grinder removing stump below grade" width="800" height="500" loading="lazy">
+              <img src="/assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp" srcset="/assets/images/commercial-stump-grinder-removing-stump-below-gr-480.webp 480w, /assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Commercial stump grinder removing stump below grade" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
               <h3><i data-lucide="disc"></i> <a href="/services/stump-grinding">Stump Grinding</a></h3>
@@ -209,7 +209,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="service-card-visual card-tint-1">
             <div class="card-img">
-              <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Lot clearing project — trees and brush removed from residential property" width="800" height="500" loading="lazy">
+              <img src="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp" srcset="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-480.webp 480w, /assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Lot clearing project — trees and brush removed from residential property" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
               <h3><i data-lucide="land-plot"></i> <a href="/services/lot-clearing">Lot Clearing</a></h3>
@@ -220,7 +220,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="service-card-visual card-tint-2">
             <div class="card-img">
-              <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land clearing — clean lot ready for development" width="800" height="500" loading="lazy">
+              <img src="/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp" alt="Completed land clearing — clean lot ready for development" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
               <h3><i data-lucide="tractor"></i> <a href="/services/forestry-mulching">Forestry Mulching</a></h3>
@@ -231,7 +231,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="service-card-visual card-tint-3">
             <div class="card-img">
-              <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="500" loading="lazy">
+              <img src="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp" srcset="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-480.webp 480w, /assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
               <h3><i data-lucide="building-2"></i> <a href="/services/land-development">Land Development</a></h3>
@@ -242,7 +242,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="service-card-visual card-tint-1">
             <div class="card-img">
-              <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Hardwood logs from tree removal — firewood stock in North Georgia" width="800" height="500" loading="lazy">
+              <img src="/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp" alt="Hardwood logs from tree removal — firewood stock in North Georgia" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
               <h3><i data-lucide="flame"></i> <a href="/services/firewood">Firewood</a></h3>
@@ -253,7 +253,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="service-card-visual card-tint-2">
             <div class="card-img">
-              <img src="https://i.imgur.com/dgkvKEa.jpeg" alt="Logs ready for portable sawmill processing — custom lumber milling" width="800" height="500" loading="lazy">
+              <img src="/assets/images/logs-ready-for-portable-sawmill-processing-custo-480.webp" alt="Logs ready for portable sawmill processing — custom lumber milling" width="800" height="500" loading="lazy">
             </div>
             <div class="card-body">
               <h3><i data-lucide="axe"></i> <a href="/services/sawmill-services">Sawmill Services</a></h3>
@@ -365,7 +365,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
           <div class="about-image-group" data-animate="fade-up">
             <div class="about-image-primary">
-              <img src="https://i.imgur.com/WpCmdQg.jpeg" alt="River City Tree Care crew at work on active job site" width="600" height="400" loading="lazy">
+              <img src="/assets/images/river-city-tree-care-crew-at-work-on-active-job-960.webp" srcset="/assets/images/river-city-tree-care-crew-at-work-on-active-job-480.webp 480w, /assets/images/river-city-tree-care-crew-at-work-on-active-job-960.webp 960w" sizes="(max-width: 768px) 100vw, 600px" alt="River City Tree Care crew at work on active job site" width="600" height="400" loading="lazy">
             </div>
           </div>
 
@@ -412,11 +412,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
         <div class="ba-grid" data-animate="fade-up">
           <div class="ba-panel">
-            <img src="https://i.imgur.com/81aTpmZ.jpeg" alt="Property before tree removal — overgrown trees and brush in Chickamauga, GA" width="800" height="600" loading="lazy">
+            <img src="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp" srcset="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-480.webp 480w, /assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Property before tree removal — overgrown trees and brush in Chickamauga, GA" width="800" height="600" loading="lazy">
             <span class="ba-label">Before</span>
           </div>
           <div class="ba-panel">
-            <img src="https://i.imgur.com/obWRY2D.jpeg" alt="Property after tree removal — clean lot with clear sightlines in Chickamauga, GA" width="800" height="600" loading="lazy">
+            <img src="/assets/images/property-after-tree-removal-clean-lot-with-clear-960.webp" srcset="/assets/images/property-after-tree-removal-clean-lot-with-clear-480.webp 480w, /assets/images/property-after-tree-removal-clean-lot-with-clear-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Property after tree removal — clean lot with clear sightlines in Chickamauga, GA" width="800" height="600" loading="lazy">
             <span class="ba-label">After</span>
           </div>
         </div>
@@ -436,22 +436,22 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
 
         <div class="gallery-grid" data-stagger>
           <div class="gallery-item">
-            <img src="https://i.imgur.com/VXyzEDK.jpeg" alt="Land clearing project — trees and brush removed from lot in Chickamauga, GA" width="800" height="600" loading="lazy">
+            <img src="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp" srcset="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-480.webp 480w, /assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Land clearing project — trees and brush removed from lot in Chickamauga, GA" width="800" height="600" loading="lazy">
           </div>
           <div class="gallery-item">
-            <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree debris on job site" width="800" height="600" loading="lazy">
+            <img src="/assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp" srcset="/assets/images/wood-chipper-processing-branches-during-tree-tri-480.webp 480w, /assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Wood chipper processing tree debris on job site" width="800" height="600" loading="lazy">
           </div>
           <div class="gallery-item">
-            <img src="https://i.imgur.com/O3Mk7h2.jpeg" alt="Sawmill services — custom lumber milling from downed trees" width="800" height="600" loading="lazy">
+            <img src="/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp" alt="Sawmill services — custom lumber milling from downed trees" width="800" height="600" loading="lazy">
           </div>
           <div class="gallery-item">
-            <img src="https://i.imgur.com/yVOtcwu.jpeg" alt="Completed land clearing — clean lot ready for development near Chattanooga, TN" width="800" height="600" loading="lazy">
+            <img src="/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp" alt="Completed land clearing — clean lot ready for development near Chattanooga, TN" width="800" height="600" loading="lazy">
           </div>
           <div class="gallery-item">
-            <img src="https://i.imgur.com/z7KgBB4.jpeg" alt="Stump grinder removing tree stump below grade" width="800" height="600" loading="lazy">
+            <img src="/assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp" srcset="/assets/images/commercial-stump-grinder-removing-stump-below-gr-480.webp 480w, /assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Stump grinder removing tree stump below grade" width="800" height="600" loading="lazy">
           </div>
           <div class="gallery-item">
-            <img src="https://i.imgur.com/59CI1Kv.jpeg" alt="Large hauling trailer loaded with cut timber from job site" width="800" height="600" loading="lazy">
+            <img src="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp" srcset="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-480.webp 480w, /assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Large hauling trailer loaded with cut timber from job site" width="800" height="600" loading="lazy">
           </div>
         </div>
       </div>

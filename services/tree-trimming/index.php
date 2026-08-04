@@ -2,7 +2,7 @@
 $pageTitle       = "Tree Trimming Chickamauga, GA | River City Tree Care";
 $pageDescription = "Professional tree trimming in Chickamauga, GA and Chattanooga, TN. Crown thinning, deadwood removal, clearance trimming. Free estimates — call (706) 264-6130.";
 $canonicalUrl    = "https://www.rivercitytreega.com/services/tree-trimming/";
-$ogImage         = "https://i.imgur.com/jUSd82l.jpeg";
+$ogImage         = "/assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -113,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/jUSd82l.jpeg" alt="Wood chipper processing tree branches during trimming job in Chickamauga, GA" width="800" height="600">
+            <img src="/assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp" srcset="/assets/images/wood-chipper-processing-branches-during-tree-tri-480.webp 480w, /assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Wood chipper processing tree branches during trimming job in Chickamauga, GA" width="800" height="600">
           </div>
           <div>
             <h2>Why Regular Tree Trimming Matters</h2>
@@ -190,7 +190,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
       <div class="container">
         <div class="split-reverse">
           <div class="service-img-wrap">
-            <img src="https://i.imgur.com/WpCmdQg.jpeg" alt="River City Tree Care job site — professional tree work in progress" width="800" height="600">
+            <img src="/assets/images/river-city-tree-care-crew-at-work-on-active-job-960.webp" srcset="/assets/images/river-city-tree-care-crew-at-work-on-active-job-480.webp 480w, /assets/images/river-city-tree-care-crew-at-work-on-active-job-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="River City Tree Care job site — professional tree work in progress" width="800" height="600">
           </div>
           <div>
             <h2>What We Trim</h2>
