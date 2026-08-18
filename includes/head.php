@@ -36,7 +36,7 @@
   <?php endif; ?>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/styles.css?v=4">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=5">
 
   <!-- Elfsight Reviews Widget -->
   <script src="https://elfsightcdn.com/platform.js" async></script>
