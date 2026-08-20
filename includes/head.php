@@ -12,10 +12,31 @@
   <meta name="robots" content="noindex, nofollow">
   <?php endif; ?>
 
-  <!-- OG Tags -->
+  <?php if (empty($noIndex)): ?>
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <?php endif; ?>
+
+  <!-- Icons (Google shows the favicon next to the site name in results) -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+
+  <!-- OG Tags — image must be an ABSOLUTE URL or scrapers ignore it -->
+  <?php
+    $__siteOrigin = 'https://rivercitytreega.com';
+    if (empty($ogImage)) { $ogImage = '/assets/images/og-logo.jpg'; }
+    $__ogImageAbs = preg_match('#^https?://#', $ogImage) ? $ogImage : $__siteOrigin . $ogImage;
+  ?>
+  <meta property="og:site_name" content="River City Tree Care, LLC">
   <meta property="og:title" content="<?php echo $pageTitle; ?>">
   <meta property="og:description" content="<?php echo $pageDescription; ?>">
-  <meta property="og:image" content="<?php echo $ogImage; ?>">
+  <meta property="og:image" content="<?php echo $__ogImageAbs; ?>">
+  <?php if ($ogImage === '/assets/images/og-logo.jpg'): ?>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="River City Tree Care, LLC logo">
+  <?php endif; ?>
   <meta property="og:url" content="<?php echo $canonicalUrl; ?>">
   <meta property="og:type" content="<?php echo ($currentPage === 'home') ? 'website' : 'article'; ?>">
 

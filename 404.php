@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "Page Not Found — River City Tree Care";
 $pageDescription = "The page you're looking for doesn't exist or has been moved.";
-$canonicalUrl    = "https://www.rivercitytreega.com/404";
-$ogImage         = "/assets/images/logo.png";
+$canonicalUrl    = "https://rivercitytreega.com/404";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "";
 $heroImage       = "";
 $schemaMarkup    = "";

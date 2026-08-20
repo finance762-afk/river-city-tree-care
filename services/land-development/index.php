@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "Land Development Chickamauga, GA | River City Tree Care";
 $pageDescription = "Land clearing and site prep for residential and commercial development in Chickamauga, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/land-development/";
-$ogImage         = "/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp";
+$canonicalUrl    = "https://rivercitytreega.com/services/land-development/";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -14,9 +14,9 @@ $schemaMarkup = '{
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.rivercitytreega.com/#business",
+      "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
+      "url": "https://rivercitytreega.com",
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
@@ -34,7 +34,7 @@ $schemaMarkup = '{
     {
       "@type": "Service",
       "serviceType": "Land Development Clearing",
-      "provider": { "@id": "https://www.rivercitytreega.com/#business" },
+      "provider": { "@id": "https://rivercitytreega.com/#business" },
       "areaServed": [
         { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
@@ -45,9 +45,9 @@ $schemaMarkup = '{
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Land Development", "item": "https://www.rivercitytreega.com/services/land-development" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Land Development", "item": "https://rivercitytreega.com/services/land-development" }
       ]
     },
     {

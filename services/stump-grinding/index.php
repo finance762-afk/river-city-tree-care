@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "Stump Grinding in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Stump grinding in Chickamauga, GA and Chattanooga, TN. Most stumps ground below grade in under an hour. $100–$400 per stump. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/stump-grinding/";
-$ogImage         = "/assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp";
+$canonicalUrl    = "https://rivercitytreega.com/services/stump-grinding/";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -14,9 +14,9 @@ $schemaMarkup = '{
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.rivercitytreega.com/#business",
+      "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
+      "url": "https://rivercitytreega.com",
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
@@ -34,7 +34,7 @@ $schemaMarkup = '{
     {
       "@type": "Service",
       "serviceType": "Stump Grinding",
-      "provider": { "@id": "https://www.rivercitytreega.com/#business" },
+      "provider": { "@id": "https://rivercitytreega.com/#business" },
       "areaServed": [
         { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
@@ -45,9 +45,9 @@ $schemaMarkup = '{
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Stump Grinding", "item": "https://www.rivercitytreega.com/services/stump-grinding" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Stump Grinding", "item": "https://rivercitytreega.com/services/stump-grinding" }
       ]
     },
     {

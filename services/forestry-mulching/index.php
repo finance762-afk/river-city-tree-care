@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "Forestry Mulching Chickamauga, GA | River City Tree Care";
 $pageDescription = "Forestry mulching in Chickamauga, GA and Chattanooga, TN. Clear overgrown land in a single pass — no hauling, no burning. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/forestry-mulching/";
-$ogImage         = "/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp";
+$canonicalUrl    = "https://rivercitytreega.com/services/forestry-mulching/";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -14,9 +14,9 @@ $schemaMarkup = '{
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.rivercitytreega.com/#business",
+      "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
+      "url": "https://rivercitytreega.com",
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
@@ -34,7 +34,7 @@ $schemaMarkup = '{
     {
       "@type": "Service",
       "serviceType": "Forestry Mulching",
-      "provider": { "@id": "https://www.rivercitytreega.com/#business" },
+      "provider": { "@id": "https://rivercitytreega.com/#business" },
       "areaServed": [
         { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
@@ -45,9 +45,9 @@ $schemaMarkup = '{
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Forestry Mulching", "item": "https://www.rivercitytreega.com/services/forestry-mulching" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Forestry Mulching", "item": "https://rivercitytreega.com/services/forestry-mulching" }
       ]
     },
     {

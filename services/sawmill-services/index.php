@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "Sawmill Services in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Portable sawmill services in Chickamauga, GA. Custom lumber milling from your logs — slabs, beams, and dimensional cuts. Call (706) 264-6130 for availability.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/sawmill-services/";
-$ogImage         = "/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp";
+$canonicalUrl    = "https://rivercitytreega.com/services/sawmill-services/";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -14,9 +14,9 @@ $schemaMarkup = '{
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.rivercitytreega.com/#business",
+      "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
+      "url": "https://rivercitytreega.com",
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
@@ -34,7 +34,7 @@ $schemaMarkup = '{
     {
       "@type": "Service",
       "serviceType": "Sawmill Services",
-      "provider": { "@id": "https://www.rivercitytreega.com/#business" },
+      "provider": { "@id": "https://rivercitytreega.com/#business" },
       "areaServed": [
         { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
@@ -45,9 +45,9 @@ $schemaMarkup = '{
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Sawmill Services", "item": "https://www.rivercitytreega.com/services/sawmill-services" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Sawmill Services", "item": "https://rivercitytreega.com/services/sawmill-services" }
       ]
     },
     {

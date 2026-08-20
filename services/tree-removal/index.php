@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "Tree Removal Chickamauga, GA | River City Tree Care";
 $pageDescription = "Professional tree removal in Chickamauga, GA and Chattanooga, TN. 24/7 emergency response, full cleanup included. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/tree-removal/";
-$ogImage         = "/assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp";
+$canonicalUrl    = "https://rivercitytreega.com/services/tree-removal/";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -14,9 +14,9 @@ $schemaMarkup = '{
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.rivercitytreega.com/#business",
+      "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
+      "url": "https://rivercitytreega.com",
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
@@ -34,7 +34,7 @@ $schemaMarkup = '{
     {
       "@type": "Service",
       "serviceType": "Tree Removal",
-      "provider": { "@id": "https://www.rivercitytreega.com/#business" },
+      "provider": { "@id": "https://rivercitytreega.com/#business" },
       "areaServed": [
         { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
@@ -46,9 +46,9 @@ $schemaMarkup = '{
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Tree Removal", "item": "https://www.rivercitytreega.com/services/tree-removal" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Tree Removal", "item": "https://rivercitytreega.com/services/tree-removal" }
       ]
     },
     {

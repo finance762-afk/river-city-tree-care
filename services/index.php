@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "Tree Services Chickamauga, GA | River City Tree Care";
 $pageDescription = "Tree removal, stump grinding, lot clearing, forestry mulching, and more in Chickamauga, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/";
-$ogImage         = "/assets/images/sqx9jx4-960.webp";
+$canonicalUrl    = "https://rivercitytreega.com/services/";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -14,16 +14,16 @@ $schemaMarkup = '{
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.rivercitytreega.com/#business",
+      "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
+      "url": "https://rivercitytreega.com",
       "telephone": "+1-706-264-6130"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rivercitytreega.com/services" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" }
       ]
     }
   ]

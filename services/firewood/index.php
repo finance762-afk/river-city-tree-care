@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "Firewood for Sale in Chickamauga, GA | River City Tree Care";
 $pageDescription = "Split hardwood firewood for sale in Chickamauga, GA and Chattanooga, TN. Oak, hickory, and mixed hardwoods. Call (706) 264-6130 for availability and pricing.";
-$canonicalUrl    = "https://www.rivercitytreega.com/services/firewood/";
-$ogImage         = "/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp";
+$canonicalUrl    = "https://rivercitytreega.com/services/firewood/";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "services";
 $heroImage       = "";
 $useSwiper       = false;
@@ -14,9 +14,9 @@ $schemaMarkup = '{
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.rivercitytreega.com/#business",
+      "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
+      "url": "https://rivercitytreega.com",
       "telephone": "+1-706-264-6130",
       "address": {
         "@type": "PostalAddress",
@@ -34,7 +34,7 @@ $schemaMarkup = '{
     {
       "@type": "Service",
       "serviceType": "Firewood Sales",
-      "provider": { "@id": "https://www.rivercitytreega.com/#business" },
+      "provider": { "@id": "https://rivercitytreega.com/#business" },
       "areaServed": [
         { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
         { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
@@ -45,9 +45,9 @@ $schemaMarkup = '{
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Firewood", "item": "https://www.rivercitytreega.com/services/firewood" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Firewood", "item": "https://rivercitytreega.com/services/firewood" }
       ]
     },
     {

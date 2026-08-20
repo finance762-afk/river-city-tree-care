@@ -1,8 +1,8 @@
 <?php
 $pageTitle       = "About River City Tree Care, LLC — Chickamauga, GA";
 $pageDescription = "River City Tree Care, LLC is owned by Andrew Roberson in Chickamauga, GA. Tree removal, land clearing, and stump grinding. Licensed and insured.";
-$canonicalUrl    = "https://www.rivercitytreega.com/about";
-$ogImage         = "/assets/images/andrew-roberson-owner-of-river-city-tree-care-ll-960.webp";
+$canonicalUrl    = "https://rivercitytreega.com/about";
+$ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "about";
 $heroImage       = "";
 $useSwiper       = false;
@@ -14,10 +14,10 @@ $schemaMarkup = '{
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.rivercitytreega.com/#organization",
+      "@id": "https://rivercitytreega.com/#organization",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
-      "logo": "/assets/images/logo.png",
+      "url": "https://rivercitytreega.com",
+      "logo": "https://rivercitytreega.com/assets/images/logo.png",
       "telephone": "+1-706-264-6130",
       "email": "treeclimber1110@gmail.com",
       "address": {
@@ -51,13 +51,13 @@ $schemaMarkup = '{
       "@type": "Person",
       "name": "Andrew Roberson",
       "jobTitle": "Owner",
-      "worksFor": { "@id": "https://www.rivercitytreega.com/#organization" }
+      "worksFor": { "@id": "https://rivercitytreega.com/#organization" }
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.rivercitytreega.com/#business",
+      "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
-      "url": "https://www.rivercitytreega.com",
+      "url": "https://rivercitytreega.com",
       "telephone": "+1-706-264-6130",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -68,8 +68,8 @@ $schemaMarkup = '{
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.rivercitytreega.com/about" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
+        { "@type": "ListItem", "position": 2, "name": "About", "item": "https://rivercitytreega.com/about" }
       ]
     }
   ]
