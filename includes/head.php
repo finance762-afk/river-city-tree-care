@@ -84,9 +84,9 @@
 
   <!-- GSC Verification (homepage only) -->
   <?php if ($currentPage === 'home'): ?>
-  <!-- <?php if (!empty($gscVerification)): ?>
+  <?php if (!empty($gscVerification)): ?>
   <meta name="google-site-verification" content="<?php echo htmlspecialchars($gscVerification, ENT_QUOTES, 'UTF-8'); ?>">
-  <?php endif; ?> -->
+  <?php endif; ?>
   <?php endif; ?>
 
   <!-- Hero Image Preload -->
