@@ -58,12 +58,7 @@ $schemaMarkup = '{
       "@id": "https://rivercitytreega.com/#business",
       "name": "River City Tree Care, LLC",
       "url": "https://rivercitytreega.com",
-      "telephone": "+1-706-264-6130",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "47"
-      }
+      "telephone": "+1-706-264-6130"
     },
     {
       "@type": "BreadcrumbList",

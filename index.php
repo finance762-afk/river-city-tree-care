@@ -48,12 +48,7 @@ $schemaMarkup = '{
         {"@type": "City", "name": "LaFayette", "addressRegion": "GA"},
         {"@type": "City", "name": "Rossville", "addressRegion": "GA"}
       ],
-      "priceRange": "$$",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "47"
-      }
+      "priceRange": "$$"
     },
     {
       "@type": "WebSite",

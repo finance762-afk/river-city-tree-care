@@ -24,11 +24,6 @@ $schemaMarkup = '{
         "addressRegion": "GA",
         "postalCode": "30707",
         "addressCountry": "US"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "47"
       }
     },
     {
