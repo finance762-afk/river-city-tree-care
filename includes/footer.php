@@ -67,7 +67,8 @@
         <p><a href="https://pageoneinsights.com" rel="dofollow" target="_blank">Web Design &amp; Hosting by Page One Insights, LLC</a></p>
       </div>
     </div>
-  </footer>
+      <?php include __DIR__ . '/partner-badge.php'; ?>
+</footer>
 
   <!-- Mobile CTA Bar -->
   <div class="mobile-cta-bar">
