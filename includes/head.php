@@ -41,9 +41,8 @@ $ogImageUrl = $siteUrl . '/assets/images/' . ($ogImage ?? 'og-logo.jpg');
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-<!-- Self-hosted fonts (no font CDN): display + body faces preloaded -->
+<!-- Self-hosted fonts (no font CDN): only the heading face is preloaded -->
 <link rel="preload" href="/assets/fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/nunito-sans.woff2" as="font" type="font/woff2" crossorigin>
 <?php if (!empty($heroPreload['srcset'])): ?>
 <link rel="preload" as="image" type="image/avif" imagesrcset="<?php echo e($heroPreload['srcset']); ?>" imagesizes="<?php echo e($heroPreload['sizes']); ?>" fetchpriority="high">
 <?php endif; ?>
