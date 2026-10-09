@@ -1,4 +1,12 @@
+# ============================================================
+# River City Tree Care — .htaccess (v7 architecture, 2026-10-09)
+# ============================================================
 Options -Indexes
+DirectorySlash On
+DirectoryIndex index.php
+ErrorDocument 404 /404.php
+
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 
@@ -10,37 +18,78 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
-# Add trailing slash to bare directory requests (prevents .php rewrite from eating them)
+# /about and /contact were flat .php pages before v7 and are directories now.
+# The old slash-less URLs keep working: one 301 to the directory URL.
+RewriteRule ^(about|contact)$ /$1/ [L,R=301]
+RewriteRule ^(about|contact)\.php$ /$1/ [L,R=301]
+
+# The old static image sitemap is folded into the dynamic sitemap
+RewriteRule ^sitemap-images\.xml$ /sitemap.xml [L,R=301]
+
+# Add the trailing slash to any other bare directory request
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^(.+[^/])$ /$1/ [L,R=301]
 
-# Exclude assets and includes from rewrites
+# Internal build docs are never served
+RewriteRule ^(V8-|SEO-|REDESIGN-|CLAUDE\.md|SKILL\.md|qa-report\.json|\.v8-done|\.seo-pass-done|\.git) - [R=404,L,NC]
+
+# Partials are never served directly
+RewriteRule ^includes/ - [R=404,L,NC]
+
+# Dynamic sitemap: /sitemap.xml is served by sitemap.php
+RewriteRule ^sitemap\.xml$ /sitemap.php [L]
+
+# Clean URLs: extensionless -> .php only when that file exists (directories fall through to DirectoryIndex)
 RewriteCond %{REQUEST_URI} !^/assets/
 RewriteCond %{REQUEST_URI} !^/includes/
-
-# If the request is not an existing file, try adding .php
-# Note: [^\./]+ excludes slashes so that directory URLs (services/, about/, etc.)
-# never get rewritten to .php — Apache's DirectoryIndex handles those.
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\./]+)$ $1.php [NC,L]
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-# Serve index.php for directories
-DirectoryIndex index.php
-
-# Strip .php extension from URLs (301 redirect)
-RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+# Strip .php from the address bar (301)
+RewriteCond %{THE_REQUEST} /([^.\s]+)\.php[\s?] [NC]
+RewriteCond %{REQUEST_URI} !^/sitemap\.php [NC]
+RewriteCond %{REQUEST_URI} !^/404\.php [NC]
 RewriteRule ^ /%1 [NC,L,R=301]
+</IfModule>
 
-# Cache control for static assets
+# Security headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Compression: Brotli first, gzip fallback
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/javascript application/javascript application/json application/xml application/ld+json image/svg+xml
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json application/xml application/ld+json image/svg+xml
+</IfModule>
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+  AddType font/woff2 .woff2
+</IfModule>
+
+# Caching: static assets one year, immutable (css/js carry ?v=$cssVersion); HTML revalidates
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
-
-# Custom 404
-ErrorDocument 404 /404.php
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|woff2|webp|avif|jpe?g|png|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(php|html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>

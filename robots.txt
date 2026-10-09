@@ -4,4 +4,3 @@ Disallow: /includes/
 Disallow: /thank-you
 
 Sitemap: https://rivercitytreega.com/sitemap.xml
-Sitemap: https://rivercitytreega.com/sitemap-images.xml
