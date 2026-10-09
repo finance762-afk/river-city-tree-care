@@ -1,6 +1,6 @@
 <?php
 $pageTitle       = "Tree Service Areas | River City Tree Care";
-$pageDescription = "River City Tree Care serves Fort Oglethorpe, Chattanooga, Ringgold, LaFayette and the 50 miles around Chickamauga, GA with tree and stump work. Free estimates: (706) 264-6130.";
+$pageDescription = "River City Tree Care serves Fort Oglethorpe, Chattanooga, Ringgold, LaFayette and 50 miles around Chickamauga, GA. Licensed. Free estimates: (706) 264-6130.";
 $canonicalUrl    = "https://rivercitytreega.com/service-areas/";
 $ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "service-areas";

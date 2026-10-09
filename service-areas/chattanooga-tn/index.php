@@ -1,6 +1,6 @@
 <?php
 $pageTitle       = "Tree Service in Chattanooga, TN | River City Tree Care";
-$pageDescription = "Stump grinding, stump removal and forestry mulching in Chattanooga, TN from a licensed, insured crew just over the Georgia line. Open 24/7. Free estimates: (706) 264-6130.";
+$pageDescription = "Stump grinding, stump removal and forestry mulching in Chattanooga, TN from a licensed, insured crew over the Georgia line. Free estimates: (706) 264-6130.";
 $canonicalUrl    = "https://rivercitytreega.com/service-areas/chattanooga-tn/";
 $ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "service-areas";
