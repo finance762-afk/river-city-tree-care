@@ -1,110 +1,124 @@
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
+<?php
+/**
+ * includes/footer.php — closes <main>; footer with entity block, NAP <address>, legal row,
+ * dofollow credit, partner badge; then the estimate dialog, cookie bar, mobile CTA bar, scripts.
+ */
+$footGbp = gbpSummary();
+?>
+</main>
 
-        <div class="footer-info">
-          <h3>River City Tree Care</h3>
-          <p class="entity-block">
-            River City Tree Care, LLC is a tree service and land clearing company based in Chickamauga, GA, serving a 50-mile radius including Chattanooga, TN and surrounding communities. River City Tree Care specializes in tree removal, stump grinding, and lot clearing. Contact: <a href="tel:+17062646130">(706) 264-6130</a> | <a href="mailto:treeclimber1110@gmail.com">treeclimber1110@gmail.com</a> | <a href="https://rivercitytreega.com">RivercityTreeGA.com</a>. Licensed and insured.
-          </p>
+<footer class="site-footer texture-grain">
+  <span class="grain-layer" aria-hidden="true"></span>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/images/logo-mark-192.webp" srcset="/assets/images/logo-mark-192.webp 1x, /assets/images/logo-mark-384.webp 2x" alt="<?php echo e($siteName); ?> logo" width="191" height="192" loading="lazy" decoding="async">
+        <p><strong><?php echo e($siteName); ?></strong> is the tree service and land clearing crew run by <?php echo e($ownerName); ?> out of Chickamauga, Georgia.</p>
+        <div class="footer-badges">
+          <span>Licensed &amp; insured</span>
+          <span>Free estimates</span>
+          <span>Open 24/7</span>
         </div>
-
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services/">Services</a></li>
-            <li><a href="/services/tree-trimming/">Tree Trimming</a></li>
-            <li><a href="/services/tree-removal/">Tree Removal</a></li>
-            <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
-            <li><a href="/services/lot-clearing/">Lot Clearing</a></li>
-            <li><a href="/services/forestry-mulching/">Forestry Mulching</a></li>
-            <li><a href="/services/land-development/">Land Development</a></li>
-            <li><a href="/services/firewood/">Firewood</a></li>
-            <li><a href="/services/sawmill-services/">Sawmill Services</a></li>
-            <li><a href="/service-areas/">Service Areas</a></li>
-            <li><a href="/service-areas/fort-oglethorpe-ga/">Fort Oglethorpe, GA</a></li>
-            <li><a href="/service-areas/chattanooga-tn/">Chattanooga, TN</a></li>
-            <li><a href="/service-areas/ringgold-ga/">Ringgold, GA</a></li>
-            <li><a href="/service-areas/lafayette-ga/">LaFayette, GA</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h4>Contact Us</h4>
-          <p><a href="tel:+17062646130">(706) 264-6130</a></p>
-          <p><a href="mailto:treeclimber1110@gmail.com">treeclimber1110@gmail.com</a></p>
-          <p>Chickamauga, GA 30707</p>
-          <p style="margin-top: var(--space-sm); font-size: 0.85rem;">Open 24/7 &mdash; Emergency calls welcome</p>
-        </div>
-
-        <div class="footer-social">
-          <h4>Follow Us</h4>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/p/River-City-Tree-Care-61569736164864/" target="_blank" rel="noopener" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="https://www.youtube.com/@RiverCityTreeCare" target="_blank" rel="noopener" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/rivercitytreecare" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            </a>
-            <a href="https://www.tiktok.com/@rivercitytreecare.com" target="_blank" rel="noopener" aria-label="TikTok">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-            </a>
-            <a href="https://nextdoor.com/pages/river-city-tree-care-ringgold-ga/" target="_blank" rel="noopener" aria-label="Nextdoor">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12.0 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 14.5h-2v-3.75c0-.69-.56-1.25-1.25-1.25s-1.25.56-1.25 1.25v3.75h-2v-6h2v.9c.53-.7 1.35-1.15 2.25-1.15 1.52 0 2.25 1.1 2.25 2.5v3.75z"/></svg>
-            </a>
-          </div>
-          <ul style="margin-top: var(--space-md);">
-            <li><a href="https://www.angi.com/companylist/us/ga/ringgold/river-city-fence-reviews-380222.htm" target="_blank" rel="noopener">Find us on Angi</a></li>
-            <li><a href="https://www.bbb.org/us/ga/ringgold/profile/tree-service/river-city-tree-care-0483-40084597" target="_blank" rel="noopener">BBB Profile</a></li>
-          </ul>
-        </div>
-
+        <?php if ($footGbp && $footGbp['url'] !== ''): ?>
+        <a class="footer-rating" href="<?php echo e($footGbp['url']); ?>" target="_blank" rel="noopener"><?php echo stars(); ?> <span><b><?php echo e($footGbp['rating']); ?></b> on Google · <?php echo (int) $footGbp['count']; ?> reviews</span></a>
+        <?php endif; ?>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; <?php echo date('Y'); ?> River City Tree Care, LLC. All rights reserved.</p>
-        <p><a href="https://pageoneinsights.com" rel="dofollow" target="_blank">Web Design &amp; Hosting by Page One Insights, LLC</a></p>
+      <div>
+        <h3 class="footer-h">Services</h3>
+        <ul>
+          <?php foreach ($services as $footSvc): ?>
+          <li><a href="/services/<?php echo $footSvc['slug']; ?>/"><?php echo e($footSvc['name']); ?></a></li>
+          <?php endforeach; ?>
+          <li><a href="/services/">All services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-h">Service Areas</h3>
+        <ul>
+          <?php foreach ($serviceAreaPages as $footArea): ?>
+          <li><a href="/service-areas/<?php echo $footArea['slug']; ?>/"><?php echo e($footArea['name'] . ', ' . $footArea['state']); ?></a></li>
+          <?php endforeach; ?>
+          <li><a href="/service-areas/">All service areas</a></li>
+        </ul>
+        <h3 class="footer-h footer-h-gap">Company</h3>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-h">Contact</h3>
+        <address class="footer-nap">
+          <div><?php echo icon('phone', 18); ?><a href="tel:<?php echo e($phoneRaw); ?>"><?php echo e($phone); ?></a></div>
+          <div><?php echo icon('mail', 18); ?><a href="mailto:<?php echo e($email); ?>"><?php echo e($email); ?></a></div>
+          <div><?php echo icon('map-pin', 18); ?><span><?php echo e($address['city'] . ', ' . $address['state'] . ' ' . $address['zip']); ?></span></div>
+          <div><?php echo icon('clock', 18); ?><span><?php echo e($hoursDisplay); ?></span></div>
+        </address>
+        <ul class="footer-social">
+          <?php foreach (array_merge($socialLinks, $profileLinks) as $footLabel => $footUrl): ?>
+          <li><a href="<?php echo e($footUrl); ?>" target="_blank" rel="noopener"><?php echo e($footLabel); ?></a></li>
+          <?php endforeach; ?>
+        </ul>
       </div>
     </div>
-      <?php include __DIR__ . '/partner-badge.php'; ?>
+
+    <p class="footer-entity entity-block"><strong><?php echo e($siteName); ?></strong> is a tree service and land clearing company based in Chickamauga, GA <?php echo e($address['zip']); ?>, owned and operated by <?php echo e($ownerName); ?>. The company works a 50-mile radius that includes Fort Oglethorpe, Ringgold, LaFayette and Chattanooga, TN, and specializes in tree removal, stump grinding and lot clearing. Contact: <?php echo e($phone); ?> | <?php echo e($email); ?> | rivercitytreega.com. Licensed and insured.</p>
+
+    <div class="footer-legal">
+      <div class="footer-legal-inner">
+        <nav class="footer-legal-links" aria-label="Legal">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <span class="footer-legal-divider" aria-hidden="true">|</span>
+          <a href="/terms/">Terms of Service</a>
+          <span class="footer-legal-divider" aria-hidden="true">|</span>
+          <a href="/cookie-policy/">Cookie Policy</a>
+          <span class="footer-legal-divider" aria-hidden="true">|</span>
+          <a href="/accessibility/">Accessibility</a>
+          <span class="footer-legal-divider" aria-hidden="true">|</span>
+          <a href="/privacy-policy/#ccpa-rights">Do Not Sell or Share My Personal Information</a>
+          <span class="footer-legal-divider" aria-hidden="true">|</span>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <p>&copy; <?php echo date('Y'); ?> <?php echo e($legalName); ?>. All rights reserved.</p>
+      <p class="footer-credit"><a href="https://pageoneinsights.com" rel="dofollow" target="_blank">Web Design & Hosting by Page One Insights, LLC</a></p>
+    </div>
+  </div>
+  <?php include __DIR__ . '/partner-badge.php'; ?>
 </footer>
 
-  <!-- Mobile CTA Bar -->
-  <div class="mobile-cta-bar">
-    <a href="tel:+17062646130"><i data-lucide="phone"></i> Call Now</a>
-    <a href="/contact"><i data-lucide="file-text"></i> Free Estimate</a>
+<dialog class="estimate-dialog" id="estimate-dialog" aria-labelledby="estimate-dialog-title">
+  <div class="dialog-head">
+    <div>
+      <h2 id="estimate-dialog-title" class="dialog-title">Request an estimate</h2>
+      <p class="footnote">The on-site visit and the written price cost nothing.</p>
+    </div>
+    <button type="button" class="dialog-close" aria-label="Close" data-close-estimate><?php echo icon('x', 20); ?></button>
   </div>
+  <div class="dialog-body">
+    <?php $formId = 'dialog'; include __DIR__ . '/lead-form.php'; ?>
+  </div>
+</dialog>
 
-  <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Back to top">
-    <i data-lucide="chevron-up"></i>
-  </button>
+<div class="cookie-bar" id="cookie-bar" role="region" aria-label="Cookie notice">
+  <p>This site uses cookies to run and to understand traffic. See our <a href="/cookie-policy/">Cookie Policy</a>.</p>
+  <button type="button">Got it</button>
+</div>
 
-  <!-- Initialize Lucide Icons -->
-  <script>lucide.createIcons();</script>
+<div class="mobile-cta-bar" aria-label="Contact options">
+  <a href="tel:<?php echo e($phoneRaw); ?>" class="mobile-cta-bar__call"><?php echo icon('phone', 18); ?> Call now</a>
+  <button type="button" class="mobile-cta-bar__estimate" data-open-estimate>Get an estimate</button>
+</div>
 
-  <!-- Core Scripts -->
-  <script src="/assets/js/animations.js" defer></script>
-  <script src="/assets/js/effects.js" defer></script>
+<button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top"><?php echo icon('chevron-down', 22, 'flip'); ?></button>
 
-  <!-- Conditional CDN Scripts -->
-  <?php if (!empty($useSwiper)): ?>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-  <?php endif; ?>
-
-  <?php if (!empty($useTilt)): ?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
-  <?php endif; ?>
-
-  <?php if (!empty($useTyped)): ?>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js" defer></script>
-  <?php endif; ?>
-
+<script src="/assets/js/main.js?v=<?php echo $cssVersion; ?>" defer></script>
+<script src="/assets/js/animations.js?v=<?php echo $cssVersion; ?>" defer></script>
+<script src="/assets/js/effects.js?v=<?php echo $cssVersion; ?>" defer></script>
 </body>
 </html>
