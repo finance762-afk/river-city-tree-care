@@ -1,159 +1,80 @@
 <?php
-$pageTitle       = "Tree Services Chickamauga, GA | River City Tree Care";
-$pageDescription = "Tree removal, stump grinding, lot clearing, forestry mulching, and more in Chickamauga, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://rivercitytreega.com/services/";
-$ogImage         = "/assets/images/og-logo.jpg";
-$currentPage     = "services";
-$heroImage       = "";
-$useSwiper       = false;
-$useTilt         = false;
-$useTyped        = false;
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
-$schemaMarkup = '{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://rivercitytreega.com/#business",
-      "name": "River City Tree Care, LLC",
-      "url": "https://rivercitytreega.com",
-      "telephone": "+1-706-264-6130"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" }
-      ]
-    }
-  ]
-}';
+$currentPage     = 'services';
+$pageType        = 'other';
+$pageTitle       = 'Tree Services in Chickamauga, GA | River City Tree Care';
+$pageDescription = 'All eight services from River City Tree Care in Chickamauga, GA: trimming, removal, stump grinding, lot clearing, forestry mulching, firewood and sawmill work.';
+$canonicalUrl    = $siteUrl . '/services/';
+$pageStyle       = <<<CSS
+.svc-hub-pick { background: var(--color-surface); }
+.svc-hub-pick .section-head { max-width: 64ch; }
+CSS;
+
+$schemaNodes = [webPageNode('CollectionPage'), breadcrumbNode([['Services', '/services/']])];
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-  <main id="main-content">
-
-    <div class="page-header">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a> <span>/</span> <strong>Services</strong>
-        </nav>
-        <h1>Tree Services in Chickamauga, GA &amp; Chattanooga, TN</h1>
-        <p class="lead prose">River City Tree Care, LLC provides full-service tree work and land clearing across a 50-mile radius from Chickamauga, GA — including Ringgold, Chattanooga, TN, Fort Oglethorpe, Dalton, LaFayette, and surrounding communities. Every job includes free on-site estimates, full cleanup, and 24/7 emergency availability. Call <a href="tel:+17062646130">(706) 264-6130</a> to schedule.</p>
+<section class="hero hero--interior" aria-label="Tree services in Chickamauga, GA">
+  <div class="container">
+    <div class="hero-text">
+      <?php echo breadcrumbs([['Services', null]]); ?>
+      <span class="eyebrow">Eight services, one crew</span>
+      <h1 class="hero-title">Tree Services in Chickamauga, GA</h1>
+      <p class="hero-answer">River City Tree Care offers eight services from its base in Chickamauga, GA: tree trimming, tree removal, stump grinding, lot clearing, forestry mulching, land development clearing, firewood and portable sawmill work. Owner Andrew Roberson prices and runs every job.</p>
+      <div class="hero-actions">
+        <button type="button" class="btn btn-accent btn-lg" data-open-estimate>Request an estimate</button>
+        <a class="link-call" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> Call <?php echo e($phone); ?></a>
       </div>
     </div>
+  </div>
+</section>
 
-    <section class="services-section" style="position: relative;">
-      <div class="container" style="position: relative; z-index: 1;">
+<section class="section" aria-label="Tree service and land clearing services">
+  <div class="container-wide">
+    <div class="section-title reveal-up">
+      <span class="eyebrow-label">What We Do</span>
+      <h2>Which <span class="text-accent">tree and land services</span> does River City Tree Care provide?</h2>
+      <p class="hero-answer">River City Tree Care provides tree care, land clearing and wood products. Tree care is trimming, removal and stump grinding. Land work is lot clearing, forestry mulching and development site prep. The wood from those jobs is sold as firewood or milled into lumber on a portable sawmill.</p>
+      <span class="section-subtitle">Pick the job you have</span>
+      <p class="prose">Each page gives the typical price where one is published, the steps, and the questions customers ask most.</p>
+    </div>
+    <div class="services-grid" data-p1-dynamic>
+      <?php echo serviceCards($services); ?>
+    </div>
+  </div>
+</section>
 
-        <div class="services-grid-4" data-stagger>
+<section class="section svc-hub-pick edge-curve-top" aria-labelledby="pick-h2">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow-label">Not sure which one?</span>
+      <h2 id="pick-h2">Which service fits my problem?</h2>
+      <p class="answer">Start from what you are looking at. A single tree is a trimming or removal job, a stump is a grinding job, and anything measured in acres is clearing or mulching. The table matches common situations to the service River City Tree Care would quote.</p>
+    </div>
+    <div class="table-wrap reveal-up">
+      <table class="data-table">
+        <caption>Typical ranges are the figures River City Tree Care publishes. Everything is confirmed in writing after a site visit.</caption>
+        <thead><tr><th scope="col">What you have</th><th scope="col">Service</th><th scope="col">Typical range</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Limbs on the roof or over the drive</th><td><a href="/services/tree-trimming/">Tree trimming</a></td><td class="num">$200–$800 per tree</td></tr>
+          <tr><th scope="row">A dead, leaning or storm-damaged tree</th><td><a href="/services/tree-removal/">Tree removal</a></td><td class="num">$400–$2,500+</td></tr>
+          <tr><th scope="row">A stump in the yard</th><td><a href="/services/stump-grinding/">Stump grinding</a></td><td class="num">$100–$400 per stump</td></tr>
+          <tr><th scope="row">A wooded lot you want to build on</th><td><a href="/services/lot-clearing/">Lot clearing</a></td><td class="num">$1,500–$8,000+</td></tr>
+          <tr><th scope="row">Overgrown pasture or a fence row</th><td><a href="/services/forestry-mulching/">Forestry mulching</a></td><td>Quoted by the acre</td></tr>
+          <tr><th scope="row">A home site, subdivision or commercial pad</th><td><a href="/services/land-development/">Land development clearing</a></td><td>Quoted from the site plan</td></tr>
+          <tr><th scope="row">A cold fireplace</th><td><a href="/services/firewood/">Firewood</a></td><td>Call for the truckload price</td></tr>
+          <tr><th scope="row">Good logs on the ground</th><td><a href="/services/sawmill-services/">Sawmill services</a></td><td>Quoted per job</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose">Work is done within 50 miles of Chickamauga. See the <a href="/service-areas/">towns River City Tree Care serves</a>, or read <a href="/about/">who runs the crew</a>.</p>
+  </div>
+</section>
 
-          <div class="service-card-visual card-tint-1">
-            <div class="card-img">
-              <img src="/assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp" srcset="/assets/images/wood-chipper-processing-branches-during-tree-tri-480.webp 480w, /assets/images/wood-chipper-processing-branches-during-tree-tri-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Wood chipper processing branches during tree trimming job in Chickamauga, GA" width="800" height="500" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3><i data-lucide="scissors"></i> <a href="/services/tree-trimming/">Tree Trimming</a></h3>
-              <p>Crown thinning, deadwood removal, and clearance trimming for power lines, rooflines, and driveways.</p>
-              <a href="/services/tree-trimming/" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="service-card-visual card-tint-2">
-            <div class="card-img">
-              <img src="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp" srcset="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-480.webp 480w, /assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Tree removal job site — overgrown trees on residential property" width="800" height="500" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3><i data-lucide="trees"></i> <a href="/services/tree-removal/">Tree Removal</a></h3>
-              <p>Hazardous, dead, and storm-damaged trees removed safely. 24/7 emergency response with full debris haul-away.</p>
-              <a href="/services/tree-removal/" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="service-card-visual card-tint-3">
-            <div class="card-img">
-              <img src="/assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp" srcset="/assets/images/commercial-stump-grinder-removing-stump-below-gr-480.webp 480w, /assets/images/commercial-stump-grinder-removing-stump-below-gr-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Commercial stump grinder removing stump below grade" width="800" height="500" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3><i data-lucide="disc"></i> <a href="/services/stump-grinding/">Stump Grinding</a></h3>
-              <p>Stumps ground 6–12 inches below grade. Yard ready to fill, seed, or build over — most done in under an hour.</p>
-              <a href="/services/stump-grinding/" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="service-card-visual card-tint-1">
-            <div class="card-img">
-              <img src="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp" srcset="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-480.webp 480w, /assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Lot clearing project — trees and brush removed from residential property" width="800" height="500" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3><i data-lucide="land-plot"></i> <a href="/services/lot-clearing/">Lot Clearing</a></h3>
-              <p>Residential and commercial lots cleared for building, fencing, or landscaping — all debris hauled off-site.</p>
-              <a href="/services/lot-clearing/" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="service-card-visual card-tint-2">
-            <div class="card-img">
-              <img src="/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp" alt="Completed land clearing — clean lot ready for development" width="800" height="500" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3><i data-lucide="tractor"></i> <a href="/services/forestry-mulching/">Forestry Mulching</a></h3>
-              <p>Clear overgrown acreage in a single pass. No hauling, no burning — nutrient-rich mulch stays on-site.</p>
-              <a href="/services/forestry-mulching/" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="service-card-visual card-tint-3">
-            <div class="card-img">
-              <img src="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp" srcset="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-480.webp 480w, /assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="500" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3><i data-lucide="building-2"></i> <a href="/services/land-development/">Land Development</a></h3>
-              <p>Site prep for new construction — tree removal, brush clearing, and grading-ready results for builders and developers.</p>
-              <a href="/services/land-development/" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="service-card-visual card-tint-1">
-            <div class="card-img">
-              <img src="/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp" alt="Hardwood logs from tree removal — firewood stock in North Georgia" width="800" height="500" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3><i data-lucide="flame"></i> <a href="/services/firewood/">Firewood</a></h3>
-              <p>Seasoned hardwood cut from local job sites — oak, hickory, and mixed hardwoods by the truckload.</p>
-              <a href="/services/firewood/" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="service-card-visual card-tint-2">
-            <div class="card-img">
-              <img src="/assets/images/logs-ready-for-portable-sawmill-processing-custo-480.webp" alt="Logs ready for portable sawmill processing — custom lumber milling" width="800" height="500" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3><i data-lucide="axe"></i> <a href="/services/sawmill-services/">Sawmill Services</a></h3>
-              <p>Turn downed trees into usable lumber on-site — slabs, beams, and dimensional cuts from your logs.</p>
-              <a href="/services/sawmill-services/" class="card-link">Learn More <i data-lucide="arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section class="cta-banner">
-      <div class="container">
-        <h2>Not Sure What You Need?</h2>
-        <p class="prose-centered">Call River City Tree Care for a free walkthrough and estimate. We'll assess the job and recommend the right approach — no pressure, no obligation.</p>
-        <div class="cta-actions">
-          <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
+<?php $ctaBandId = 'cta-services'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

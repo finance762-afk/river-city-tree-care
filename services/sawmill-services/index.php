@@ -1,293 +1,137 @@
 <?php
-$pageTitle       = "Sawmill Services in Chickamauga, GA | River City Tree Care";
-$pageDescription = "Portable sawmill services in Chickamauga, GA. Custom lumber milling from your logs — slabs, beams, and dimensional cuts. Call (706) 264-6130 for availability.";
-$canonicalUrl    = "https://rivercitytreega.com/services/sawmill-services/";
-$ogImage         = "/assets/images/og-logo.jpg";
-$currentPage     = "services";
-$heroImage       = "";
-$useSwiper       = false;
-$useTilt         = false;
-$useTyped        = false;
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
-$schemaMarkup = '{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://rivercitytreega.com/#business",
-      "name": "River City Tree Care, LLC",
-      "url": "https://rivercitytreega.com",
-      "telephone": "+1-706-264-6130",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Chickamauga",
-        "addressRegion": "GA",
-        "postalCode": "30707",
-        "addressCountry": "US"
-      }
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Sawmill Services",
-      "provider": { "@id": "https://rivercitytreega.com/#business" },
-      "areaServed": [
-        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
-        { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
-        { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
-      ],
-      "description": "Portable sawmill services in Chickamauga, GA — turning logs into custom-cut lumber, slabs, beams, and dimensional cuts."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Sawmill Services", "item": "https://rivercitytreega.com/services/sawmill-services" }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "name": "How Sawmill Services Work",
-      "step": [
-        { "@type": "HowToStep", "position": 1, "name": "Log Assessment", "text": "We evaluate your logs for species, size, and condition to determine what can be milled." },
-        { "@type": "HowToStep", "position": 2, "name": "Milling Plan", "text": "We discuss your needs — slabs, beams, dimensional lumber — and plan cuts accordingly." },
-        { "@type": "HowToStep", "position": 3, "name": "On-Site Milling", "text": "The portable sawmill is set up on your property and logs are milled to specification." },
-        { "@type": "HowToStep", "position": 4, "name": "Stacking and Drying", "text": "Cut lumber is stacked with spacers for air drying. Drying times depend on species and thickness." }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What types of lumber can you mill?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "River City Tree Care mills dimensional lumber (2x4s, 2x6s, 4x4s, etc.), live-edge slabs for tables and countertops, beams for construction or decorative use, and custom thicknesses as needed. The final product depends on log diameter, species, and condition."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you mill logs from a tree you just removed?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — if you are having a tree removed and the trunk is large enough (generally 12 inches diameter or larger and relatively straight), we can mill it into usable lumber on the same visit or a follow-up trip."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the minimum log size for milling?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Generally, logs need to be at least 12 inches in diameter and 6 feet long to produce usable lumber. Larger diameter logs yield more and better lumber. Contact us to discuss your specific logs."
-          }
-        }
-      ]
-    }
-  ]
-}';
+$currentPage     = 'services';
+$pageType        = 'service';
+$serviceSlug     = 'sawmill-services';
+$pageTitle       = 'Sawmill Services in Chickamauga, GA | River City Tree Care';
+$pageDescription = 'Portable sawmill services in Chickamauga, GA: your logs milled on site into slabs, beams and boards. Logs 12 inches and wider, by appointment. (706) 264-6130.';
+$canonicalUrl    = $siteUrl . '/services/sawmill-services/';
+$pageStyle       = <<<CSS
+.sp-sawmill .photo-frame--wide { max-width: 560px; }
+CSS;
+
+$faqs = [
+    ['Can you mill a tree you just took down?',
+     'Yes. If the trunk is 12 inches or more across and sound, it can be milled during the removal visit or on a follow-up trip. This is popular with customers taking out a large oak who want to keep the wood. See <a href="/services/tree-removal/">tree removal</a>.'],
+    ['How long does fresh-milled lumber need to dry?',
+     'As a rule of thumb, air-drying takes about a year per inch of thickness: roughly 12 months for a 1-inch oak board and 24 for a 2-inch slab. Stack it with spacers under cover where air can move through.'],
+    ['What does milling cost?',
+     'It depends on the logs and the cuts, so River City Tree Care quotes each job. Call (706) 264-6130 with the species, diameters and lengths.'],
+];
+
+$schemaNodes = [
+    webPageNode(),
+    breadcrumbNode([['Services', '/services/'], ['Sawmill Services', '/services/sawmill-services/']]),
+    serviceNode('Portable Sawmill Services', 'Portable sawmill services in Chickamauga, GA: logs milled on site into dimensional lumber, live-edge slabs and beams. Minimum log size 12 inches in diameter and 6 feet long.', 'Chickamauga, GA'),
+    faqSchemaNode($faqs),
+];
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-  <main id="main-content">
-
-    <div class="page-header">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Sawmill Services</strong>
-        </nav>
-        <h1>Sawmill Services in Chickamauga, GA</h1>
-        <p class="lead prose">River City Tree Care offers portable sawmill services in Chickamauga, GA — turning your timber into custom-cut lumber on site. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with milling for property owners, builders, and land clearing customers. This is a specialty service — call <a href="tel:+17062646130">(706) 264-6130</a> for availability, pricing, and minimum log requirements.</p>
+<section class="hero hero--interior" aria-label="Sawmill services in Chickamauga, GA">
+  <div class="container hero-grid hero-grid--form">
+    <div class="hero-text">
+      <?php echo breadcrumbs([['Services', '/services/'], ['Sawmill Services', null]]); ?>
+      <span class="eyebrow">Portable mill · By appointment</span>
+      <h1 class="hero-title">Sawmill Services in Chickamauga, GA</h1>
+      <p class="hero-answer">River City Tree Care runs a portable sawmill in Chickamauga, GA that turns your logs into lumber on your own property: live-edge slabs, beams and dimensional boards. Logs need to be at least 12 inches across and 6 feet long. Milling is a specialty service booked by appointment.</p>
+      <div class="hero-actions">
+        <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Ask about milling</button>
+        <a class="link-call" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> Call <?php echo e($phone); ?></a>
       </div>
     </div>
+    <?php $heroFormId = 'hero-sawmill'; $heroFormService = 'Sawmill Services'; $heroFormHeading = 'Ask about milling'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php'; ?>
+  </div>
+</section>
 
-    <!-- Split: image left, content right -->
-    <section class="service-intro" data-animate="fade-up">
-      <div class="container">
-        <div class="split">
-          <div class="service-img-wrap">
-            <img src="/assets/images/hardwood-logs-from-tree-removal-firewood-stock-i-480.webp" alt="Portable sawmill milling logs into lumber in Chickamauga, GA" width="800" height="600">
-          </div>
-          <div>
-            <h2>Turn Downed Trees into Usable Lumber</h2>
-            <div class="prose">
-              <p>When a tree comes down — whether from storm damage, land clearing, or planned removal — the trunk doesn't have to go to a landfill or a burn pile. If the log is large enough and in reasonable condition, it can be milled into usable lumber right on your property.</p>
-              <p><strong>River City Tree Care</strong> operates a portable sawmill that can be set up on-site to turn raw logs into dimensional lumber, live-edge slabs, beams, and custom cuts. This is a specialty service we offer alongside our <a href="/services/tree-removal" style="color: var(--primary);">tree removal</a> and <a href="/services/lot-clearing" style="color: var(--primary);">lot clearing</a> work — if you're already having trees removed, milling is an easy add-on.</p>
-              <p>Sawmill services are available by appointment and depend on equipment availability. Call to discuss your project, log sizes, and what you want to produce.</p>
-            </div>
-          </div>
+<section class="section sp-sawmill">
+  <div class="container sp-layout">
+    <article class="sp-article">
+
+      <div class="content-block">
+        <h2>What can a portable sawmill make from my logs?</h2>
+        <p class="answer">A portable sawmill can turn a sound log into dimensional lumber, live-edge slabs, beams or boards cut to a custom thickness. River City Tree Care sets the mill up on your property, so the log does not have to be trucked anywhere first.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <caption>What River City Tree Care mills, and what customers use it for.</caption>
+            <thead><tr><th scope="col">Cut</th><th scope="col">Examples</th><th scope="col">Typical use</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Dimensional lumber</th><td>2x4, 2x6, 4x4, 6x6</td><td>Framing, barns, sheds</td></tr>
+              <tr><th scope="row">Live-edge slabs</th><td>Natural-edge boards</td><td>Tables, mantels, shelving, countertops</td></tr>
+              <tr><th scope="row">Beams</th><td>Structural or decorative</td><td>Timber framing, porches</td></tr>
+              <tr><th scope="row">Rough-cut boards</th><td>Custom thickness</td><td>Fencing, garden borders</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </section>
 
-    <!-- What we mill -->
-    <section class="service-content" style="background: var(--bg-alt);" data-animate="fade-up">
-      <div class="container">
-        <h2>What Can Be Milled?</h2>
-        <ul class="scope-list">
-          <li><i data-lucide="ruler"></i> <strong>Dimensional lumber</strong> — 2x4s, 2x6s, 4x4s, 6x6s, and other standard sizes</li>
-          <li><i data-lucide="panel-top"></i> <strong>Live-edge slabs</strong> — natural-edge boards for tables, countertops, mantels, and shelving</li>
-          <li><i data-lucide="box"></i> <strong>Beams</strong> — structural and decorative beams for construction, barns, and timber framing</li>
-          <li><i data-lucide="layers"></i> <strong>Custom thicknesses</strong> — boards milled to your specification for specific projects</li>
-          <li><i data-lucide="fence"></i> <strong>Fencing material</strong> — rough-cut boards for privacy fences, pasture fencing, or garden borders</li>
+      <figure class="photo-frame photo-frame--wide reveal-up">
+        <?php echo picture('river-city-tree-care-crew-at-work-on-active-job', 'Portable band sawmill set up in a wooded yard beside a row of cut logs', '(max-width: 960px) 90vw, 560px'); ?>
+        <figcaption>The portable band mill set up beside a row of logs, ready to cut.</figcaption>
+      </figure>
+
+      <div class="content-block">
+        <h2>How big does a log have to be to mill?</h2>
+        <p class="answer">A log should be at least 12 inches in diameter and 6 feet long to mill into usable lumber. Logs 18 inches and wider give the widest boards. The log also needs to be reasonably straight and free of major rot.</p>
+        <p>Metal matters as much as size. A nail, a staple or a strand of old fence wire grown into the trunk will damage the blade, so yard trees and fence-row trees get a careful look first. If you are not sure a tree is worth milling, send Andrew a photo or call.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Which North Georgia trees are worth milling?</h2>
+        <p class="answer">Oak, hickory, poplar and pine are the trees around Chickamauga worth milling. White oak is the one people most often want kept, because it resists rot outdoors. Whatever the species, the trunk has to be sound, reasonably straight and at least 12 inches across.</p>
+        <ul class="check-list">
+          <li><?php echo icon('check', 20); ?><span><strong>Red and white oak:</strong> dense, strong and the most requested.</span></li>
+          <li><?php echo icon('check', 20); ?><span><strong>Hickory:</strong> very hard and heavy; used for flooring, tool handles and rustic furniture.</span></li>
+          <li><?php echo icon('check', 20); ?><span><strong>Poplar:</strong> a softer hardwood that works easily; good for trim and shelving.</span></li>
+          <li><?php echo icon('check', 20); ?><span><strong>Pine:</strong> mills easily; used for framing and barn lumber.</span></li>
         </ul>
-
-        <div class="callout-box">
-          <h3>Minimum Log Requirements</h3>
-          <p>Logs should be at least <strong>12 inches in diameter</strong> and <strong>6 feet long</strong> to produce usable lumber. Larger diameter logs — 18 inches and up — yield the best results and the widest boards. Logs should be reasonably straight and free of major rot or metal (nails, fence wire, etc. can damage the blade).</p>
-        </div>
+        <p>Logs that are too small or too crooked for the mill do not go to waste. They are split and sold as <a href="/services/firewood/">firewood</a>.</p>
       </div>
-    </section>
 
-    <!-- Answer blocks -->
-    <section class="service-content" style="background: var(--bg);">
-      <div class="container">
-
-        <div class="answer-block">
-          <h3>Can you mill logs from a tree you just removed?</h3>
-          <p>Yes — if the trunk is 12+ inches in diameter and in good condition, we can mill it during the same visit or schedule a follow-up trip. This is popular with customers having large oaks or hardwoods removed who want to keep the wood as lumber instead of sending it off as debris.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>How long does fresh-milled lumber need to dry?</h3>
-          <p>Air-drying time depends on species and board thickness. As a general rule, lumber takes about one year per inch of thickness to air-dry. A 1-inch oak board needs roughly 12 months; a 2-inch slab needs about 24 months. Stacking with spacers (stickers) in a covered area with good airflow produces the best results. Kiln drying is faster but requires access to a kiln facility.</p>
-        </div>
-
+      <div class="content-block">
+        <h2>How does on-site milling work?</h2>
+        <p class="answer">On-site milling with River City Tree Care runs in four steps: assess the logs, plan the cuts, mill, then stack the boards to dry. It is often added to a clearing job, when the logs are already on the ground.</p>
+        <ol class="step-list">
+          <li><b>Log assessment</b><span>Species, diameter, length and condition are checked to see what each log will yield.</span></li>
+          <li><b>Milling plan</b><span>You say what you need (slabs, beams, boards) and the cuts are planned to get the most out of each log.</span></li>
+          <li><b>Milling</b><span>The mill is set up on your property, logs are loaded and cut, and boards are stacked as they come off the saw.</span></li>
+          <li><b>Stack and dry</b><span>Lumber is stacked with spacers for air drying, and Andrew tells you how long that species and thickness needs.</span></li>
+        </ol>
+        <p>Having land opened up for a home site? <a href="/services/lot-clearing/">Lot clearing</a> and milling can be planned together so the best trees become the porch posts. The full list is on the <a href="/services/">services page</a>.</p>
       </div>
-    </section>
 
-    <!-- Process -->
-    <section class="process-section" data-animate="fade-up">
-      <div class="container">
-        <h2>How Sawmill Services Work</h2>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-number">1</div>
-            <h3>Log Assessment</h3>
-            <p>We evaluate your logs — species, diameter, length, and condition — to determine what can be milled and what it'll produce.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">2</div>
-            <h3>Milling Plan</h3>
-            <p>You tell us what you need — slabs, beams, dimensional lumber — and we plan the cuts to maximize usable material.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">3</div>
-            <h3>On-Site Milling</h3>
-            <p>The portable mill is set up on your property. Logs are loaded, milled to specification, and boards are stacked as they come off the saw.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">4</div>
-            <h3>Stack &amp; Dry</h3>
-            <p>Milled lumber is stacked with spacers for proper air drying. We'll advise on drying times and storage based on what was milled.</p>
-          </div>
-        </div>
+      <div class="content-block">
+        <h2>Frequently asked questions</h2>
+        <?php echo faqList($faqs); ?>
       </div>
-    </section>
 
-    <!-- Mid CTA -->
-    <section class="service-cta">
-      <div class="container">
-        <h2>Got Logs? Let's Turn Them into Lumber.</h2>
-        <p class="prose-centered">Sawmill services are available by appointment. Call River City Tree Care to discuss your logs, your project, and scheduling.</p>
-        <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-          <a href="/contact" class="btn-primary ripple">Contact Us</a>
-        </div>
+      <p class="updated">Last updated: <?php echo date('F Y'); ?></p>
+    </article>
+
+    <aside class="sp-rail" aria-label="Sawmill services at a glance">
+      <div class="rail-card">
+        <h3>At a glance</h3>
+        <dl class="rail-facts">
+          <div><dt>Minimum log</dt><dd>12 in. × 6 ft</dd></div>
+          <div><dt>Best boards</dt><dd>18 in. and wider</dd></div>
+          <div><dt>Where</dt><dd>On your property</dd></div>
+          <div><dt>Booking</dt><dd>By appointment</dd></div>
+        </dl>
       </div>
-    </section>
-
-    <!-- Second image + additional content -->
-    <section class="service-content" style="background: var(--bg-alt);" data-animate="fade-up">
-      <div class="container">
-        <div class="split-reverse">
-          <div class="service-img-wrap">
-            <img src="/assets/images/logs-ready-for-portable-sawmill-processing-custo-480.webp" alt="Logs ready for sawmill processing — custom lumber milling service" width="800" height="600">
-          </div>
-          <div>
-            <h2>Best Species for Milling in North Georgia</h2>
-            <div class="prose">
-              <p>Not every tree produces great lumber, but many of the species common across Catoosa County and the Chattanooga region mill well:</p>
-              <p><strong>Oak (red and white)</strong> — the most popular hardwood for milling. Dense, strong, and versatile. White oak is especially valued for outdoor projects due to its rot resistance.</p>
-              <p><strong>Hickory</strong> — extremely hard and heavy. Popular for tool handles, flooring, and rustic furniture.</p>
-              <p><strong>Poplar</strong> — softer hardwood that's easy to work and finishes cleanly. Good for trim, shelving, and painted projects.</p>
-              <p><strong>Pine</strong> — fast-growing softwood that mills easily. Used for framing, rough construction, and barn projects.</p>
-              <p>If you have a large tree coming down and you're not sure if it's worth milling, send us a photo or call — we'll tell you what it'll produce.</p>
-            </div>
-
-            <div class="related-services">
-              <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/firewood"><i data-lucide="arrow-right"></i> Firewood</a>
-              <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
-            </div>
-          </div>
-        </div>
+      <div class="rail-card rail-card--dark">
+        <h3>Got logs?</h3>
+        <p>Tell Andrew the species, how wide and how long.</p>
+        <a class="btn btn-accent btn-block" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> <?php echo e($phone); ?></a>
       </div>
-    </section>
+    </aside>
+  </div>
+</section>
 
-    <!-- FAQ -->
-    <section class="faq-section" data-animate="fade-up">
-      <div class="container">
-        <h2 class="section-title" style="text-align: center;">Sawmill FAQ</h2>
-
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              What types of lumber can you mill?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Dimensional lumber (2x4s, 2x6s, etc.), live-edge slabs, beams, and custom thicknesses. The output depends on log diameter, species, and condition.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Can you mill logs from a tree you just removed?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Yes — if the trunk is 12+ inches in diameter and in good shape, we can mill it during the removal visit or on a follow-up trip. Popular with customers removing large hardwoods.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              What is the minimum log size for milling?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Generally 12 inches in diameter and 6 feet long minimum. Larger logs (18"+ diameter) produce the widest and most versatile boards. Call us to discuss your specific logs.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Closing CTA -->
-    <section class="cta-banner">
-      <div class="container">
-        <h2>Custom Lumber from Your Own Trees</h2>
-        <p class="prose-centered">River City Tree Care offers portable sawmill services in Chickamauga, GA and the surrounding area. Turn your timber into something useful.</p>
-        <div class="cta-actions">
-          <a href="/contact" class="btn-primary ripple">Contact Us About Milling</a>
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="container" style="padding: var(--space-lg) var(--space-lg);">
-      <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
-    </div>
-
-  </main>
+<?php $relatedCurrent = 'sawmill-services'; $relatedPrefer = ['firewood', 'lot-clearing', 'tree-removal']; include $_SERVER['DOCUMENT_ROOT'] . '/includes/related-services.php'; ?>
+<?php $closingHeading = 'Got logs worth keeping?'; $closingCopy = 'Call River City Tree Care with the species and sizes and book a milling day.'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/closing-cta.php'; ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

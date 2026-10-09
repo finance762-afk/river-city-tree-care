@@ -1,277 +1,130 @@
 <?php
-$pageTitle       = "Land Development Chickamauga, GA | River City Tree Care";
-$pageDescription = "Land clearing and site prep for residential and commercial development in Chickamauga, GA and Chattanooga, TN. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://rivercitytreega.com/services/land-development/";
-$ogImage         = "/assets/images/og-logo.jpg";
-$currentPage     = "services";
-$heroImage       = "";
-$useSwiper       = false;
-$useTilt         = false;
-$useTyped        = false;
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
-$schemaMarkup = '{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://rivercitytreega.com/#business",
-      "name": "River City Tree Care, LLC",
-      "url": "https://rivercitytreega.com",
-      "telephone": "+1-706-264-6130",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Chickamauga",
-        "addressRegion": "GA",
-        "postalCode": "30707",
-        "addressCountry": "US"
-      }
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Land Development Clearing",
-      "provider": { "@id": "https://rivercitytreega.com/#business" },
-      "areaServed": [
-        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
-        { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
-        { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
-      ],
-      "description": "Full land clearing and site prep for residential and commercial development in Chickamauga, GA and Chattanooga, TN."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Land Development", "item": "https://rivercitytreega.com/services/land-development" }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "name": "How Land Development Clearing Works",
-      "step": [
-        { "@type": "HowToStep", "position": 1, "name": "Site Assessment", "text": "We walk the property with the owner or contractor, review plans, and provide a detailed estimate." },
-        { "@type": "HowToStep", "position": 2, "name": "Clear and Remove", "text": "All trees, brush, and undergrowth are removed from the development footprint." },
-        { "@type": "HowToStep", "position": 3, "name": "Stump Grinding", "text": "Stumps are ground below grade across the entire cleared area." },
-        { "@type": "HowToStep", "position": 4, "name": "Debris Haul-Away", "text": "All debris is loaded and hauled. The site is left grading-ready for the next contractor." }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do you work with builders and contractors?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. River City Tree Care coordinates directly with builders, general contractors, and developers on residential and commercial projects. We work on the timeline your project requires."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What size land development projects do you handle?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "From single residential lots to multi-acre commercial parcels. We handle clearing for custom homes, subdivisions, commercial pads, and industrial sites across North Georgia and the Chattanooga metro."
-          }
-        }
-      ]
-    }
-  ]
-}';
+$currentPage     = 'services';
+$pageType        = 'service';
+$serviceSlug     = 'land-development';
+$pageTitle       = 'Land Development Clearing in Chickamauga, GA | River City';
+$pageDescription = 'Land clearing and site prep for home sites, subdivisions and commercial pads around Chickamauga, GA. River City Tree Care works with builders. (706) 264-6130.';
+$canonicalUrl    = $siteUrl . '/services/land-development/';
+$pageStyle       = <<<CSS
+.sp-dev .photo-frame--wide { max-width: 520px; }
+CSS;
+
+$faqs = [
+    ['What size projects does River City Tree Care take?',
+     'From a single custom home lot to multi-acre commercial parcels: home builds, phased subdivision lots, commercial pads, driveways and access roads across North Georgia and the Chattanooga area.'],
+    ['Is the site ready for grading when you finish?',
+     'Yes. Trees, brush, stumps and debris are gone, and the ground is clean and level enough for the grading contractor to start.'],
+    ['Can the timber be used instead of hauled?',
+     'Yes. Usable logs can be milled through the <a href="/services/sawmill-services/">portable sawmill</a> or cut as <a href="/services/firewood/">firewood</a>, which is common on wooded home sites where the owner wants lumber for a barn or porch.'],
+];
+
+$schemaNodes = [
+    webPageNode(),
+    breadcrumbNode([['Services', '/services/'], ['Land Development', '/services/land-development/']]),
+    serviceNode('Land Development Clearing', 'Land clearing and site preparation for residential and commercial development around Chickamauga, GA: tree removal, brush clearing, stump grinding and debris haul-away, coordinated with builders and contractors.', 'Chickamauga, GA'),
+    faqSchemaNode($faqs),
+];
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-  <main id="main-content">
-
-    <div class="page-header">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Land Development</strong>
-        </nav>
-        <h1>Land Development Clearing in Chickamauga, GA</h1>
-        <p class="lead prose">River City Tree Care provides full land clearing and site prep for residential and commercial development projects across North Georgia and the Chattanooga metro. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area — from single custom home lots to multi-acre subdivision and commercial clearing. Free on-site estimates for every project.</p>
+<section class="hero hero--interior" aria-label="Land development clearing in Chickamauga, GA">
+  <div class="container hero-grid hero-grid--form">
+    <div class="hero-text">
+      <?php echo breadcrumbs([['Services', '/services/'], ['Land Development', null]]); ?>
+      <span class="eyebrow">Site prep for builders and owners</span>
+      <h1 class="hero-title">Land Development Clearing in Chickamauga, GA</h1>
+      <p class="hero-answer">River City Tree Care clears land for development around Chickamauga, GA, from one custom home lot to multi-acre subdivision and commercial sites. The crew removes the trees, brush and stumps inside the footprint, hauls the debris and hands the site over ready for grading.</p>
+      <div class="hero-actions">
+        <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Request an estimate</button>
+        <a class="link-call" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> Call <?php echo e($phone); ?></a>
       </div>
     </div>
+    <?php $heroFormId = 'hero-land-development'; $heroFormService = 'Land Development'; $heroFormHeading = 'Price a site'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php'; ?>
+  </div>
+</section>
 
-    <!-- Split: image left, content right -->
-    <section class="service-intro" data-animate="fade-up">
-      <div class="container">
-        <div class="split">
-          <div class="service-img-wrap">
-            <img src="/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp" alt="Completed land development clearing — clean site ready for construction near Chattanooga, TN" width="800" height="600">
-          </div>
-          <div>
-            <h2>Site Prep That Gets You to Grading Day</h2>
-            <div class="prose">
-              <p>Before a foundation is poured, a driveway is graded, or a utility trench is dug — the land has to be cleared. That means every tree, stump, and piece of brush within the development footprint needs to be removed so the grading contractor can start with clean, level ground.</p>
-              <p><strong>River City Tree Care</strong> handles the clearing phase of residential and commercial development projects across Catoosa County, Hamilton County, Whitfield County, and surrounding areas. We work directly with homeowners building on raw land, general contractors managing new construction, and developers clearing multiple lots or commercial pads.</p>
-              <p>Our scope covers the full clearing process: tree removal, brush clearing, stump grinding below grade, and complete debris haul-away. When we finish, the site is grading-ready — no leftover stumps, no brush piles, no return trips.</p>
-            </div>
-          </div>
+<section class="section sp-dev">
+  <div class="container sp-layout">
+    <article class="sp-article">
+
+      <div class="content-block">
+        <h2>What does land development clearing include?</h2>
+        <p class="answer">Land development clearing from River City Tree Care covers tree removal, brush and undergrowth clearing, stump grinding below grade and debris haul-away across the whole footprint. It is the step that has to happen before the foundation is poured, the driveway is graded or a utility trench is dug.</p>
+        <p>The work is done to the site plan when there is one. Andrew walks the property with the owner or the contractor, reviews the plan, and gives a detailed written estimate at no charge. Pricing follows acreage and density, the same way it does for <a href="/services/lot-clearing/">a single lot</a>.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Which parts of a development site get cleared?</h2>
+        <p class="answer">River City Tree Care clears every part of a site that will be built on, driven on or trenched. On a custom home that is usually four areas: the building pad, the driveway, the septic field and the utility runs.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <caption>Typical clearing scope by project type.</caption>
+            <thead><tr><th scope="col">Project</th><th scope="col">What is cleared</th><th scope="col">Who the crew works with</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Custom home</th><td>Building pad, driveway, septic field, utility runs</td><td>Owner or builder</td></tr>
+              <tr><th scope="row">Subdivision lots</th><td>Lots cleared in phases</td><td>Developer</td></tr>
+              <tr><th scope="row">Commercial pad</th><td>Retail, office or industrial footprint</td><td>General contractor</td></tr>
+              <tr><th scope="row">Access and boundaries</th><td>Driveways, access roads, setbacks and property lines</td><td>Owner, surveyor or fence crew</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </section>
 
-    <!-- Scope grid -->
-    <section class="service-content" style="background: var(--bg-alt);" data-animate="fade-up">
-      <div class="container">
-        <h2>Development Projects We Clear For</h2>
-        <ul class="scope-list">
-          <li><i data-lucide="home"></i> <strong>Custom home builds</strong> — clear the building pad, driveway, septic field, and utility runs</li>
-          <li><i data-lucide="map"></i> <strong>Subdivision lots</strong> — phased clearing for multi-lot residential developments</li>
-          <li><i data-lucide="building-2"></i> <strong>Commercial pads</strong> — retail, office, and industrial site clearing</li>
-          <li><i data-lucide="road"></i> <strong>Driveways and access roads</strong> — cut paths through wooded property to the building site</li>
-          <li><i data-lucide="droplets"></i> <strong>Utility and septic clearing</strong> — clear trenching paths for water, sewer, electric, and septic systems</li>
-          <li><i data-lucide="fence"></i> <strong>Property line clearing</strong> — clear setback areas and boundary lines for surveys and fencing</li>
-        </ul>
+      <figure class="photo-frame photo-frame--wide reveal-up">
+        <?php echo picture('hauling-trailer-loaded-with-cleared-timber-from', 'Dump trailer with its bed raised, the kind used to haul cleared material off a site', '(max-width: 960px) 90vw, 520px'); ?>
+        <figcaption>A dump trailer with the bed raised. Cleared material leaves a development site by the trailer load.</figcaption>
+      </figure>
+
+      <div class="content-block">
+        <h2>How does River City Tree Care work with builders?</h2>
+        <p class="answer">River City Tree Care works directly with builders, general contractors and developers, clearing to their specification and inside their schedule. The crew is used to sharing a site with other trades and can stage equipment around active construction. Andrew is the one contact from estimate to handoff.</p>
+        <ol class="step-list">
+          <li><b>Site assessment</b><span>A walk of the property with you or your contractor, a look at the site plan, and a written estimate.</span></li>
+          <li><b>Clear and remove</b><span>Trees, brush and undergrowth in the footprint are cut and removed with equipment matched to the size of the job.</span></li>
+          <li><b>Stump grinding</b><span>Every stump in the cleared area is ground 6 to 12 inches below grade.</span></li>
+          <li><b>Haul and handoff</b><span>Debris is loaded and hauled, and the site is handed to the next contractor.</span></li>
+        </ol>
       </div>
-    </section>
 
-    <!-- Answer blocks -->
-    <section class="service-content" style="background: var(--bg);">
-      <div class="container">
-
-        <div class="answer-block">
-          <h3>Do you work with builders and contractors?</h3>
-          <p>Yes — River City Tree Care works directly with builders, general contractors, and development companies. We coordinate on project timelines, clear to specification, and handle the work within the schedule your project requires. We're used to working alongside other trades and can stage equipment around active construction sites when needed.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>What's included in land development clearing?</h3>
-          <p>Full tree removal, brush and undergrowth clearing, stump grinding below grade, and complete debris haul-away. For properties with usable timber, logs can be milled through our <a href="/services/sawmill-services" style="color: var(--primary);">sawmill service</a> or cut as <a href="/services/firewood" style="color: var(--primary);">firewood</a>. For heavily wooded acreage, we may combine traditional clearing with <a href="/services/forestry-mulching" style="color: var(--primary);">forestry mulching</a> for maximum efficiency.</p>
-        </div>
-
+      <div class="content-block">
+        <h2>What equipment does a development site need?</h2>
+        <p class="answer">A development site needs more than chainsaws. River City Tree Care brings saws for felling, a commercial stump grinder, a brush chipper, skid steers to move material and heavy trailers to haul it, and matches the equipment to the size of the job.</p>
+        <p>On larger acreage the crew combines two methods. <a href="/services/forestry-mulching/">Forestry mulching</a> takes care of brush and small trees quickly, and conventional clearing handles the big timber. The rest of what the company does is on the <a href="/services/">services page</a>.</p>
       </div>
-    </section>
 
-    <!-- Process -->
-    <section class="process-section" data-animate="fade-up">
-      <div class="container">
-        <h2>How Land Development Clearing Works</h2>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-number">1</div>
-            <h3>Site Assessment</h3>
-            <p>We walk the property with you or your contractor, review site plans if available, and provide a detailed written estimate.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">2</div>
-            <h3>Clear &amp; Remove</h3>
-            <p>All trees, brush, and undergrowth within the development footprint are cut and removed. Equipment is matched to the job size.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">3</div>
-            <h3>Stump Grinding</h3>
-            <p>Every stump across the cleared area is ground 6–12 inches below grade for buildable, level ground.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">4</div>
-            <h3>Haul &amp; Handoff</h3>
-            <p>All debris is loaded and hauled off-site. The property is left grading-ready for the next contractor.</p>
-          </div>
-        </div>
+      <div class="content-block">
+        <h2>Frequently asked questions</h2>
+        <?php echo faqList($faqs); ?>
       </div>
-    </section>
 
-    <!-- Mid CTA -->
-    <section class="service-cta">
-      <div class="container">
-        <h2>Building on Raw Land? We Clear It First.</h2>
-        <p class="prose-centered">Free site walk and estimate for residential and commercial development clearing across Chickamauga, Ringgold, Chattanooga, and North Georgia.</p>
-        <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-          <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
-        </div>
+      <p class="updated">Last updated: <?php echo date('F Y'); ?></p>
+    </article>
+
+    <aside class="sp-rail" aria-label="Land development clearing at a glance">
+      <div class="rail-card">
+        <h3>At a glance</h3>
+        <dl class="rail-facts">
+          <div><dt>Project size</dt><dd>One lot to multi-acre</dd></div>
+          <div><dt>Stumps</dt><dd>6–12 in. below grade</dd></div>
+          <div><dt>Handoff</dt><dd>Ready for grading</dd></div>
+          <div><dt>Works with</dt><dd>Builders, GCs, developers</dd></div>
+        </dl>
       </div>
-    </section>
-
-    <!-- Equipment + second image -->
-    <section class="service-content" style="background: var(--bg-alt);" data-animate="fade-up">
-      <div class="container">
-        <div class="split-reverse">
-          <div class="service-img-wrap">
-            <img src="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp" srcset="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-480.webp 480w, /assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Hauling trailer loaded with cleared timber from development site" width="800" height="600">
-          </div>
-          <div>
-            <h2>The Right Equipment for the Scale</h2>
-            <div class="prose">
-              <p>Land development clearing requires more than chainsaws. River City Tree Care brings the full equipment spread — chainsaws for precision felling, commercial stump grinders, brush chippers, skid steers for material handling, and heavy hauling trailers for off-site disposal.</p>
-              <p>For larger acreage, we combine <a href="/services/forestry-mulching" style="color: var(--primary);">forestry mulching</a> with traditional clearing — mulching handles the brush and small-diameter trees efficiently, while conventional methods address the larger timber. This combination often delivers the fastest, most cost-effective result for development-scale jobs.</p>
-            </div>
-
-            <div class="related-services">
-              <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
-              <a href="/services/forestry-mulching"><i data-lucide="arrow-right"></i> Forestry Mulching</a>
-            </div>
-          </div>
-        </div>
+      <div class="rail-card rail-card--dark">
+        <h3>Talk to Andrew</h3>
+        <p>Have the address and the site plan handy if there is one.</p>
+        <a class="btn btn-accent btn-block" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> <?php echo e($phone); ?></a>
       </div>
-    </section>
+    </aside>
+  </div>
+</section>
 
-    <!-- FAQ -->
-    <section class="faq-section" data-animate="fade-up">
-      <div class="container">
-        <h2 class="section-title" style="text-align: center;">Land Development FAQ</h2>
-
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Do you work with builders and contractors?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Yes — we coordinate directly with builders, GCs, and developers. We work within your project timeline and can stage around other trades on active sites.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              What size projects do you handle?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>From single residential lots to multi-acre commercial parcels. Custom homes, subdivisions, commercial pads, driveways, and industrial sites across North Georgia and the Chattanooga area.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Is the site grading-ready when you're done?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Yes. All trees, brush, stumps, and debris are removed. The site is left clean and level enough for a grading contractor to begin work immediately.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Closing CTA -->
-    <section class="cta-banner">
-      <div class="container">
-        <h2>From Raw Land to Build-Ready — River City Gets It Done</h2>
-        <p class="prose-centered">Serving builders, developers, and homeowners across Chickamauga, Ringgold, Chattanooga, TN, and the surrounding area. 24/7 availability.</p>
-        <div class="cta-actions">
-          <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="container" style="padding: var(--space-lg) var(--space-lg);">
-      <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
-    </div>
-
-  </main>
+<?php $relatedCurrent = 'land-development'; $relatedPrefer = ['lot-clearing', 'forestry-mulching', 'sawmill-services']; include $_SERVER['DOCUMENT_ROOT'] . '/includes/related-services.php'; ?>
+<?php $closingHeading = 'Building on raw land?'; $closingCopy = 'River City Tree Care clears it first. Call Andrew or send the address and the plan.'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/closing-cta.php'; ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

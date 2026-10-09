@@ -1,278 +1,138 @@
 <?php
-$pageTitle       = "Forestry Mulching Chickamauga, GA | River City Tree Care";
-$pageDescription = "Forestry mulching in Chickamauga, GA and Chattanooga, TN. Clear overgrown land in a single pass — no hauling, no burning. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://rivercitytreega.com/services/forestry-mulching/";
-$ogImage         = "/assets/images/og-logo.jpg";
-$currentPage     = "services";
-$heroImage       = "";
-$useSwiper       = false;
-$useTilt         = false;
-$useTyped        = false;
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
-$schemaMarkup = '{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://rivercitytreega.com/#business",
-      "name": "River City Tree Care, LLC",
-      "url": "https://rivercitytreega.com",
-      "telephone": "+1-706-264-6130",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Chickamauga",
-        "addressRegion": "GA",
-        "postalCode": "30707",
-        "addressCountry": "US"
-      }
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Forestry Mulching",
-      "provider": { "@id": "https://rivercitytreega.com/#business" },
-      "areaServed": [
-        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
-        { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
-        { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" }
-      ],
-      "description": "Forestry mulching for overgrown land, fence lines, and site prep in Chickamauga, GA and North Georgia. One-pass clearing with no debris haul-away."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Forestry Mulching", "item": "https://rivercitytreega.com/services/forestry-mulching" }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How is forestry mulching different from traditional land clearing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Traditional clearing requires cutting trees, loading debris onto trucks, and hauling everything off-site. Forestry mulching does it in one pass — a single machine cuts, grinds, and spreads vegetation as mulch on the ground. No hauling, no burning, and less soil disturbance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What size trees can a forestry mulcher handle?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most forestry mulchers handle trees up to 8–10 inches in diameter efficiently. Larger trees are typically cut first and then mulched, or removed separately if the wood has value."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is forestry mulching good for the soil?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The mulch layer left behind acts as a natural ground cover — it suppresses regrowth, retains moisture, and decomposes over time to add organic matter back into the soil. It also reduces erosion on sloped land."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "name": "How Forestry Mulching Works",
-      "step": [
-        { "@type": "HowToStep", "position": 1, "name": "Site Assessment", "text": "We walk the property, assess vegetation density and terrain, and provide a written estimate." },
-        { "@type": "HowToStep", "position": 2, "name": "Equipment Setup", "text": "A forestry mulcher is brought on-site and positioned at the starting point of the clearing zone." },
-        { "@type": "HowToStep", "position": 3, "name": "Single-Pass Clearing", "text": "The mulcher cuts, grinds, and spreads all vegetation in a single pass — trees, brush, and undergrowth processed into ground-level mulch." },
-        { "@type": "HowToStep", "position": 4, "name": "Final Walkthrough", "text": "The cleared area is inspected to ensure full coverage. The mulch layer is left as natural ground cover." }
-      ]
-    }
-  ]
-}';
+$currentPage     = 'services';
+$pageType        = 'service';
+$serviceSlug     = 'forestry-mulching';
+$pageTitle       = 'Forestry Mulching in Chickamauga, GA | River City Tree Care';
+$pageDescription = 'Forestry mulching in Chickamauga, GA and North Georgia: one machine grinds brush and saplings into mulch in place. No hauling, no burning. (706) 264-6130.';
+$canonicalUrl    = $siteUrl . '/services/forestry-mulching/';
+$pageStyle       = <<<CSS
+.sp-mulch .photo-frame--wide { max-width: 480px; }
+CSS;
+
+$faqs = [
+    ['What does forestry mulching cost?',
+     'It is priced by the acre and by how thick the growth is, so River City Tree Care quotes it after walking the land. There is no published per-acre figure because a field of saplings and a privet thicket are very different days of work.'],
+    ['Is forestry mulching good for the soil?',
+     'Yes. The mulch layer slows erosion, holds moisture and breaks down into organic matter over time. The topsoil is not stripped the way it is when land is cleared down to bare dirt.'],
+    ['Do you mulch land in Tennessee?',
+     'Yes. Hamilton County is inside the 50-mile service radius. The <a href="/service-areas/chattanooga-tn/">Chattanooga page</a> covers mulching privet, kudzu and volunteer pines on hillside acreage there.'],
+];
+
+$schemaNodes = [
+    webPageNode(),
+    breadcrumbNode([['Services', '/services/'], ['Forestry Mulching', '/services/forestry-mulching/']]),
+    serviceNode('Forestry Mulching', 'Single-pass forestry mulching around Chickamauga, GA for overgrown acreage, fence lines, pasture reclamation and firebreaks. Vegetation is ground into mulch and left on the ground.', 'Chickamauga, GA'),
+    faqSchemaNode($faqs),
+];
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-  <main id="main-content">
-
-    <div class="page-header">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Forestry Mulching</strong>
-        </nav>
-        <h1>Forestry Mulching in Chickamauga, GA &amp; North Georgia</h1>
-        <p class="lead prose">Forestry mulching is often the most cost-effective clearing method for wooded acreage — one machine handles cutting, grinding, and mulching in a single pass. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with forestry mulching for overgrown land, fence lines, pasture reclamation, and site prep. No hauling. No burning. Call <a href="tel:+17062646130">(706) 264-6130</a> for a free estimate.</p>
+<section class="hero hero--interior" aria-label="Forestry mulching in Chickamauga, GA">
+  <div class="container hero-grid hero-grid--form">
+    <div class="hero-text">
+      <?php echo breadcrumbs([['Services', '/services/'], ['Forestry Mulching', null]]); ?>
+      <span class="eyebrow">No hauling · No burning</span>
+      <h1 class="hero-title">Forestry Mulching in Chickamauga, GA</h1>
+      <p class="hero-answer">River City Tree Care clears overgrown land around Chickamauga, GA with a forestry mulcher: one machine that cuts brush, saplings and small trees and grinds them into mulch where they stand. Nothing is hauled and nothing is burned, and the mulch stays down to hold the soil.</p>
+      <div class="hero-actions">
+        <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Request an estimate</button>
+        <a class="link-call" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> Call <?php echo e($phone); ?></a>
       </div>
     </div>
+    <?php $heroFormId = 'hero-forestry-mulching'; $heroFormService = 'Forestry Mulching'; $heroFormHeading = 'Get a mulching price'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php'; ?>
+  </div>
+</section>
 
-    <!-- Split-reverse: content left, image right -->
-    <section class="service-intro" data-animate="fade-up">
-      <div class="container">
-        <div class="split-reverse">
-          <div class="service-img-wrap">
-            <img src="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp" srcset="/assets/images/lot-clearing-project-trees-and-brush-removed-fro-480.webp 480w, /assets/images/lot-clearing-project-trees-and-brush-removed-fro-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Forestry mulching clearing overgrown land in Chickamauga, GA" width="800" height="600">
-          </div>
-          <div>
-            <h2>One Machine. One Pass. Clean Ground.</h2>
-            <div class="prose">
-              <p>A forestry mulcher is a single machine that cuts standing vegetation — trees, saplings, brush, and undergrowth — and grinds it into mulch on the spot. The mulch layer stays on the ground as natural cover, suppressing regrowth and reducing erosion. No debris trucks. No burn piles. No exposed bare dirt.</p>
-              <p><strong>River City Tree Care</strong> uses forestry mulching across North Georgia and the Chattanooga metro for properties where traditional lot clearing is either overkill or too disruptive. It's the right approach when you need land cleared but don't need every scrap of material hauled off-site — and it's typically faster and less expensive than conventional clearing for acreage jobs.</p>
-              <p>Forestry mulching works on flat ground, slopes, wet areas, and rocky terrain where heavy excavation equipment can't go. It's especially effective for fence line clearing, pasture reclamation, right-of-way maintenance, and firebreak creation.</p>
-            </div>
-          </div>
-        </div>
+<section class="section sp-mulch">
+  <div class="container sp-layout">
+    <article class="sp-article">
+
+      <div class="content-block">
+        <h2>What is forestry mulching?</h2>
+        <p class="answer">Forestry mulching is land clearing done by a single machine in a single pass. The mulcher cuts standing brush, saplings and undergrowth and grinds them on the spot. The chips stay on the ground as cover, which slows regrowth and keeps bare dirt from washing.</p>
+        <p>River City Tree Care uses it on properties where full clearing would be more than the land needs: no debris trucks, no burn piles. It works on flat ground, on slopes, in wet spots and over rocky terrain where heavy excavation equipment struggles.</p>
       </div>
-    </section>
 
-    <!-- Comparison: Mulching vs Traditional -->
-    <section class="service-content" style="background: var(--bg-alt);" data-animate="fade-up">
-      <div class="container">
-        <h2>Forestry Mulching vs. Traditional Clearing</h2>
-        <div class="comparison-block">
-          <div class="comparison-col">
-            <h3>Forestry Mulching</h3>
-            <ul>
-              <li><i data-lucide="check"></i> One machine, one pass — faster for acreage</li>
-              <li><i data-lucide="check"></i> No debris hauling required</li>
-              <li><i data-lucide="check"></i> Mulch layer prevents erosion and suppresses regrowth</li>
-              <li><i data-lucide="check"></i> Works on slopes, wet areas, and rocky terrain</li>
-              <li><i data-lucide="check"></i> Less soil disturbance — topsoil stays intact</li>
-              <li><i data-lucide="check"></i> Often lower cost per acre for wooded land</li>
-            </ul>
-          </div>
-          <div class="comparison-col">
-            <h3>Traditional Clearing</h3>
-            <ul>
-              <li><i data-lucide="check"></i> Best when debris must be fully removed from site</li>
-              <li><i data-lucide="check"></i> Required for grading-ready construction sites</li>
-              <li><i data-lucide="check"></i> Handles very large trees that exceed mulcher capacity</li>
-              <li><i data-lucide="check"></i> Removes stumps below grade for building</li>
-              <li><i data-lucide="check"></i> Allows timber to be kept or milled</li>
-              <li><i data-lucide="check"></i> Better for small, dense lots with access constraints</li>
-            </ul>
-          </div>
+      <figure class="photo-frame photo-frame--wide reveal-up">
+        <?php echo picture('completed-land-clearing-clean-lot-ready-for-deve', 'Tracked mulching machine at the end of a freshly mulched lane through woods', '(max-width: 960px) 90vw, 480px'); ?>
+        <figcaption>A lane opened through woods with the mulcher. The ground behind the machine is covered in chips, not bare soil.</figcaption>
+      </figure>
+
+      <div class="content-block">
+        <h2>How is forestry mulching different from clearing a lot?</h2>
+        <p class="answer">Mulching leaves the material on the ground and clearing takes it away. That one difference decides most jobs: mulching is faster for acreage and disturbs less soil, while clearing is what a building site needs because it removes stumps and leaves bare ground.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <caption>Forestry mulching compared with traditional clearing, as River City Tree Care does both.</caption>
+            <thead><tr><th scope="col">Factor</th><th scope="col">Forestry mulching</th><th scope="col">Traditional clearing</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Equipment</th><td>One machine, one pass</td><td>Saws, grinder, skid steers, trailers</td></tr>
+              <tr><th scope="row">Debris</th><td>Stays as mulch</td><td>Loaded and hauled off</td></tr>
+              <tr><th scope="row">Soil</th><td>Topsoil stays in place under the mulch</td><td>Opened up for grading</td></tr>
+              <tr><th scope="row">Stumps</th><td>Cut to ground level</td><td>Ground 6 to 12 inches below grade</td></tr>
+              <tr><th scope="row">Large trees</th><td>Felled first or taken out separately</td><td>Felled; timber kept, milled or hauled</td></tr>
+            </tbody>
+          </table>
         </div>
-        <div class="prose">
-          <p>Not sure which approach fits your property? River City Tree Care handles both. We'll walk the site, assess the terrain and vegetation, and recommend the right method — or a combination of both. <a href="/services/lot-clearing" style="color: var(--primary);">Learn more about traditional lot clearing &rarr;</a></p>
-        </div>
+        <p>If you are building, start with <a href="/services/lot-clearing/">lot clearing</a>. On large tracts the crew often mulches the brush and small trees first and then clears the building pad the traditional way.</p>
       </div>
-    </section>
 
-    <!-- Answer blocks -->
-    <section class="service-content" style="background: var(--bg);">
-      <div class="container">
-
-        <div class="answer-block">
-          <h3>What size trees can a forestry mulcher handle?</h3>
-          <p>Most forestry mulchers efficiently process trees up to 8–10 inches in diameter. Larger trees are typically felled first and then mulched, or removed separately if the wood has lumber or firewood value. Brush, saplings, and undergrowth of any size are handled in a single pass.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>Is forestry mulching good for the soil?</h3>
-          <p>Yes. The ground mulch layer acts as natural erosion control, retains soil moisture, and decomposes over time to add organic matter back into the ground. This makes it ideal for properties that will be seeded for pasture or left as managed natural land — the soil isn't stripped bare like it would be with conventional clearing.</p>
-        </div>
-
+      <div class="content-block">
+        <h2>What kinds of jobs is forestry mulching used for?</h2>
+        <p class="answer">River City Tree Care uses the mulcher mostly for overgrown fields, fence lines and the first pass on land that is about to be developed. Fence rows in Walker County fill in with privet, cedar and sweetgum faster than a bush hog can keep up, and a mulcher takes the line back.</p>
+        <ul class="check-list">
+          <li><?php echo icon('check', 20); ?><span><strong>Fields and pasture:</strong> land that has gone to saplings and brush</span></li>
+          <li><?php echo icon('check', 20); ?><span><strong>Fence lines:</strong> a strip opened on each side for a new fence</span></li>
+          <li><?php echo icon('check', 20); ?><span><strong>Firebreaks:</strong> a mulched strip around a home or timber</span></li>
+          <li><?php echo icon('check', 20); ?><span><strong>Rights-of-way:</strong> utility and road easements kept open</span></li>
+          <li><?php echo icon('check', 20); ?><span><strong>Pre-development:</strong> the first pass before <a href="/services/land-development/">land development clearing</a></span></li>
+        </ul>
       </div>
-    </section>
 
-    <!-- Mid CTA -->
-    <section class="service-cta">
-      <div class="container">
-        <h2>Overgrown Acreage? One Call Gets It Cleared.</h2>
-        <p class="prose-centered">River City Tree Care provides forestry mulching across Chickamauga, Ringgold, Chattanooga, TN, and North Georgia. Free site walk and estimate.</p>
-        <div class="cta-actions">
-          <a href="/contact" class="btn-primary ripple">Get a Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-        </div>
+      <div class="content-block">
+        <h2>How does a forestry mulching job work?</h2>
+        <p class="answer">A forestry mulching job with River City Tree Care has three steps. Andrew walks the land, the crew fells anything too big for the machine, and the mulcher works across the area. You are left with an even layer of chips over ground that has not been stripped.</p>
+        <ol class="step-list">
+          <li><b>Walk the land</b><span>Andrew looks at the terrain and the growth, marks what stays, and tells you whether mulching, clearing or both fits. The visit is free.</span></li>
+          <li><b>Fell what is too big</b><span>Trees too large for the mulcher are cut first. Wood worth keeping goes to firewood or the sawmill.</span></li>
+          <li><b>Mulch</b><span>The machine works across the area and leaves an even layer of chips.</span></li>
+        </ol>
+        <p>The other seven services are listed on the <a href="/services/">services page</a>.</p>
       </div>
-    </section>
 
-    <!-- Use cases + second image -->
-    <section class="service-content" style="background: var(--bg-alt);" data-animate="fade-up">
-      <div class="container">
-        <div class="split">
-          <div class="service-img-wrap">
-            <img src="/assets/images/completed-land-clearing-clean-lot-ready-for-deve-480.webp" alt="Cleared acreage after forestry mulching in North Georgia" width="800" height="600">
-          </div>
-          <div>
-            <h2>Common Forestry Mulching Projects</h2>
-            <ul class="scope-list">
-              <li><i data-lucide="check"></i> <strong>Overgrown fields and pastures</strong> — reclaim land that's been overtaken by saplings and brush</li>
-              <li><i data-lucide="check"></i> <strong>Fence line clearing</strong> — clear 10–20 feet on each side for new fence installation</li>
-              <li><i data-lucide="check"></i> <strong>Firebreak creation</strong> — mulch strips of vegetation to create defensible space</li>
-              <li><i data-lucide="check"></i> <strong>Right-of-way maintenance</strong> — keep utility and road easements clear</li>
-              <li><i data-lucide="check"></i> <strong>Pre-development clearing</strong> — initial clearing before full <a href="/services/land-development" style="color: var(--primary);">land development</a></li>
-            </ul>
-
-            <div class="related-services">
-              <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-              <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
-              <a href="/services/land-development"><i data-lucide="arrow-right"></i> Land Development</a>
-            </div>
-          </div>
-        </div>
+      <div class="content-block">
+        <h2>Frequently asked questions</h2>
+        <?php echo faqList($faqs); ?>
       </div>
-    </section>
 
-    <!-- FAQ -->
-    <section class="faq-section" data-animate="fade-up">
-      <div class="container">
-        <h2 class="section-title" style="text-align: center;">Forestry Mulching FAQ</h2>
+      <p class="updated">Last updated: <?php echo date('F Y'); ?></p>
+    </article>
 
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How is forestry mulching different from traditional land clearing?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Traditional clearing cuts trees, loads debris onto trucks, and hauls it off-site. Forestry mulching does it all in one pass — a single machine grinds vegetation into mulch that stays on the ground. Faster, less soil disturbance, no hauling costs.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              What size trees can a forestry mulcher handle?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Most mulchers handle trees up to 8–10 inches. Larger trees are felled first or removed separately. Brush and saplings of any size are processed in a single pass.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Is forestry mulching good for the soil?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Yes — the mulch layer prevents erosion, retains moisture, suppresses weed regrowth, and adds organic matter to the soil as it decomposes. Topsoil stays intact unlike excavation-based clearing.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <aside class="sp-rail" aria-label="Forestry mulching at a glance">
+      <div class="rail-card">
+        <h3>At a glance</h3>
+        <dl class="rail-facts">
+          <div><dt>Method</dt><dd>One machine, one pass</dd></div>
+          <div><dt>Debris</dt><dd>Left as mulch</dd></div>
+          <div><dt>Priced by</dt><dd>Acre and density</dd></div>
+          <div><dt>Good for</dt><dd>Acreage, fence lines</dd></div>
+        </dl>
       </div>
-    </section>
-
-    <!-- Closing CTA -->
-    <section class="cta-banner">
-      <div class="container">
-        <h2>Clear the Land. Keep the Soil. Save the Haul.</h2>
-        <p class="prose-centered">Forestry mulching from River City Tree Care — serving Chickamauga, Ringgold, Chattanooga, Dalton, Fort Oglethorpe, and everywhere in between.</p>
-        <div class="cta-actions">
-          <a href="/contact" class="btn-primary ripple">Schedule Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-        </div>
+      <div class="rail-card rail-card--dark">
+        <h3>Talk to Andrew</h3>
+        <p>Tell him the acreage and what has grown up on it.</p>
+        <a class="btn btn-accent btn-block" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> <?php echo e($phone); ?></a>
       </div>
-    </section>
+    </aside>
+  </div>
+</section>
 
-    <div class="container" style="padding: var(--space-lg) var(--space-lg);">
-      <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
-    </div>
-
-  </main>
+<?php $relatedCurrent = 'forestry-mulching'; $relatedPrefer = ['lot-clearing', 'land-development', 'sawmill-services']; include $_SERVER['DOCUMENT_ROOT'] . '/includes/related-services.php'; ?>
+<?php $closingHeading = 'Overgrown acreage?'; $closingCopy = 'River City Tree Care will walk it with you and tell you whether mulching, clearing or both makes sense.'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/closing-cta.php'; ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

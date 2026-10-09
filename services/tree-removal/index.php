@@ -1,294 +1,141 @@
 <?php
-$pageTitle       = "Tree Removal Chickamauga, GA | River City Tree Care";
-$pageDescription = "Professional tree removal in Chickamauga, GA and Chattanooga, TN. 24/7 emergency response, full cleanup included. Free estimates — call (706) 264-6130.";
-$canonicalUrl    = "https://rivercitytreega.com/services/tree-removal/";
-$ogImage         = "/assets/images/og-logo.jpg";
-$currentPage     = "services";
-$heroImage       = "";
-$useSwiper       = false;
-$useTilt         = false;
-$useTyped        = false;
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
-$schemaMarkup = '{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://rivercitytreega.com/#business",
-      "name": "River City Tree Care, LLC",
-      "url": "https://rivercitytreega.com",
-      "telephone": "+1-706-264-6130",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Chickamauga",
-        "addressRegion": "GA",
-        "postalCode": "30707",
-        "addressCountry": "US"
-      }
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Tree Removal",
-      "provider": { "@id": "https://rivercitytreega.com/#business" },
-      "areaServed": [
-        { "@type": "City", "name": "Chickamauga", "addressRegion": "GA" },
-        { "@type": "City", "name": "Ringgold", "addressRegion": "GA" },
-        { "@type": "City", "name": "Chattanooga", "addressRegion": "TN" },
-        { "@type": "City", "name": "Fort Oglethorpe", "addressRegion": "GA" }
-      ],
-      "description": "Full tree removal for hazardous, dead, and storm-damaged trees in Chickamauga, GA and Chattanooga, TN. 24/7 emergency response."
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rivercitytreega.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://rivercitytreega.com/services" },
-        { "@type": "ListItem", "position": 3, "name": "Tree Removal", "item": "https://rivercitytreega.com/services/tree-removal" }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "name": "How River City Tree Care Removes Trees",
-      "step": [
-        { "@type": "HowToStep", "position": 1, "name": "Assessment", "text": "We inspect the tree, assess hazards, and provide a free written estimate." },
-        { "@type": "HowToStep", "position": 2, "name": "Safety Setup", "text": "Drop zones are cleared, rigging is set, and neighboring structures are protected." },
-        { "@type": "HowToStep", "position": 3, "name": "Removal", "text": "The tree is taken down in sections using climbing gear and rigging or felled directionally where space allows." },
-        { "@type": "HowToStep", "position": 4, "name": "Cleanup", "text": "All wood, branches, and debris are chipped or hauled off-site. Stump grinding is available as an add-on." }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does tree removal cost in Chickamauga, GA?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tree removal in Chickamauga and the Chattanooga area typically costs $400–$2,500+ depending on tree height, condition, proximity to structures, and whether stump removal is included. Small trees may run $400–$900, while large hardwoods near homes or power lines can cost $1,500–$2,500 or more."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer 24/7 emergency tree removal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. River City Tree Care responds to emergency calls 24 hours a day, 7 days a week. Storm damage, fallen trees on structures, and trees blocking roads or driveways are handled with same-day response."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you remove the stump too?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Stump grinding is available as an add-on to any tree removal job. Most customers bundle both services. The stump is ground 6–12 inches below grade so the area can be filled and seeded."
-          }
-        }
-      ]
-    }
-  ]
-}';
+$currentPage     = 'services';
+$pageType        = 'service';
+$serviceSlug     = 'tree-removal';
+$pageTitle       = 'Tree Removal in Chickamauga, GA | River City Tree Care';
+$pageDescription = 'Tree removal in Chickamauga, GA from an owner-run crew: typically $400 to $2,500+, cleanup included, storm calls answered day and night. (706) 264-6130.';
+$canonicalUrl    = $siteUrl . '/services/tree-removal/';
+$pageStyle       = <<<CSS
+.sp-removal .ba-slider { margin-top: var(--space-2); }
+.sp-removal .species { columns: 2; column-gap: var(--space-8); }
+@media (max-width: 560px) { .sp-removal .species { columns: 1; } }
+CSS;
+
+$faqs = [
+    ['Do you remove the stump too?',
+     'Stump grinding is an add-on to any removal and most customers take it. The stump is ground 6 to 12 inches below grade so the spot can be filled and seeded. It typically adds $100 to $400 per stump: see <a href="/services/stump-grinding/">stump grinding</a>.'],
+    ['Can I keep the wood?',
+     'Yes. Tell the crew before they start and the trunk is cut to firewood length and stacked where you want it. Straight hardwood logs 12 inches and wider can be milled into boards with the <a href="/services/sawmill-services/">portable sawmill</a>.'],
+    ['What if a tree falls in the middle of the night?',
+     'Call (706) 264-6130. River City Tree Care answers storm calls at any hour, holidays included, and a tree on a house, a driveway or a road goes to the front of the line.'],
+];
+
+$schemaNodes = [
+    webPageNode(),
+    breadcrumbNode([['Services', '/services/'], ['Tree Removal', '/services/tree-removal/']]),
+    serviceNode('Tree Removal', 'Removal of dead, leaning and storm-damaged trees around Chickamauga, GA, with rigging in tight yards and debris haul-away. Typical cost $400 to $2,500 or more.', 'Chickamauga, GA', [400, 2500]),
+    faqSchemaNode($faqs),
+];
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
-  <main id="main-content">
-
-    <div class="page-header">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> <strong>Tree Removal</strong>
-        </nav>
-        <h1>Tree Removal in Chickamauga, GA &amp; Chattanooga, TN</h1>
-        <p class="lead prose">Tree removal in Chickamauga and Chattanooga typically costs $400–$2,500+ depending on tree height, condition, location near structures, and whether stump removal is included. River City Tree Care serves Chickamauga, GA and the greater Chattanooga area with 24/7 emergency tree removal, full cleanup, and free on-site estimates. Call <a href="tel:+17062646130">(706) 264-6130</a> any time.</p>
+<section class="hero hero--interior" aria-label="Tree removal in Chickamauga, GA">
+  <div class="container hero-grid hero-grid--form">
+    <div class="hero-text">
+      <?php echo breadcrumbs([['Services', '/services/'], ['Tree Removal', null]]); ?>
+      <span class="eyebrow">Typically $400–$2,500+</span>
+      <h1 class="hero-title">Tree Removal in Chickamauga, GA</h1>
+      <p class="hero-answer">River City Tree Care removes dead, leaning and storm-damaged trees in Chickamauga, GA for a typical $400 to $2,500 or more, depending on size and what the tree is standing next to. Owner Andrew Roberson runs the crew, and the wood and brush leave with them.</p>
+      <div class="hero-actions">
+        <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Request an estimate</button>
+        <a class="link-call" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> Call <?php echo e($phone); ?></a>
       </div>
     </div>
+    <?php $heroFormId = 'hero-tree-removal'; $heroFormService = 'Tree Removal'; $heroFormHeading = 'Get a removal price'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php'; ?>
+  </div>
+</section>
 
-    <!-- Before/After panel — full width -->
-    <section class="before-after-section" style="padding-top: var(--space-2xl);" data-animate="fade-up">
-      <div class="container">
-        <div class="ba-grid">
-          <div class="ba-panel">
-            <img src="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp" srcset="/assets/images/tree-removal-job-site-overgrown-trees-on-residen-480.webp 480w, /assets/images/tree-removal-job-site-overgrown-trees-on-residen-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Property before tree removal in Chickamauga, GA — overgrown trees and brush" width="800" height="600">
-            <span class="ba-label">Before</span>
-          </div>
-          <div class="ba-panel">
-            <img src="/assets/images/property-after-tree-removal-clean-lot-with-clear-960.webp" srcset="/assets/images/property-after-tree-removal-clean-lot-with-clear-480.webp 480w, /assets/images/property-after-tree-removal-clean-lot-with-clear-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Property after tree removal in Chickamauga, GA — clean cleared lot" width="800" height="600">
-            <span class="ba-label">After</span>
-          </div>
+<section class="section sp-removal">
+  <div class="container sp-layout">
+    <article class="sp-article">
+
+      <div class="content-block">
+        <h2>How much does tree removal cost in Chickamauga, GA?</h2>
+        <p class="answer">Tree removal from River City Tree Care typically runs $400 to $2,500 or more. Small trees are usually $400 to $900. Large hardwoods close to a house, a fence or a power line run $1,500 to $2,500 and up, because every piece has to be roped down instead of dropped.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <caption>Typical removal ranges published by River City Tree Care. The written estimate after a site visit is the real number.</caption>
+            <thead><tr><th scope="col">Job</th><th scope="col">Typical range</th><th scope="col">Why</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Small tree, open yard</th><td class="num">$400–$900</td><td>Can often be felled in one direction and chipped on the spot</td></tr>
+              <tr><th scope="row">Large hardwood near a structure</th><td class="num">$1,500–$2,500+</td><td>Climbed and lowered in sections with rigging</td></tr>
+              <tr><th scope="row">Stump, per stump</th><td class="num">$100–$400 extra</td><td>Ground 6 to 12 inches below grade if you want it gone</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </section>
 
-    <!-- Content: split-reverse (content left, image right) -->
-    <section class="service-intro" data-animate="fade-up">
-      <div class="container">
-        <div class="split-reverse">
-          <div class="service-img-wrap">
-            <img src="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp" srcset="/assets/images/hauling-trailer-loaded-with-cleared-timber-from-480.webp 480w, /assets/images/hauling-trailer-loaded-with-cleared-timber-from-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="River City Tree Care hauling trailer loaded with cut timber from removal job" width="800" height="600">
-          </div>
-          <div>
-            <h2>When Does a Tree Need to Come Down?</h2>
-            <div class="prose">
-              <p>Not every tree can be saved. Dead trees, storm-damaged trunks, root-compromised hardwoods leaning toward your house, and trees interfering with construction all need professional removal — not trimming.</p>
-              <p><strong>River City Tree Care</strong> removes trees of all sizes across the Chickamauga, GA and Chattanooga, TN area. That includes large oaks in tight residential yards, storm-damaged pines dropped across driveways, and multi-tree clearing for new construction. Our crew brings professional rigging, climbing gear, and heavy equipment to every job.</p>
-              <p>Every removal includes complete debris haul-away. We chip branches on-site, load trunk sections, and leave your property cleaner than we found it. If you want the wood kept for firewood, we'll cut and stack it where you need it.</p>
-              <p><strong>Emergency work is available 24/7.</strong> Storm damage, fallen trees on structures, and road-blocking situations get same-day response — call <a href="tel:+17062646130" style="color: var(--primary);">(706) 264-6130</a> day or night.</p>
-            </div>
-          </div>
-        </div>
+      <div class="content-block">
+        <h2>How does River City Tree Care take a tree down safely?</h2>
+        <p class="answer">River City Tree Care takes a tree down in four steps: assess it, protect what is under it, bring it down, and clean up. Where there is room the tree is felled in one direction. Where there is not, a climber sections it from the top with ropes.</p>
+        <ol class="step-list">
+          <li><b>Assessment</b><span>Andrew checks the lean, the condition of the wood and the hazards around it, then gives a written price. The visit is free.</span></li>
+          <li><b>Safety setup</b><span>Drop zones are cleared, rigging lines are set, and nearby structures and landscaping are protected.</span></li>
+          <li><b>Removal</b><span>The tree is sectioned from the top down with climbing gear and rigging, or felled directionally where space allows.</span></li>
+          <li><b>Cleanup and haul</b><span>Limbs are chipped, trunk sections are loaded and hauled, and the ground is raked.</span></li>
+        </ol>
       </div>
-    </section>
 
-    <!-- Answer blocks -->
-    <section class="service-content" style="background: var(--bg-alt);">
-      <div class="container">
-
-        <div class="answer-block">
-          <h3>How much does tree removal cost in Chickamauga, GA?</h3>
-          <p>Tree removal typically ranges from $400 to $2,500+ in the Chickamauga and Chattanooga area. Small trees (under 30 feet) may cost $400–$900. Medium trees (30–60 feet) usually run $800–$1,500. Large hardwoods near structures, power lines, or fences often cost $1,500–$2,500 or more due to rigging and precision cutting requirements. Stump grinding adds $100–$400 per stump. River City Tree Care gives free estimates so you know the full cost upfront.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>What happens to the wood and debris?</h3>
-          <p>Everything is removed from your property — branches are chipped on-site, trunk sections are loaded and hauled, and the area is raked clean. If you want firewood, we'll cut it to length and stack it. Larger logs from quality hardwoods can be milled into lumber through our <a href="/services/sawmill-services" style="color: var(--primary);">sawmill services</a>.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>Do you handle emergency tree removal after storms?</h3>
-          <p>Yes — River City Tree Care operates 24/7 for emergency calls. Fallen trees on homes, across driveways, or blocking roads are prioritized for same-day response. Call <a href="tel:+17062646130" style="color: var(--primary);">(706) 264-6130</a> any time.</p>
-        </div>
-
+      <div class="content-block">
+        <h2>What does a tight removal look like before and after?</h2>
+        <p class="answer">A tight removal ends with the tree gone and everything around it untouched. In this job the tree stood between a metal carport and a chain-link fence. Afterwards the carport and fence are still standing, and what is left is a flush stump ready for the grinder.</p>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/before-after.php';
+        echo p1_before_after(
+            'tree-removal-job-site-overgrown-trees-on-residen', 'property-after-tree-removal-clean-lot-with-clear',
+            'Mature tree leaning beside a metal carport and chain-link fence before removal',
+            'Same carport and fence after the tree was removed, with a flush-cut stump',
+            ['caption' => 'Before and after a residential removal by River City Tree Care. Drag the handle to compare.', 'id' => 'ba-removal']
+        ); ?>
       </div>
-    </section>
 
-    <!-- Process -->
-    <section class="process-section" data-animate="fade-up">
-      <div class="container">
-        <h2>How We Remove Trees Safely</h2>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-number">1</div>
-            <h3>Assessment</h3>
-            <p>We inspect the tree, assess lean direction, check for hazards, and give you a free written estimate.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">2</div>
-            <h3>Safety Setup</h3>
-            <p>Drop zones are cleared, rigging lines are set, and any nearby structures or landscaping are protected.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">3</div>
-            <h3>Removal</h3>
-            <p>The tree is sectioned from the top down using climbing gear and rigging, or felled directionally where space allows.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">4</div>
-            <h3>Cleanup &amp; Haul</h3>
-            <p>All wood and debris chipped or loaded. Stump grinding available as add-on. Property left clean.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mid CTA -->
-    <section class="service-cta">
-      <div class="container">
-        <h2>Dead Tree? Storm Damage? We're on It.</h2>
-        <p class="prose-centered">River City Tree Care responds 24/7 to emergency tree removal across Chickamauga, Ringgold, Chattanooga, Fort Oglethorpe, Dalton, and surrounding areas.</p>
-        <div class="cta-actions">
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-          <a href="/contact" class="btn-primary ripple">Request a Free Estimate</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Additional content -->
-    <section class="service-content" style="background: var(--bg);" data-animate="fade-up">
-      <div class="container">
-        <h2>Trees We Commonly Remove in North Georgia</h2>
-        <div class="prose" style="margin-bottom: var(--space-xl);">
-          <p>The mix of hardwoods and softwoods across Catoosa County, Hamilton County, and the surrounding area means we work with a wide range of species. Each requires a different approach to rigging, cutting, and cleanup:</p>
-        </div>
-        <ul class="scope-list">
-          <li><i data-lucide="check"></i> <strong>Oaks</strong> — heavy, dense canopies requiring careful sectioning and rigging</li>
-          <li><i data-lucide="check"></i> <strong>Pines</strong> — tall, prone to storm snap; often the most common emergency removal</li>
-          <li><i data-lucide="check"></i> <strong>Maples and sweetgums</strong> — fast growers that frequently interfere with structures</li>
-          <li><i data-lucide="check"></i> <strong>Hickories</strong> — strong wood, deep root systems, premium firewood when milled</li>
-          <li><i data-lucide="check"></i> <strong>Dead standing timber</strong> — unpredictable fall direction, handled with extra caution</li>
-          <li><i data-lucide="check"></i> <strong>Storm-damaged trees</strong> — partially fallen, hung up on other trees, or leaning on structures</li>
+      <div class="content-block">
+        <h2>When does a tree need to come down instead of being trimmed?</h2>
+        <p class="answer">A tree needs to come down when trimming cannot make it safe. That means dead trees, trunks split by a storm, hardwoods with failing roots that lean toward a house, and trees standing where a building or driveway is about to go.</p>
+        <p>These are the trees the crew removes most often across Walker and Catoosa counties, and each one behaves differently on the rope:</p>
+        <ul class="species">
+          <li><strong>Oaks:</strong> heavy, dense canopies that need careful sectioning.</li>
+          <li><strong>Pines:</strong> tall and prone to snapping in storms; the most common emergency call.</li>
+          <li><strong>Maples and sweetgums:</strong> fast growers that crowd roofs and lines.</li>
+          <li><strong>Hickories:</strong> strong wood and deep roots, and good firewood.</li>
+          <li><strong>Dead standing timber:</strong> unpredictable, handled with extra caution.</li>
+          <li><strong>Storm-damaged trees:</strong> hung up in other trees or resting on a structure.</li>
         </ul>
-
-        <div class="related-services">
-          <span style="color: var(--text-light); font-size: 0.9rem;">Related services:</span>
-          <a href="/services/tree-trimming"><i data-lucide="arrow-right"></i> Tree Trimming</a>
-          <a href="/services/stump-grinding"><i data-lucide="arrow-right"></i> Stump Grinding</a>
-          <a href="/services/lot-clearing"><i data-lucide="arrow-right"></i> Lot Clearing</a>
-        </div>
+        <p>If the tree can be saved, Andrew will say so and quote <a href="/services/tree-trimming/">tree trimming</a> instead. When several trees are coming out for a build, <a href="/services/lot-clearing/">lot clearing</a> is priced as one job. The <a href="/services/">services page</a> lists everything the crew does.</p>
       </div>
-    </section>
 
-    <!-- FAQ -->
-    <section class="faq-section" data-animate="fade-up">
-      <div class="container">
-        <h2 class="section-title" style="text-align: center;">Tree Removal FAQ</h2>
-
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How much does tree removal cost in Chickamauga, GA?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Tree removal ranges from $400 to $2,500+ depending on size, condition, and access. Small trees run $400–$900. Large hardwoods near structures cost $1,500–$2,500+. Stump grinding adds $100–$400. Call <a href="tel:+17062646130" style="color: var(--primary);">(706) 264-6130</a> for a free on-site estimate.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Do you offer 24/7 emergency tree removal?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Yes — River City Tree Care is available 24 hours a day, 7 days a week for emergency calls. Fallen trees, storm damage, and trees threatening structures get same-day response whenever possible.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Do you remove the stump too?
-              <i data-lucide="chevron-down chevron"></i>
-            </button>
-            <div class="faq-answer" role="region">
-              <div class="faq-answer-inner prose">
-                <p>Stump grinding is available as an add-on with every tree removal. Most customers bundle both — the stump is ground 6–12 inches below grade so the area can be filled and seeded. See our <a href="/services/stump-grinding" style="color: var(--primary);">stump grinding page</a> for details.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="content-block">
+        <h2>Frequently asked questions</h2>
+        <?php echo faqList($faqs); ?>
       </div>
-    </section>
 
-    <!-- Closing CTA -->
-    <section class="cta-banner">
-      <div class="container">
-        <h2>Get That Tree Handled — Call Today</h2>
-        <p class="prose-centered">Free estimates. 24/7 emergency response. Serving Chickamauga, Ringgold, Chattanooga, TN, and everywhere in between.</p>
-        <div class="cta-actions">
-          <a href="/contact" class="btn-primary ripple">Get Your Free Estimate</a>
-          <a href="tel:+17062646130" class="cta-phone"><i data-lucide="phone"></i> (706) 264-6130</a>
-        </div>
+      <p class="updated">Last updated: <?php echo date('F Y'); ?></p>
+    </article>
+
+    <aside class="sp-rail" aria-label="Tree removal at a glance">
+      <div class="rail-card">
+        <h3>At a glance</h3>
+        <dl class="rail-facts">
+          <div><dt>Typical price</dt><dd>$400–$2,500+</dd></div>
+          <div><dt>Small trees</dt><dd>$400–$900</dd></div>
+          <div><dt>Cleanup</dt><dd>Included</dd></div>
+          <div><dt>Stump</dt><dd>Optional add-on</dd></div>
+        </dl>
       </div>
-    </section>
+      <div class="rail-card rail-card--dark">
+        <h3>Tree on the house?</h3>
+        <p>Do not wait on a form. Call and tell Andrew what it is resting on.</p>
+        <a class="btn btn-accent btn-block" href="<?php echo telHref(); ?>"><?php echo icon('phone', 18); ?> <?php echo e($phone); ?></a>
+      </div>
+    </aside>
+  </div>
+</section>
 
-    <div class="container" style="padding: var(--space-lg) var(--space-lg);">
-      <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
-    </div>
-
-  </main>
+<?php $relatedCurrent = 'tree-removal'; $relatedPrefer = ['stump-grinding', 'tree-trimming', 'lot-clearing']; include $_SERVER['DOCUMENT_ROOT'] . '/includes/related-services.php'; ?>
+<?php $closingHeading = 'Dead tree or storm damage?'; $closingCopy = 'Call River City Tree Care or send the details. Andrew will look at it and put the price in writing.'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/closing-cta.php'; ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
