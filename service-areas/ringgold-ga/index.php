@@ -1,6 +1,6 @@
 <?php
 $pageTitle       = "Tree Service in Ringgold, GA | River City Tree Care";
-$pageDescription = "Tree pruning, stump grinding and lot clearing in Ringgold, GA and Catoosa County. Licensed, insured, 24/7 emergency tree removal. Free estimates: call (706) 264-6130.";
+$pageDescription = "Tree pruning, stump grinding and lot clearing in Ringgold, GA and Catoosa County. Licensed, insured, 24/7 emergency removal. Free estimates: (706) 264-6130.";
 $canonicalUrl    = "https://rivercitytreega.com/service-areas/ringgold-ga/";
 $ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "service-areas";

@@ -1,6 +1,6 @@
 <?php
 $pageTitle       = "Tree Service in LaFayette, GA | River City Tree Care";
-$pageDescription = "Tree service in LaFayette, GA: pruning, stump removal, tree removal and land clearing for Walker County from a licensed, insured local crew. Free estimates: (706) 264-6130.";
+$pageDescription = "Tree service in LaFayette, GA: pruning, stump removal, tree removal and land clearing for Walker County. Licensed and insured. Free estimates: (706) 264-6130.";
 $canonicalUrl    = "https://rivercitytreega.com/service-areas/lafayette-ga/";
 $ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "service-areas";

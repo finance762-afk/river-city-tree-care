@@ -1,6 +1,6 @@
 <?php
 $pageTitle       = "Tree Service in Fort Oglethorpe, GA | River City Tree Care";
-$pageDescription = "Stump grinding, stump removal, tree trimming and emergency tree removal in Fort Oglethorpe, GA. Licensed, insured, open 24/7. Free estimates: call (706) 264-6130.";
+$pageDescription = "Stump grinding, tree trimming and 24/7 emergency tree removal in Fort Oglethorpe, GA from a licensed, insured local crew. Free estimates: call (706) 264-6130.";
 $canonicalUrl    = "https://rivercitytreega.com/service-areas/fort-oglethorpe-ga/";
 $ogImage         = "/assets/images/og-logo.jpg";
 $currentPage     = "service-areas";
