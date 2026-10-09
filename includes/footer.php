@@ -22,6 +22,11 @@
             <li><a href="/services/land-development/">Land Development</a></li>
             <li><a href="/services/firewood/">Firewood</a></li>
             <li><a href="/services/sawmill-services/">Sawmill Services</a></li>
+            <li><a href="/service-areas/">Service Areas</a></li>
+            <li><a href="/service-areas/fort-oglethorpe-ga/">Fort Oglethorpe, GA</a></li>
+            <li><a href="/service-areas/chattanooga-tn/">Chattanooga, TN</a></li>
+            <li><a href="/service-areas/ringgold-ga/">Ringgold, GA</a></li>
+            <li><a href="/service-areas/lafayette-ga/">LaFayette, GA</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>

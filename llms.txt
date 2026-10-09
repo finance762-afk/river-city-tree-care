@@ -24,6 +24,12 @@
 
 ## Service Area
 50-mile radius from Chickamauga, GA including:
+Service area pages:
+- Fort Oglethorpe, GA: https://rivercitytreega.com/service-areas/fort-oglethorpe-ga/
+- Chattanooga, TN: https://rivercitytreega.com/service-areas/chattanooga-tn/
+- Ringgold, GA: https://rivercitytreega.com/service-areas/ringgold-ga/
+- LaFayette, GA: https://rivercitytreega.com/service-areas/lafayette-ga/
+- All areas: https://rivercitytreega.com/service-areas/
 - Chickamauga, GA
 - Chattanooga, TN
 - Ringgold, GA
